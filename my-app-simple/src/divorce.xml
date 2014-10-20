@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<Law>
+	<LawName>离婚协议</LawName>
 <Divorce>
 	<房产>
 	<Category>房产</Category>
@@ -62,5 +64,5 @@
 		</Refer>
 	</Item>
 	</子女>
-
 </Divorce>
+</Law>

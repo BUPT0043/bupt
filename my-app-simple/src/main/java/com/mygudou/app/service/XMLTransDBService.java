@@ -15,6 +15,7 @@ import com.mygudou.app.daoimp.ItemDAOImpl;
 import com.mygudou.app.daoimp.XMLDAOimpl;
 import com.mygudou.app.model.Category;
 import com.mygudou.app.model.Item;
+import com.mygudou.app.model.Law;
 @Service("XMLTransDBService")
 @Transactional
 public class XMLTransDBService {
@@ -28,6 +29,7 @@ public class XMLTransDBService {
     	File file = new File("src\\divorce.xml");
 		InputStream A =  new FileInputStream(file);
 		InputStream B =  new FileInputStream(file);
+		InputStream C =  new FileInputStream(file);
 		List<Item> xmls=XMLDAO.getDivorce(A);		
 		
 		Iterator<Item> it=xmls.iterator();
@@ -56,9 +58,23 @@ public class XMLTransDBService {
     		
     		
     	}
+    	List<Law> xml2=XMLDAO.getDivorce2(C);
+    	Iterator<Law> la=xml2.iterator();
+    	while(la.hasNext()){
+    		
+    		Law law=la.next();
+    		if(ItemDAO.isNotExist(law)){	
+    			ItemDAO.insertLaw(law);
+    		}
+    		else{
+    		
+    		}
+    		
+    		
+    	}
     	
     }
-    //获取Item\Category
+    //jsp获取Item\Category\Law
     public List<Item> getList(){
     	return ItemDAO.getItems();
     }
@@ -66,5 +82,10 @@ public class XMLTransDBService {
     	
     	return ItemDAO.getCategory();
     }
+//    public List<Law> getLawList(){
+//    	
+//		return ItemDAO.getLaws();
+//    	
+//    }
     
 }

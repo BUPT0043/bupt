@@ -13,8 +13,10 @@ import org.springframework.stereotype.Repository;
 import com.mygudou.app.dao.ItemDAO;
 import com.mygudou.app.model.Category;
 import com.mygudou.app.model.Item;
+import com.mygudou.app.model.Law;
 import com.mygudou.app.rowmapper.CategoryRowMapper;
 import com.mygudou.app.rowmapper.ItemRowMapper;
+import com.mygudou.app.rowmapper.LawRowMapper;
 
 @Repository("ItemDAO")
 public class ItemDAOImpl implements ItemDAO{
@@ -23,6 +25,7 @@ public class ItemDAOImpl implements ItemDAO{
     
     String TABLE_NAME="res_category_item";
     String TABLE_NAME1="res_category";
+    String TABLE_NAME2="res_law";
 
 	public int insertItem(Item item) {
 		
@@ -59,6 +62,41 @@ public class ItemDAOImpl implements ItemDAO{
        			}
        );
 	}	
+	public int insertLaw(Law law) {
+		int i=0;
+		
+		try{
+			final String name=law.getName();
+
+        jdbcTemplate.update("INSERT INTO "+TABLE_NAME2+" (name) VALUES(?)",  
+                new PreparedStatementSetter() {  
+                    public void setValues(PreparedStatement ps) throws SQLException {  
+                    	System.out.println(name+">>>>>>lawName>>>>>>>>>");
+                        ps.setString(1, name);  
+                      
+                    }
+       			}
+       );}catch(Exception e){
+    	   
+    	   e.printStackTrace();
+       }
+        return i;
+	}
+
+
+	/*public void insertLaw(Law law) {
+		
+		final String name=law.getName();
+        jdbcTemplate.update("INSERT INTO "+TABLE_NAME2+" (name) VALUES(?)",  
+                new PreparedStatementSetter() {  
+                    public void setValues(PreparedStatement ps) throws SQLException {  
+                        ps.setString(1, name);  
+                    
+                    }
+       			}
+       );
+	}	*/
+	
 	public boolean isNotExist(Category category) {
 		final String name=category.getCategoryname();
 		List list = jdbcTemplate.queryForList("SELECT * FROM "+TABLE_NAME1+" WHERE NAME="+"'"+name+"'");
@@ -85,6 +123,22 @@ public class ItemDAOImpl implements ItemDAO{
 			System.out.println(b+"<<<<<<<<<<<b");
 			return b;
 		}
+
+		public boolean isNotExist(Law law) {
+			final String name=law.getName();
+			List list2=jdbcTemplate.queryForList("SELECT * FROM "+TABLE_NAME2+" WHERE NAME="+"'"+name+"'");
+			System.out.println(list2.size()+"----law.size-----");
+			boolean b;
+			if(list2.size()>0){
+				b=false;
+				
+			}
+			else{
+				b=true;
+			}
+			return b;
+		}
+
 	
 /**
  * 这个函数是拿到所有的items
@@ -102,7 +156,14 @@ public class ItemDAOImpl implements ItemDAO{
         return jdbcTemplate.query(sql, new CategoryRowMapper());
 	}
 
+	public List<Law> getLaws() {
+		String sql = "select * from "+ TABLE_NAME2;
+		return jdbcTemplate.query(sql, new LawRowMapper());
+	}
 
+
+
+	
 
 
 
