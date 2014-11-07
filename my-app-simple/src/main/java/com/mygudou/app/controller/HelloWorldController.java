@@ -14,33 +14,34 @@ public class HelloWorldController{
     @Resource(name = "XMLTransDBService")
     private XMLTransDBService XMLTransDBService;	
 	Logger logger = Logger.getLogger(HelloWorldController.class); 
-    /**
-     * 显示badcause的信息，按照Cluster_score倒序排列
-     * @param 
-     * @return
-     * @throws Exception 
-     */    
-/*    @RequestMapping(value = "/index")        //②相对于①处的映射进行窄化
-    public ModelAndView showFront(String badcause) throws Exception {
-        ModelAndView mv = new ModelAndView();
-        //拿到badcause名字和代号
-        XMLTransDBService.TransXmlToDB();
-        mv.addObject("hello","hello");
-        //mv.addObject("",List);
-        mv.setViewName("hello");
-        return mv;
-        }*/    
-    @RequestMapping(value = "/main")       
-    public ModelAndView showItems(String badcause) throws Exception {
-       
+	
+//	首页
+	@RequestMapping(value = "/firstshow")
+	 public ModelAndView showfirst(String badcause) throws Exception {
+		ModelAndView mv2 = new ModelAndView();
+		mv2.setViewName("firstshow");
+		return mv2;   }
+
+//	项目选择
+	@RequestMapping(value = "/login")
+	 public ModelAndView showCategory(String badcause) throws Exception {
+		ModelAndView mv1 = new ModelAndView();
+		mv1.setViewName("login");
+		
+		return mv1;    
+	}
+//	主界面登陆
+	@RequestMapping(value = "/main")       
+    public ModelAndView showItems(String badcause) throws Exception {    
     	ModelAndView mv = new ModelAndView();
         mv.addObject("items",XMLTransDBService.getList());//读refer data
         mv.addObject("category",XMLTransDBService.getCateogoryList());//读category_name
-       // System.out.println(XMLTransDBService.getCateogoryList().size()+"--+++--");
-       // int id = XMLTransDBService.getCateogoryList().get(0).getId();
-        //System.out.println("\n\n\n id"+id);
+        mv.addObject("law",XMLTransDBService.getLawList());
         XMLTransDBService.TransXmlToDB();
         mv.setViewName("main");
         return mv;
         }
-}
+ 
+	}
+
+

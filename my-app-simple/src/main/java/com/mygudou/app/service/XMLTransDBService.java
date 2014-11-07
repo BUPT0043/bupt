@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Resource;
 
@@ -30,7 +31,46 @@ public class XMLTransDBService {
 		InputStream A =  new FileInputStream(file);
 		InputStream B =  new FileInputStream(file);
 		InputStream C =  new FileInputStream(file);
-		List<Item> xmls=XMLDAO.getDivorce(A);		
+		
+		List<Law> xml2=XMLDAO.getDivorce2(C);
+    	Iterator<Law> la=xml2.iterator();
+    	while(la.hasNext()){
+    		
+    		Law law=la.next();
+    		if(ItemDAO.isNotExist(law)){	
+    			ItemDAO.insertLaw(law);
+    		}
+    		else{
+   
+    		}
+
+    	}
+		
+		Map<String,Object> map=XMLDAO.getDivorce1(B);//InputStream只能用一次
+    	List<Category> list=(List<Category>) map.get("category");
+    	System.out.println(list.size()+"---list---");
+    	String lawName=(String) map.get("lawName");
+    	
+    	for(Category ca:list){
+    		if(ItemDAO.isNotExist(ca)){	//判空
+    			ItemDAO.insertCategroy(ca,lawName);//插入
+    		}
+    	}
+		
+    	Map<String,Object> map1=(Map<String, Object>) XMLDAO.getDivorce(A);
+    	List<Item> list1=(List<Item>) map1.get("item");
+    	String categoryName=(String) map1.get("categoryName");
+    	//有问题？
+    	for(int i=0;i<list1.size();i++){
+    		Item itt=list1.get(i);
+
+    		if(ItemDAO.isNotExist(itt)){
+    			ItemDAO.insertItem(itt,categoryName);
+    		}
+
+    	}
+    	}
+   /*     List<Item> xmls=XMLDAO.getDivorce(A);		
 		
 		Iterator<Item> it=xmls.iterator();
     	while(it.hasNext()){
@@ -42,39 +82,9 @@ public class XMLTransDBService {
     		else{
     			
     		}
-    	}
+    	}*/
     	
-		List<Category> xml1=XMLDAO.getDivorce1(B);//InputStream只能用一次
-    	Iterator<Category> ca=xml1.iterator();
-    	while(ca.hasNext()){
-    		
-    		Category category=ca.next();
-    		if(ItemDAO.isNotExist(category)){	//判空
-    			ItemDAO.insertCategroy(category);//插入
-    		}
-    		else{
-    		
-    		}
-    		
-    		
-    	}
-    	List<Law> xml2=XMLDAO.getDivorce2(C);
-    	Iterator<Law> la=xml2.iterator();
-    	while(la.hasNext()){
-    		
-    		Law law=la.next();
-    		if(ItemDAO.isNotExist(law)){	
-    			ItemDAO.insertLaw(law);
-    		}
-    		else{
-    		
-    		}
-    		
-    		
-    	}
-    	
-    }
-    //jsp获取Item\Category\Law
+//jsp获取Item\Category\Law
     public List<Item> getList(){
     	return ItemDAO.getItems();
     }
@@ -82,10 +92,11 @@ public class XMLTransDBService {
     	
     	return ItemDAO.getCategory();
     }
-//    public List<Law> getLawList(){
-//    	
-//		return ItemDAO.getLaws();
-//    	
-//    }
+    
+   public List<Law> getLawList(){
+   	
+	return ItemDAO.getLaws();
+    	
+   }
     
 }

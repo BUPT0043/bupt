@@ -3,6 +3,7 @@ package com.mygudou.app.daoimp;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Resource;
 
@@ -27,41 +28,40 @@ public class ItemDAOImpl implements ItemDAO{
     String TABLE_NAME1="res_category";
     String TABLE_NAME2="res_law";
 
-	public int insertItem(Item item) {
+	public void insertItem(Item item,String categoryName) {
 		
-		int i=0;
-		
-		try{
 			final String data=item.getData();
 			final String refer=item.getRefer();
-
-        jdbcTemplate.update("INSERT INTO "+TABLE_NAME+" (data,refer) VALUES(?,?)",  
+			final int categoryid=jdbcTemplate.queryForInt("select id from res_category where name="+"'"+categoryName+"'");
+			//List List1=jdbcTemplate.queryForList("select id from res_category where name="+"'"+categoryName+"'");
+			
+            jdbcTemplate.update("INSERT INTO "+TABLE_NAME+" (categoryid,data,refer) VALUES(?,?,?)",  
                 new PreparedStatementSetter() {  
                     public void setValues(PreparedStatement ps) throws SQLException {  
-                    	//System.out.println(data+">>>>>>>>>>>>>>>>>>>>>>>>>>>");
-                        ps.setString(1, data);  
-                        ps.setString(2, refer);
-                    }
-       			}
-       );}catch(Exception e){
-    	   
-    	   e.printStackTrace();
-       }
-        return i;
-	}
-	
-	public void insertCategroy(Category category) {
-	
-		final String name=category.getCategoryname();
-        jdbcTemplate.update("INSERT INTO "+TABLE_NAME1+" (name) VALUES(?)",  
-                new PreparedStatementSetter() {  
-                    public void setValues(PreparedStatement ps) throws SQLException {  
-                        ps.setString(1, name);  
-                    
+                        ps.setInt(1,categoryid);
+                    	ps.setString(2, data);  
+                        ps.setString(3, refer);
                     }
        			}
        );
+    
+	}
+	
+	public void insertCategroy(Category category,String lawName) {//把值带过来了，
+		
+		final String name=category.getCategoryname();
+		final int lawid= jdbcTemplate.queryForInt("select id from res_law where name="+"'"+lawName+"'");
+		jdbcTemplate.update("INSERT INTO "+TABLE_NAME1+" (lawid,name) VALUES(?,?)",  
+                new PreparedStatementSetter() {  
+                    public void setValues(PreparedStatement ps) throws SQLException {  
+                    	ps.setInt(1, lawid);
+                    	ps.setString(2, name);  
+              
+                    }
+       			}
+       );     
 	}	
+	
 	public int insertLaw(Law law) {
 		int i=0;
 		
@@ -83,19 +83,6 @@ public class ItemDAOImpl implements ItemDAO{
         return i;
 	}
 
-
-	/*public void insertLaw(Law law) {
-		
-		final String name=law.getName();
-        jdbcTemplate.update("INSERT INTO "+TABLE_NAME2+" (name) VALUES(?)",  
-                new PreparedStatementSetter() {  
-                    public void setValues(PreparedStatement ps) throws SQLException {  
-                        ps.setString(1, name);  
-                    
-                    }
-       			}
-       );
-	}	*/
 	
 	public boolean isNotExist(Category category) {
 		final String name=category.getCategoryname();
@@ -160,6 +147,8 @@ public class ItemDAOImpl implements ItemDAO{
 		String sql = "select * from "+ TABLE_NAME2;
 		return jdbcTemplate.query(sql, new LawRowMapper());
 	}
+
+
 
 
 

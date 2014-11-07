@@ -10,7 +10,7 @@ import com.mygudou.app.model.Law;
 public interface ItemDAO {
 	
 	//insert
-	public int insertItem(Item item);
+	//public int insertItem(Item item);
 //	public void insertCategory(Category category);
 	public int insertLaw(Law law);
 	

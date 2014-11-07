@@ -1,12 +1,18 @@
 package com.mygudou.app.daoimp;
 
 import java.io.InputStream;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.stereotype.Repository;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
+
+
+
+
 
 import com.mygudou.app.dao.XMLDAO;
 import com.mygudou.app.model.Category;
@@ -16,9 +22,9 @@ import com.mygudou.app.model.Law;
 @Repository("XMLDAO")
 public class XMLDAOimpl implements XMLDAO{
 
-
-	public List<Item> getDivorce(InputStream xml) throws Exception {
+	public Map<String, Object> getDivorce(InputStream xml) throws Exception {
 		
+		Map<String,Object> map=new HashMap<String,Object>();
 		List<Item> lst = null;
 		Item it = null;
 		XmlPullParserFactory pullParserFactory = XmlPullParserFactory.newInstance();
@@ -35,6 +41,12 @@ public class XMLDAOimpl implements XMLDAO{
 				lst = new LinkedList<Item>();
 				break;
 			case XmlPullParser.START_TAG:
+
+			if ("Category".equals(nodeName)) {
+				String categoryName=pullParser.nextText(); 
+				map.put("categoryName", categoryName);
+				//System.out.println(categoryName+"categoryName");
+				} 
 				
 			 if ("Data".equals(nodeName)) {
 					it =new Item();
@@ -46,8 +58,6 @@ public class XMLDAOimpl implements XMLDAO{
 					str+=pullParser.nextText()+"<br/>";	//换行
 					it.setRefer(str);	 
 				}
-			 //System.out.println(str+"------1---------");
-			 //it.setRefer(str);
 			 break;
 			case XmlPullParser.END_TAG:
 				if("Item".equals(nodeName)){
@@ -60,12 +70,13 @@ public class XMLDAOimpl implements XMLDAO{
 			}
 			event=pullParser.next();
 		}
-		return lst;
+		System.out.println(lst.size()+"----item.size()---");
+		map.put("item", lst);
+		return map;
 	}
-	public List<Category> getDivorce1(InputStream xml) throws Exception {
+	public Map<String,Object> getDivorce1(InputStream xml) throws Exception {
+		Map<String,Object> map=(Map<String, Object>) new HashMap<String, Object>();//给后边Imple传值
 		List<Category> lst1 = null;
-		List<Item> lst2=null;
-		Item it=null;
 		Category ca=null;
 		XmlPullParserFactory pullParserFactory = XmlPullParserFactory.newInstance();
 		XmlPullParser pullParser = pullParserFactory.newPullParser();
@@ -81,13 +92,15 @@ public class XMLDAOimpl implements XMLDAO{
 				lst1 = new LinkedList<Category>();
 				break;
 			case XmlPullParser.START_TAG:
-				
+			if ("LawName".equals(nodeName)) {
+					 String lawName=pullParser.nextText(); 
+					 map.put("lawName", lawName);
+				} //这边把Law 也就是各种协议的 名字读进来了 
+			
 			 if ("Category".equals(nodeName)) {
 				 ca=new Category();
-				 it=new Item();
 				 String name=pullParser.nextText(); 
 				 ca.setCategoryname(name);
-				 //it.setId(id);
 				} 
 			case XmlPullParser.END_TAG:
 				if("Category".equals(nodeName)){
@@ -99,7 +112,8 @@ public class XMLDAOimpl implements XMLDAO{
 			event1=pullParser.next();
 		}
 		System.out.println(lst1.size()+"=================");
-		return lst1;
+		map.put("category", lst1);
+		return map;//放到map里
 	}
 	public List<Law> getDivorce2(InputStream xml) throws Exception {
 	
