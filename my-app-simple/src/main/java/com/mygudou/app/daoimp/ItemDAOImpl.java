@@ -16,6 +16,7 @@ import com.mygudou.app.model.Category;
 import com.mygudou.app.model.Item;
 import com.mygudou.app.model.Law;
 import com.mygudou.app.rowmapper.CategoryRowMapper;
+import com.mygudou.app.rowmapper.ItemInfoRowMapper;
 import com.mygudou.app.rowmapper.ItemRowMapper;
 import com.mygudou.app.rowmapper.LawRowMapper;
 
@@ -126,10 +127,6 @@ public class ItemDAOImpl implements ItemDAO{
 			return b;
 		}
 
-	
-/**
- * 这个函数是拿到所有的items
- */
 	public List<Item> getItems() {
 
         String sql = "select * from "+ TABLE_NAME;
@@ -137,9 +134,9 @@ public class ItemDAOImpl implements ItemDAO{
         return jdbcTemplate.query(sql, new ItemRowMapper());
 	}
 
-	public List<Category> getCategory() {
+	public List<Category> getCategory(int lawid) {
 		
-		String sql = "select * from "+ TABLE_NAME1;
+		String sql = "select * from "+ TABLE_NAME1+" where lawid="+lawid;
         return jdbcTemplate.query(sql, new CategoryRowMapper());
 	}
 
@@ -148,14 +145,22 @@ public class ItemDAOImpl implements ItemDAO{
 		return jdbcTemplate.query(sql, new LawRowMapper());
 	}
 
+	public Law getLaw(int lawid) {
+		String sql = "select * from "+ TABLE_NAME2+" where id="+lawid;
+		 return jdbcTemplate.query(sql, new LawRowMapper()).get(0);
+		
+	}
+
+	public Item getItem(int lawid, int categoryid) {
+		String sql = "select * from "+ TABLE_NAME+" where categoryid="+categoryid;
+		 return jdbcTemplate.query(sql, new ItemRowMapper()).get(0);//数据不能全部读出，只能读一条？
+	}
+
+	public Category getCa(int lawid, int categoryid) {
+		String sql = "select * from "+ TABLE_NAME1+" where id="+categoryid;
+		return jdbcTemplate.query(sql, new CategoryRowMapper()).get(0);
+	}
 
 
-
-
-	
-
-
-
-	
 
 }

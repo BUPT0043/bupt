@@ -27,7 +27,9 @@ public class XMLTransDBService {
     
     public void TransXmlToDB() throws Exception{
     	
-    	File file = new File("src\\divorce.xml");
+    	File file = new File("src\\divorce1.xml");//
+    	System.out.println(file.setReadOnly()+"fileread");
+    	
 		InputStream A =  new FileInputStream(file);
 		InputStream B =  new FileInputStream(file);
 		InputStream C =  new FileInputStream(file);
@@ -88,9 +90,9 @@ public class XMLTransDBService {
     public List<Item> getList(){
     	return ItemDAO.getItems();
     }
-    public List<Category> getCateogoryList(){
+    public List<Category> getCateogoryList(int lawid){
     	
-    	return ItemDAO.getCategory();
+    	return ItemDAO.getCategory(lawid);
     }
     
    public List<Law> getLawList(){
@@ -98,5 +100,17 @@ public class XMLTransDBService {
 	return ItemDAO.getLaws();
     	
    }
+   public Law getLaw(int lawid){
+	   	
+		return ItemDAO.getLaw(lawid);
+	    	
+	   }
     
+   public Item getItem(int lawid,int categoryid){
+	   return ItemDAO.getItem(lawid,categoryid);
+   }
+   public Category getCa(int lawid,int categoryid){
+	   return ItemDAO.getCa(lawid,categoryid);
+  
+   }
 }

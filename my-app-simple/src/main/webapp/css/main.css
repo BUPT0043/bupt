@@ -1,0 +1,71 @@
+ .breadcrumb{
+                margin-top: 0px;
+                margin-bottom:0px;
+           
+                }
+                .jumbotron{
+                margin: 0px;
+                
+                }
+                .navbar navbar-default{
+                margin:0px;
+                }
+                .active1{
+                float:right;
+                }
+                .Context{
+                width:1030px;
+                margin:0 auto;
+                }
+                .editbutton{
+                float:right;
+                }
+               .thelast{
+               	width:1030px;
+               	margin:0 auto;
+               }
+               .container{
+               width:1030px;   
+               margin-bottom: 0px;          
+               }
+               .row{
+               	width:1030px;
+               	margin-right: 12px;
+               }
+               .data-edit tr{
+
+               background-color:white;
+               }
+               .div{
+               background:white;
+               }
+         	  .col-md-3{
+                margin-right: 0px; 
+               } 
+               .col-md-9{
+               margin-top:0px;
+               margin-left: 0px;
+               } 
+               
+	           .content-nav {
+				width: 201px;
+				box-shadow:inset 0 0 2px #f8f8f8;
+				background-color: #F6F6F6;
+				border-right: 1px solid #DCDCDC;
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				}
+				.dataeditzone{
+				width:250px;
+				margin-left: 0px;
+				
+				}
+				.datazone{
+				width:758px;
+				margin-right: 0px;
+				padding-right: 0px;
+				}
+           
+               
