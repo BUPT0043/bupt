@@ -61,11 +61,12 @@ public class XMLTransDBService {
 		
     	Map<String,Object> map1=(Map<String, Object>) XMLDAO.getDivorce(A);
     	List<Item> list1=(List<Item>) map1.get("item");
-    	String categoryName=(String) map1.get("categoryName");
+    	List<String> lst3=(List<String>) map1.get("categoryName");
+    	//String categoryName=(String) map1.get("categoryName");
     	//有问题？存的两个都是2.
     	for(int i=0;i<list1.size();i++){
     		Item itt=list1.get(i);
-
+    		String categoryName=lst3.get(i);
     		if(ItemDAO.isNotExist(itt)){
     			ItemDAO.insertItem(itt,categoryName);
     		}

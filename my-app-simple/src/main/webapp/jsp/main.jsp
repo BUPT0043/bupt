@@ -84,7 +84,7 @@
          <script type="text/javascript">
             function searchItem(){
         		var categoryids=0;
-                $('input[type=checkbox]:checked').each( function(){
+                $('#navList input[type=checkbox]:checked').each( function(){
                         id=$(this).attr("id").split("category_")[1];
                         categoryids+=","+id;
                 }); 
@@ -95,11 +95,13 @@
                     data: "categoryids="+categoryids+"&"+"lawid="+${lawid} ,
                     success: function(data) {
                    	 var list=eval("("+data+")");
-                   	 $("#data").empty();
+                   	 var newContent = "";
                    		for(var i in list){
-             	          	   $("#data").append("<table><tr>"+list[i]['data']+"</br>"+list[i]['refer']);
+                   			newContent +="<table><tr>"+list[i]['data']+"</br>"+list[i]['refer'];
+             	          	  // $("#data").append("<table><tr>"+list[i]['data']+"</br>"+list[i]['refer']);
              	          	   //$("#refer").append("<table><tr>"+list[i]['refer']+"</br>")
-             	             } 
+             	             }
+                   		$("#data").html(newContent);
              	        }
                 });
         	}
@@ -107,7 +109,11 @@
             $(document).ready(function(){
 				  $("#btn1").click(function(){
 					  $("#Itemedit").slideUp(500);
-					  $("#navaSidebar").html($("#navList").find(":checked").parent().clone());
+					  var newContent = "";
+					  $("#navList").find(":checked").parent().clone().each(function(){
+						  newContent+= "<p style='font-size: 14px'>"+$(this).text()+"<p/>";
+					  })
+					  $("#navaSidebar").html(newContent);
 					  });
 				  $("#btn2").click(function(){
 					  //alert('2222')

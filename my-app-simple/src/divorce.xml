@@ -18,20 +18,6 @@
 			<p>其他：</p>
 		</Refer>		
 	</Item>
-	<Item>
-	<Data>
-	(2)该房产坐落于<![CDATA[ <input  />]]>，房产证号<![CDATA[ <input  />]]>，是婚后财产
-	</Data>
-		<Refer>
-			<p>法律依据：《B》</p>
-			<p>（一）</p>
-			<p>（二）</p>
-			<p>（三）</p>
-			<p>（四）</p>
-			<p>规定：</p>
-			<p>其他：</p>
-		</Refer>
-		</Item>
 	</房产>
 	<子女>
 	<Category>子女</Category>
@@ -41,20 +27,6 @@
 	</Data>
 		<Refer>
 			<p>法律依据：《C》</p>
-			<p>（一）</p>
-			<p>（二）</p>
-			<p>（三）</p>
-			<p>（四）</p>
-			<p>规定：</p>
-			<p>其他：</p>
-		</Refer>
-	</Item>
-	<Item>
-	<Data>
-	(2)有一个男孩名字叫做<![CDATA[ <input  />]]>，不是亲生的
-	</Data>
-		<Refer>
-			<p>法律依据：《D》</p>
 			<p>（一）</p>
 			<p>（二）</p>
 			<p>（三）</p>

@@ -26,6 +26,7 @@ public class XMLDAOimpl implements XMLDAO{
 		
 		Map<String,Object> map=new HashMap<String,Object>();
 		List<Item> lst = null;
+		List<String> lst3=null;//lst3-categoryName
 		Item it = null;
 		XmlPullParserFactory pullParserFactory = XmlPullParserFactory.newInstance();
 		XmlPullParser pullParser = pullParserFactory.newPullParser();
@@ -39,12 +40,14 @@ public class XMLDAOimpl implements XMLDAO{
 			switch (event) {
 			case XmlPullParser.START_DOCUMENT://文档开始
 				lst = new LinkedList<Item>();
+				lst3 = new LinkedList<String>();
 				break;
 			case XmlPullParser.START_TAG:
 
 			if ("Category".equals(nodeName)) {
 				String categoryName=pullParser.nextText(); 
-				map.put("categoryName", categoryName);
+				lst3.add(categoryName);
+				
 				//System.out.println(categoryName+"categoryName");
 				} 
 				
@@ -72,6 +75,7 @@ public class XMLDAOimpl implements XMLDAO{
 		}
 		System.out.println(lst.size()+"----item.size()---");
 		map.put("item", lst);
+		map.put("categoryName", lst3);
 		return map;
 	}
 	public Map<String,Object> getDivorce1(InputStream xml) throws Exception {
