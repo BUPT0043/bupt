@@ -23,10 +23,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	 .breadcrumb{
                 margin-top: 0px;
                 margin-bottom:0px;
+                width: 1030px;
+                height: 46px;
            
                 }
                 .jumbotron{
-                margin-top: 0px;
+                margin-top: 3px;
                 margin-bottom:5px;
                 }
                 .navbar navbar-default{
@@ -57,10 +59,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				margin-left:0px;
 				margin-right:0px;
 				margin-up:5px;
+				margin-top: 3px;
 				}
 				.row demo-tiles{
 				width:1030px;
 				padding:20px;
+				}
+				.tile{
+				margin-top: 10px;
 				}
 				
 				.jumbotron{
@@ -92,8 +98,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<strong>提示：</strong> 请选择相关合同条款类型，如涉及钱款，请注意保护相关安全
        </div> 
        
-       <div class="alert alert-info" role="alert">
-      </div>
+      <!--  <div class="alert alert-info" role="alert">
+      </div> -->
 	 
 	<div class="menu-edit">
 		 

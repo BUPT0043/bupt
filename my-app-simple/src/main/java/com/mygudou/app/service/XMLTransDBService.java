@@ -27,7 +27,7 @@ public class XMLTransDBService {
     
     public void TransXmlToDB() throws Exception{
     	
-    	File file = new File("src\\divorce1.xml");//
+    	File file = new File("src\\divorce.xml");//
     	System.out.println(file.setReadOnly()+"fileread");
     	
 		InputStream A =  new FileInputStream(file);
@@ -62,7 +62,7 @@ public class XMLTransDBService {
     	Map<String,Object> map1=(Map<String, Object>) XMLDAO.getDivorce(A);
     	List<Item> list1=(List<Item>) map1.get("item");
     	String categoryName=(String) map1.get("categoryName");
-    	//有问题？
+    	//有问题？存的两个都是2.
     	for(int i=0;i<list1.size();i++){
     		Item itt=list1.get(i);
 
@@ -72,21 +72,7 @@ public class XMLTransDBService {
 
     	}
     	}
-   /*     List<Item> xmls=XMLDAO.getDivorce(A);		
-		
-		Iterator<Item> it=xmls.iterator();
-    	while(it.hasNext()){
-    		Item item=it.next();
-    		
-    		if(ItemDAO.isNotExist(item)){
-    			ItemDAO.insertItem(item);
-    		}
-    		else{
-    			
-    		}
-    	}*/
-    	
-//jsp获取Item\Category\Law
+  //jsp获取Item\Category\Law
     public List<Item> getList(){
     	return ItemDAO.getItems();
     }
