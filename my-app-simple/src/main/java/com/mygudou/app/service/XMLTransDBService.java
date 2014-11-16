@@ -27,7 +27,7 @@ public class XMLTransDBService {
     
     public void TransXmlToDB() throws Exception{
     	
-    	File file = new File("src\\divorce.xml");//
+    	File file = new File("src\\divorce1.xml");//
     	System.out.println(file.setReadOnly()+"fileread");
     	
 		InputStream A =  new FileInputStream(file);
