@@ -27,7 +27,8 @@
     	  }
     	  .dataeditzone{
 				margin-left:0px;
-				width:180px;
+				width:255px;
+				background-color: white;
 				}
 				.btn-lg, .btn-group-lg > .btn{
 				margin: 8px;
@@ -36,12 +37,14 @@
 				width:1030px;
 				margin-top:2px;
 				margin-bottom: 2px;
+			    position:absoulte;
+			    z-index:5555
 				}
 				.datazone p{
 				font-size: 14px;
-				margin-left: 52px;
-				
-				
+				width:769px;
+				margin-right: 0px;
+				padding-right: 0px;
 				}
 				.col-md-12{
 				margin-bottom: 2px;
@@ -68,12 +71,10 @@
 		  <script type="text/javascript">
 			  jQuery(function($){ 
 				  $(document).ready(function() { 
-						  $('.editzone').stickUp(); 
+						  $("#editzone").stickUp(); 
 						  });
 				  }); 
-		  </script>
-		  
-		  <script type="text/javascript">
+			  
 			  jQuery(function($){ 
 				  $(document).ready(function() { 
 						  $('.dataeditzone').stickUp(); 
@@ -88,6 +89,7 @@
                         id=$(this).attr("id").split("category_")[1];
                         categoryids+=","+id;
                 }); 
+                
                 //ajax
             	 $.ajax({
                     type: "POST",
@@ -97,14 +99,47 @@
                    	 var list=eval("("+data+")");
                    	 var newContent = "";
                    		for(var i in list){
-                   			newContent +="<table><tr>"+list[i]['data']+"</br>"+list[i]['refer'];
-             	          	  // $("#data").append("<table><tr>"+list[i]['data']+"</br>"+list[i]['refer']);
-             	          	   //$("#refer").append("<table><tr>"+list[i]['refer']+"</br>")
+                   			var dataList = list[i]['data'].split("<br/>");
+                   			newContent +="<table><tr>";
+                   			for(var j in dataList){
+                   				if("" != dataList[j]){
+                   					newContent +="<div><div><input class='cbxcss' type='checkbox'>"+dataList[j]+"</input></div>"+
+                   						"<input type='button' value='+' onclick='$(this).parent().clone(true).insertAfter(this);'/></div><br/>";
+                   				}
+                   			}
+                   			 newContent +="</br><input type='button' value='法律条款' onclick='showRefer(this,"+i+")' /><p id='refer_"+i+"' style='display:none'>"+list[i]['refer']+"</p>";
              	             }
                    		$("#data").html(newContent);
              	        }
                 });
         	}
+            
+            function showRefer(obj,i){
+            	if($("#refer_"+i).is(":hidden")){
+            		$(obj).val("关闭");
+            	}else{
+            		$(obj).val("法律条款");
+            	}
+            	
+            	$("#refer_"+i).toggle();
+            	
+            }
+            function toWord(){
+            	var param = new Array();
+            	$(".datazone input:checked").each(function(){
+            		var newContent = $(this).parent().clone();
+            		newContent.find("input").each(function(i){
+            			if(i != 0){
+            				var str = $(this).val();
+                			$(this).replaceWith("<p>"+str+"</p>");
+            			}
+            		});
+            		param.push(newContent.text());
+            	});
+            	window.open('toWord?param='+param);
+            	
+            }
+            
             	//显示div
             $(document).ready(function(){
 				  $("#btn1").click(function(){
@@ -115,13 +150,15 @@
 					  })
 					  $("#navaSidebar").html(newContent);
 					  });
-				  $("#btn2").click(function(){
-					  //alert('2222')
-					  $("#Itemedit").slideDown(500);
-					  });
+					  $("#btn2").click(function(){
+						  //alert('2222')
+						  $("#Itemedit").slideDown(500);
+						  });
 			});
+            	
          </script>
 </head>
+
 <body class="Context" id="body1" background="../images/1.jpg">
 		 <!--A区  -->
 		<ul class="breadcrumb">
@@ -145,7 +182,7 @@
 		<strong>提示：</strong> 涉及相关财产，请注意保护个人隐私安全
        </div>  
 		<!--D区编辑editzone--置顶-->
-       <div class="editzone" style="background-color: #FFFFCC" >  <strong style="margin-left: 10px;">条款操作</strong>
+       <div class="editzone" id="editzone" style="background-color: #FFFFCC";>  <strong style="margin-left: 10px;">条款操作</strong>
        		   <a href="#" class="btn2"><span class="glyphicon glyphicon-remove" style="color: rgb(0, 124, 162); font-size: 15px;"> 重置</a>
 	           <a href="#" id="btn2" class="btn2"><span class="glyphicon glyphicon-list" style="color: rgb(0, 124, 162); font-size: 15px;"> 重新选择</a>
        </div>
@@ -168,7 +205,7 @@
            </div>
             <button class="btn btn-primary" id="btn1" type="button" onclick="searchItem();">确定</button>
 		 </div>
-		<!-- 数据内容区域 --置顶 -->
+		<!-- 数据内容区域 -->
 		<div class="col-md-3" style="background-color: white">
 		<div class="dataeditzone" >
 			 <div class="container">
@@ -177,12 +214,7 @@
 		          <ul class="nav nav-sidebar">
 		          	<li id="navaSidebar"></li>
 		          	<li>
-			          	<button class="btn btn-lg btn-default" data-toggle="modal" data-target="#myModal" >
-			          		<span class= "glyphicon glyphicon-play-circle" style="color : rgb(255, 255, 255); font-size: 22px;"> Show</span>
-			          	</button >
-		          	</li>
-		          	<li>
-		          	    <button type ="button" class="btn btn-lg btn-default" onClick ="$('#datazone').tableExport({type:'pdf',escape:'false'});">
+                        <button type ="button" class="btn btn-lg btn-default" onClick ="toWord();">
                         	<span class= "glyphicon glyphicon-saved" style="color : rgb(255, 255, 255); font-size: 22px;" > Word</span>
                         </button>
 		          	</li>
@@ -192,12 +224,10 @@
 	         </div>
 	        </div>
 		</div>
+			<!-- 条款投射区 -->
 		<div class="col-md-9">
-		<div class="datazone" style="background-color: white">
-		
-				<!-- 条款投射区 -->
-				
-				<p id="data" class="data1"></p> <button type="button" class="btn btn-xs btn-info">Tips</button>
+			<div class="datazone" style="background-color: white">
+				<p id="data" class="data1"></p>
 				<p id="refer" class="refer1"></p>
 		   </div>
 	   </div>

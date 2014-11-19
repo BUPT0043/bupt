@@ -153,7 +153,7 @@ public class ItemDAOImpl implements ItemDAO{
 
 	public Item getItem(int lawid, int categoryid) {
 		String sql = "select * from "+ TABLE_NAME+" where categoryid="+categoryid;
-		 return jdbcTemplate.query(sql, new ItemRowMapper()).get(0);//数据不能全部读出，只能读一条？
+		 return jdbcTemplate.query(sql, new ItemRowMapper()).get(0);
 	}
 
 	public Category getCa(int lawid, int categoryid) {

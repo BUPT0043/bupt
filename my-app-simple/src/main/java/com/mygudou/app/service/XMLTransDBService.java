@@ -50,7 +50,6 @@ public class XMLTransDBService {
 		
 		Map<String,Object> map=XMLDAO.getDivorce1(B);//InputStream只能用一次
     	List<Category> list=(List<Category>) map.get("category");
-    	System.out.println(list.size()+"---list---");
     	String lawName=(String) map.get("lawName");
     	
     	for(Category ca:list){
@@ -63,8 +62,7 @@ public class XMLTransDBService {
     	List<Item> list1=(List<Item>) map1.get("item");
     	List<String> lst3=(List<String>) map1.get("categoryName");
     	//String categoryName=(String) map1.get("categoryName");
-    	//有问题？存的两个都是2.
-    	for(int i=0;i<list1.size();i++){
+       	for(int i=0;i<list1.size();i++){
     		Item itt=list1.get(i);
     		String categoryName=lst3.get(i);
     		if(ItemDAO.isNotExist(itt)){

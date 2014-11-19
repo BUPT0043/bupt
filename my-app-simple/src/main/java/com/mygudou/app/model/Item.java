@@ -32,6 +32,10 @@ public class Item implements Serializable{
 	public void setRefer(String refer) {
 		this.refer = refer;
 	}
+	@Override
+	public String toString() {
+		return "Item [id=" + id + ", data=" + data + ", refer=" + refer + "]";
+	}
 
 
 	

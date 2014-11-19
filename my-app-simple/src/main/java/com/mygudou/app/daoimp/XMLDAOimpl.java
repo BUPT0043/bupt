@@ -33,6 +33,7 @@ public class XMLDAOimpl implements XMLDAO{
 		pullParser.setInput(xml, "UTF-8");
 		int event = pullParser.getEventType();// 调用方法，产生q事件
 		String str="";
+		String strData="";
 		
 		while (event != XmlPullParser.END_DOCUMENT) {
 
@@ -52,9 +53,11 @@ public class XMLDAOimpl implements XMLDAO{
 				} 
 				
 			 if ("Data".equals(nodeName)) {
-					it =new Item();
-					String data = pullParser.nextText();
-					it.setData(data.trim());
+					if(it == null){
+						it = new Item();
+					}
+					strData+=""+pullParser.nextText()+"<br/>";
+					it.setData(strData);
 
 				} 
 			 if ("p".equals(nodeName)) {
@@ -68,12 +71,12 @@ public class XMLDAOimpl implements XMLDAO{
 					lst.add(it);
 					it=null;
 					str="";
+					strData="";
 				}
 				break;    
 			}
 			event=pullParser.next();
 		}
-		System.out.println(lst.size()+"----item.size()---");
 		map.put("item", lst);
 		map.put("categoryName", lst3);
 		return map;
@@ -115,7 +118,6 @@ public class XMLDAOimpl implements XMLDAO{
 			}
 			event1=pullParser.next();
 		}
-		System.out.println(lst1.size()+"=================");
 		map.put("category", lst1);
 		return map;//放到map里
 	}
@@ -153,7 +155,6 @@ public class XMLDAOimpl implements XMLDAO{
 			}
 			event1=pullParser.next();
 		}
-		System.out.println(lst2.size()+"-----law.size()---");
 		return lst2;
 	
 	}
