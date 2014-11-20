@@ -9,7 +9,7 @@
 <head>
 	  <head>
     <meta charset="utf-8">
-    <title>首页</title>
+    <title>成功生成Word</title>
    <meta http-equiv="Content-Type" content="text/html; charset=big5">
 	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
@@ -17,49 +17,28 @@
     <!-- Loading Flat UI -->
     
 	<style>
-	/* 收缩展开效果 */
-	.text{line-height:22px;padding:0 6px;color:#666;}
-	.box h1{padding-left:10px;height:22px;line-height:22px;background:#f1f1f1;font-weight:bold;}
-	.box{position:relative;border:1px solid #e7e7e7;}
+	.container{
+		 width:960px;
+         margin:0 auto;
+	}
 	</style>
 
 </head>
 <body>
-	<script type="text/javascript">
-	// 收缩展开效果
-	$(document).ready(function(){
-	   $(".box h1").toggle(function(){
-	     $(this).next(".text").animate({height: 'toggle', opacity: 'toggle'}, "slow");
-	   },function(){
-	$(this).next(".text").animate({height: 'toggle', opacity: 'toggle'}, "slow");
-	   });
-	});
-	</script>
-	<!-- 收缩展开效果 -->
-	<div class="box">
-	<h1>收缩展开效果</h1>
-	<div class="text">
-	        1<br/>
-	        2<br/>
-	        3<br/>
-	        4<br/>
-	        5<br/>
-	</div>
-	</div>
-	<br/>
-	
-	<div class="box">
-	<h1>收缩展开效果</h1>
-	<div class="text">
-	        1<br/>
-	        2<br/>
-	</div>
-	</div>
-	<br>
-	第一次运行请刷新一下页面。
-	<br />
-	<p><a href="http://www.webdm.cn">网页代码站</a> - 最专业的网页代码下载网站 - 致力为中国站长提供有质量的网页代码！</p>
-	
+	<div class="container">
+      <div class="page-header">
+        <h1>合同成功生成！</h1>
+      </div>
+      <p class="lead">路径为：电脑桌面/合同.doc</p>
+      <p><strong>提示：注意保护个人财产和相关信息安全！</strong></p>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p class="text-muted">最终解释权归XX所有</p>
+      </div>
+    </div>
+      
 	</body>
 	</html>
 			

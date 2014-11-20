@@ -102,7 +102,7 @@ public class XMLDAOimpl implements XMLDAO{
 			if ("LawName".equals(nodeName)) {
 					 String lawName=pullParser.nextText(); 
 					 map.put("lawName", lawName);
-				} //这边把Law 也就是各种协议的 名字读进来了 
+				} 
 			
 			 if ("Category".equals(nodeName)) {
 				 ca=new Category();

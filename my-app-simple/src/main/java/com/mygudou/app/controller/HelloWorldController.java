@@ -1,4 +1,5 @@
 package com.mygudou.app.controller;
+import java.awt.Color;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
@@ -57,7 +58,6 @@ public class HelloWorldController{
 	@RequestMapping(value = "/main" ,method=RequestMethod.GET)       
     public ModelAndView showItems(String badcause,@RequestParam("lawid") int lawid) throws Exception {    
     	ModelAndView mv = new ModelAndView();
-       // mv.addObject("items",XMLTransDBService.getList());//读refer data
         mv.addObject("category",XMLTransDBService.getCateogoryList(lawid));//读category_name
         mv.addObject("lawid",lawid);
         mv.addObject("law",XMLTransDBService.getLaw(lawid));
@@ -69,36 +69,64 @@ public class HelloWorldController{
 //	打印word
 	@RequestMapping(value = "/toWord" ,method=RequestMethod.GET)       
 	public ModelAndView toWord(@RequestParam("param")String param){
+		 Document document = new Document(PageSize.A4); 
 		ModelAndView mv = new ModelAndView();
-		com.lowagie.text.Document doc = new com.lowagie.text.Document();
+//		com.lowagie.text.Document doc = new com.lowagie.text.Document();
 
         try {
-
-            // 定义输出位置并把文档对象装入输出对象中
-
-            
-            RtfWriter2.getInstance(doc, new FileOutputStream("d://合同.doc"));
-
+            RtfWriter2.getInstance(document, new FileOutputStream("C://Users//Administrator//Desktop//合同.doc"));
             // 打开文档对象
-            doc.open();
+            document.open();
+//            设置文本格式
+            Font font = new Font(Font.NORMAL, 20, Font.BOLD, new Color(0, 0, 0)); 
+            // 设置新的段落，使其字体为font  
+            Paragraph p = new Paragraph("合同", font); 
+            // 设置段落居中，其中1为居中对齐，2为右对齐，3为左对齐  
+            p.setAlignment(1); 
+            // 文档中加入该段落  
+            document.add(p); 
             
-            // 加入文字
-//            	System.out.println(param);
-        	   String []sa = param.trim().split(",（");
-        	   String content = "";
-               for(String str : sa){
-            	   System.out.println("str   "+str);
-               	if(!"".equals(str)){
-               		content+=str+"\n（";
-               	}
-               	
-               }
-               System.out.println("content "+content);
-               doc.add(new Paragraph(content.substring(0,content.length()-1)));
-
-            // 关闭文档对象，释放资源
-
-            doc.close();
+    	    String []sa = param.trim().split(",");
+    	    String content = "";
+            for(String str : sa){
+        	    System.out.println("str   "+str);
+            	if(!"".equals(str)){
+           		 content+=str+"\n";
+            	}
+            }
+            
+            Paragraph para=new Paragraph(content);
+            para.setIndentationLeft(20); 
+            // 设置首行缩进  
+            para.setFirstLineIndent(5f); 
+            // 设置段后距和段前距  
+            para.setSpacingAfter(10f); 
+            para.setSpacingBefore(10f); 
+            System.out.println("content "+content);
+            document.add(para);
+            
+            Font font1 = new Font(Font.NORMAL, 13, Font.BOLD, new Color(0, 0, 0)); 
+            Paragraph para1=new Paragraph("甲方：",font1);
+            Paragraph para2=new Paragraph("乙方：",font1);
+            Paragraph para3=new Paragraph("日期：",font1);
+            
+            para1.setIndentationLeft(20);
+            para2.setIndentationLeft(20);
+            para3.setIndentationLeft(20);
+            
+            para1.setSpacingBefore(10f);//段后间距
+            para2.setSpacingBefore(10f);
+            para3.setSpacingBefore(10f);
+            
+            para1.setAlignment(3); 
+            para2.setAlignment(3); 
+            para3.setAlignment(3); 
+//          文档中加入该段落  
+            document.add(para1); 
+            document.add(para2); 
+            document.add(para3); 
+//          关闭文档对象，释放资源
+           document.close();
 
         } catch (com.lowagie.text.DocumentException e) {
 			e.printStackTrace();
@@ -124,7 +152,6 @@ public class HelloWorldController{
     			list1.add(XMLTransDBService.getCa(lawid, categoryid));
     		 }
     	 }
-    	 
     	 net.sf.json.JSONArray jo=net.sf.json.JSONArray.fromObject(list);
     	 response.setContentType("text/html;charset=UTF-8");   //Ajax转码
          response.getWriter().print(jo.toString());    

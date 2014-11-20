@@ -66,6 +66,24 @@
 				.refer1{
 					margin-left: 15px;
 				}
+				.bbtn{
+				  color: #fff;
+				  background-color: #1ABC9C;
+				  width:25px;
+				  height: 25px;
+				  border:0px #ff0000 solid;
+ 				  border-radius: 5px;
+				}
+				.lawbtn{
+				 color: #fff;
+ 				 background-color: #637A90;
+ 				 border:0px #ff0000 solid;
+ 				 border-radius: 5px;
+ 				 margin-left: 665px;
+ 				 width: 80px;
+ 				 height: 30px;
+ 				 
+				}
     	  </style>
     	  
 		  <script type="text/javascript">
@@ -103,11 +121,11 @@
                    			newContent +="<table><tr>";
                    			for(var j in dataList){
                    				if("" != dataList[j]){
-                   					newContent +="<div><div><input class='cbxcss' type='checkbox'>"+dataList[j]+"</input></div>"+
-                   						"<input type='button' value='+' onclick='$(this).parent().clone(true).insertAfter(this);'/></div><br/>";
+                   					newContent +="<div><div><input class='cbxcss'  type='checkbox'>"+dataList[j]+"</input></div>"+
+                   						"<input type='button' value='+' class='bbtn' onclick='$(this).parent().clone(true).insertAfter(this);'/></div>";
                    				}
                    			}
-                   			 newContent +="</br><input type='button' value='法律条款' onclick='showRefer(this,"+i+")' /><p id='refer_"+i+"' style='display:none'>"+list[i]['refer']+"</p>";
+                   			 newContent +="<input type='button' class='lawbtn' value='法律条款' onclick='showRefer(this,"+i+")' /><p id='refer_"+i+"' style='display:none'>"+list[i]['refer']+"</p>";
              	             }
                    		$("#data").html(newContent);
              	        }
@@ -139,14 +157,13 @@
             	window.open('toWord?param='+param);
             	
             }
-            
             	//显示div
             $(document).ready(function(){
 				  $("#btn1").click(function(){
 					  $("#Itemedit").slideUp(500);
 					  var newContent = "";
 					  $("#navList").find(":checked").parent().clone().each(function(){
-						  newContent+= "<p style='font-size: 14px'>"+$(this).text()+"<p/>";
+						  newContent+= "<p style='font-size: 13px'>"+$(this).text()+"<p/>";
 					  })
 					  $("#navaSidebar").html(newContent);
 					  });
@@ -183,7 +200,7 @@
        </div>  
 		<!--D区编辑editzone--置顶-->
        <div class="editzone" id="editzone" style="background-color: #FFFFCC";>  <strong style="margin-left: 10px;">条款操作</strong>
-       		   <a href="#" class="btn2"><span class="glyphicon glyphicon-remove" style="color: rgb(0, 124, 162); font-size: 15px;"> 重置</a>
+       		   <a href="#" class="btn2" onclick="javascript:window.top.location.reload()"><span class="glyphicon glyphicon-remove" style="color: rgb(0, 124, 162); font-size: 15px;"> 重置</a>
 	           <a href="#" id="btn2" class="btn2"><span class="glyphicon glyphicon-list" style="color: rgb(0, 124, 162); font-size: 15px;"> 重新选择</a>
        </div>
       

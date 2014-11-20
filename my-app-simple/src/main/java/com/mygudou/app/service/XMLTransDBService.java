@@ -28,7 +28,7 @@ public class XMLTransDBService {
     public void TransXmlToDB() throws Exception{
     	
     	File file = new File("src\\divorce1.xml");//
-    	System.out.println(file.setReadOnly()+"fileread");
+//    	System.out.println(file.setReadOnly()+"fileread");
     	
 		InputStream A =  new FileInputStream(file);
 		InputStream B =  new FileInputStream(file);
@@ -61,7 +61,7 @@ public class XMLTransDBService {
     	Map<String,Object> map1=(Map<String, Object>) XMLDAO.getDivorce(A);
     	List<Item> list1=(List<Item>) map1.get("item");
     	List<String> lst3=(List<String>) map1.get("categoryName");
-    	//String categoryName=(String) map1.get("categoryName");
+  
        	for(int i=0;i<list1.size();i++){
     		Item itt=list1.get(i);
     		String categoryName=lst3.get(i);
