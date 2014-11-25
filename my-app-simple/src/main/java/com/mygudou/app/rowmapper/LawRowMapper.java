@@ -15,6 +15,7 @@ public class LawRowMapper implements RowMapper<Law>{
 		Law la = new Law();      
         la.setId(rs.getInt("id"));
         la.setName(rs.getString("name"));      
+        la.setInform(rs.getString("inform"));
         return la;
 	}
 

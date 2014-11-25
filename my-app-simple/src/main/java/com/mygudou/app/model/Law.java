@@ -4,6 +4,14 @@ public class Law {
 	
 	private int id;
 	private String name;
+	private String inform;
+	
+	public String getInform() {
+		return inform;
+	}
+	public void setInform(String inform) {
+		this.inform = inform;
+	}
 	public int getId() {
 		return id;
 	}

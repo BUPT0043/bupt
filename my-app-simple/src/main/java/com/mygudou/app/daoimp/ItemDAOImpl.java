@@ -68,13 +68,15 @@ public class ItemDAOImpl implements ItemDAO{
 		
 		try{
 			final String name=law.getName();
+			final String inform=law.getInform();
 
-        jdbcTemplate.update("INSERT INTO "+TABLE_NAME2+" (name) VALUES(?)",  
+        jdbcTemplate.update("INSERT INTO "+TABLE_NAME2+" (name,inform) VALUES(?,?)",  
                 new PreparedStatementSetter() {  
                     public void setValues(PreparedStatement ps) throws SQLException {  
                     	System.out.println(name+">>>>>>lawName>>>>>>>>>");
-                        ps.setString(1, name);  
-                      
+                        ps.setString(1, name); 
+                        ps.setString(2, inform);
+//                        System.out.println(inform+"<<<<<<<lawInform<<<<<<");
                     }
        			}
        );}catch(Exception e){
@@ -97,7 +99,7 @@ public class ItemDAOImpl implements ItemDAO{
 		}
 		return b;
 	}//方法
-		//可以根据categoryid来判断？
+		
 		public boolean isNotExist(Item item) {
 			final String data=item.getData();
 			List list1=jdbcTemplate.queryForList("SELECT * FROM "+TABLE_NAME+" WHERE DATA="+"'"+data+"'");

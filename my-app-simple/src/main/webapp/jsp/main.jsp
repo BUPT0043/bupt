@@ -84,6 +84,10 @@
  				 height: 30px;
  				 
 				}
+				.data1 div{
+				margin-left: 8px;
+				margin-right: 8px;
+				}
     	  </style>
     	  
 		  <script type="text/javascript">
@@ -149,7 +153,7 @@
             		newContent.find("input").each(function(i){
             			if(i != 0){
             				var str = $(this).val();
-                			$(this).replaceWith("<p>"+str+"</p>");
+                			$(this).replaceWith("<p>⋚"+str+"⋚</p>");
             			}
             		});
             		param.push(newContent.text());
@@ -195,7 +199,7 @@
 		<!--幕区  -->
         <div class="jumbotron">
         <h1>${law.name }合同</h1>
-        <p>读取数据库内容</p>
+       <!--  <p>读取数据库内容</p> -->
 		<strong>提示：</strong> 涉及相关财产，请注意保护个人隐私安全
        </div>  
 		<!--D区编辑editzone--置顶-->

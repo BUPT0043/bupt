@@ -16,15 +16,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.lowagie.text.Document;  
-import com.lowagie.text.DocumentException;  
-import com.lowagie.text.Element;  
-import com.lowagie.text.Font;  
-import com.lowagie.text.PageSize;  
-import com.lowagie.text.Paragraph;  
-import com.lowagie.text.Table;  
-import com.lowagie.text.pdf.BaseFont;  
-import com.lowagie.text.rtf.RtfWriter2;  
+import com.lowagie.text.Chunk;
+import com.lowagie.text.Document;
+import com.lowagie.text.Font;
+import com.lowagie.text.FontFactory;
+import com.lowagie.text.PageSize;
+import com.lowagie.text.Paragraph;
+import com.lowagie.text.rtf.RtfWriter2;
 import com.mygudou.app.model.Category;
 import com.mygudou.app.model.Item;
 import com.mygudou.app.service.XMLTransDBService;
@@ -87,24 +85,35 @@ public class HelloWorldController{
             document.add(p); 
             
     	    String []sa = param.trim().split(",");
-    	    String content = "";
-            for(String str : sa){
+//    	     用特殊字符 进行<p>标记，然后切割，st[0]input st[1]input context st[2]input over st[3]next inputs
+    	    for(String str : sa){
         	    System.out.println("str   "+str);
             	if(!"".equals(str)){
-           		 content+=str+"\n";
+           		 String st[] = str.split("⋚");
+           		 Chunk c0 = new Chunk(st[0]);
+           		 Paragraph para=new Paragraph();
+           		 para.add(c0);
+           		 for(int i=1;i<st.length;i++){
+           			 Font f = new Font(Font.UNDERLINE);
+           			 
+           			Chunk c=new Chunk(st[i]);
+               		 if(i%2==1){
+               			 c.setFont(FontFactory.getFont(FontFactory.TIMES,12,Font.UNDERLINE));
+               		 }
+               		para.add(c);
+           		 }
+           		
+                para.setIndentationLeft(20); 
+                // 设置首行缩进  
+                para.setFirstLineIndent(5f); 
+                // 设置段后距和段前距  
+                para.setSpacingAfter(10f); 
+                para.setSpacingBefore(10f); 
+                document.add(para);
             	}
             }
-            
-            Paragraph para=new Paragraph(content);
-            para.setIndentationLeft(20); 
-            // 设置首行缩进  
-            para.setFirstLineIndent(5f); 
-            // 设置段后距和段前距  
-            para.setSpacingAfter(10f); 
-            para.setSpacingBefore(10f); 
-            System.out.println("content "+content);
-            document.add(para);
-            
+    	    
+    	    
             Font font1 = new Font(Font.NORMAL, 13, Font.BOLD, new Color(0, 0, 0)); 
             Paragraph para1=new Paragraph("甲方：",font1);
             Paragraph para2=new Paragraph("乙方：",font1);
@@ -113,8 +122,8 @@ public class HelloWorldController{
             para1.setIndentationLeft(20);
             para2.setIndentationLeft(20);
             para3.setIndentationLeft(20);
-            
-            para1.setSpacingBefore(10f);//段后间距
+//          段后间距
+            para1.setSpacingBefore(10f);
             para2.setSpacingBefore(10f);
             para3.setSpacingBefore(10f);
             

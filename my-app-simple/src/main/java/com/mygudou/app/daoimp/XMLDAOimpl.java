@@ -139,9 +139,7 @@ public class XMLDAOimpl implements XMLDAO{
 				lst2= new LinkedList<Law>();
 				break;
 			case XmlPullParser.START_TAG:
-				
 			 if ("LawName".equals(nodeName)) {
-				 
 				 la=new Law();
 				 String name=pullParser.nextText(); 
 				 la.setName(name);
