@@ -76,7 +76,7 @@ public class ItemDAOImpl implements ItemDAO{
                     	System.out.println(name+">>>>>>lawName>>>>>>>>>");
                         ps.setString(1, name); 
                         ps.setString(2, inform);
-//                        System.out.println(inform+"<<<<<<<lawInform<<<<<<");
+                     System.out.println(inform+"<<<<<<<lawInform<<<<<<");
                     }
        			}
        );}catch(Exception e){
@@ -116,6 +116,7 @@ public class ItemDAOImpl implements ItemDAO{
 
 		public boolean isNotExist(Law law) {
 			final String name=law.getName();
+
 			List list2=jdbcTemplate.queryForList("SELECT * FROM "+TABLE_NAME2+" WHERE NAME="+"'"+name+"'");
 			System.out.println(list2.size()+"----law.size-----");
 			boolean b;

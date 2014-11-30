@@ -8,16 +8,14 @@ import com.mygudou.app.model.Law;
 
 
 public interface ItemDAO {
-	
-	//insert
-	//public int insertItem(Item item);
-//	public void insertCategory(Category category);
+
 	public int insertLaw(Law law);
 	
 	//select
 	public List<Law> getLaws();
 	public List<Item> getItems();
 	public List<Category> getCategory(int lawid);
+	
 	//传值
 	public Law getLaw(int lawid);
 	public Category getCa(int lawid,int categoryid);

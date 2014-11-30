@@ -67,7 +67,7 @@ public class HelloWorldController{
 //	打印word
 	@RequestMapping(value = "/toWord" ,method=RequestMethod.GET)       
 	public ModelAndView toWord(@RequestParam("param")String param){
-		 Document document = new Document(PageSize.A4); 
+		Document document = new Document(PageSize.A4); 
 		ModelAndView mv = new ModelAndView();
 //		com.lowagie.text.Document doc = new com.lowagie.text.Document();
 

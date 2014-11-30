@@ -18,8 +18,6 @@ public class ItemRowMapper implements RowMapper<Item>{
         item.setId(rs.getInt("id"));
         item.setData(rs.getString("data"));        
         item.setRefer(rs.getString("refer"));
-      
-
         return item;
 	}
 

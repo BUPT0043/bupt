@@ -27,7 +27,7 @@ public class XMLDAOimpl implements XMLDAO{
 		Map<String,Object> map=new HashMap<String,Object>();
 		List<Item> lst = null;
 		List<String> lst3=null;//lst3-categoryName
-		Item it = null;
+		Item it = null;   
 		XmlPullParserFactory pullParserFactory = XmlPullParserFactory.newInstance();
 		XmlPullParser pullParser = pullParserFactory.newPullParser();
 		pullParser.setInput(xml, "UTF-8");
@@ -105,7 +105,7 @@ public class XMLDAOimpl implements XMLDAO{
 				} 
 			
 			 if ("Category".equals(nodeName)) {
-				 ca=new Category();
+				 ca=new Category(); 
 				 String name=pullParser.nextText(); 
 				 ca.setCategoryname(name);
 				} 
@@ -144,11 +144,16 @@ public class XMLDAOimpl implements XMLDAO{
 				 String name=pullParser.nextText(); 
 				 la.setName(name);
 				} 
+	 
 			case XmlPullParser.END_TAG:
 				if("LawName".equals(nodeName)){
 					lst2.add(la);
 					la=null;
 				}
+			/*	if("LawInform".equals(nodeName)){
+					lst2.add(la);
+					la=null;
+				}*/
 				break;    
 			}
 			event1=pullParser.next();
