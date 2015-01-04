@@ -42,7 +42,7 @@
 				}
 				.datazone p{
 				font-size: 14px;
-				width:769px;
+				width:750px;
 				margin-right: 0px;
 				padding-right: 0px;
 				}
@@ -84,10 +84,10 @@
  				 height: 30px;
  				 
 				}
-				.data1 div{
+				 .data1 div{
 				margin-left: 8px;
 				margin-right: 8px;
-				}
+				} 
     	  </style>
     	  
 		  <script type="text/javascript">
@@ -96,7 +96,6 @@
 						  $("#editzone").stickUp(); 
 						  });
 				  }); 
-			  
 			  jQuery(function($){ 
 				  $(document).ready(function() { 
 						  $('.dataeditzone').stickUp(); 
@@ -126,15 +125,26 @@
                    			for(var j in dataList){
                    				if("" != dataList[j]){
                    					newContent +="<div><div><input class='cbxcss'  type='checkbox'>"+dataList[j]+"</input></div>"+
-                   						"<input type='button' value='+' class='bbtn' onclick='$(this).parent().clone(true).insertAfter(this);'/></div>";
+                   						"<input type='button' value='+' class='bbtn' onclick='addAfter(this)'/></div>";
                    				}
                    			}
-                   			 newContent +="<input type='button' class='lawbtn' value='法律条款' onclick='showRefer(this,"+i+")' /><p id='refer_"+i+"' style='display:none'>"+list[i]['refer']+"</p>";
+                   			 newContent +="<input type='button' class='lawbtn' value='法律条款' onclick='showRefer(this,"+i+")' /><p id='refer_"+i+"' style='display:none;margin-left: 15px;"+
+                   			 				"margin-right: 15px;'>"+list[i]['refer']+"</p>";
              	             }
                    		$("#data").html(newContent);
              	        }
                 });
         	}
+            
+            function addAfter(obj){
+            	var content = $(obj).parent().clone(true);
+            	$(obj).parent().after(content[0]);
+            	$(obj).parent().next().find(":text").val("");
+            	var len = $(obj).parent().next().find(":button").length;
+            	if( len == 1){
+            		$(obj).parent().next().find(":button").after('&nbsp;&nbsp;<input type="button" value="X" class="bbtn" onclick="$(this).parent().empty();">');
+            	}
+            }
             
             function showRefer(obj,i){
             	if($("#refer_"+i).is(":hidden")){
@@ -158,8 +168,16 @@
             		});
             		param.push(newContent.text());
             	});
-            	window.open('toWord?param='+param);
-            	
+            	//Ajax刷新下载
+            	$.ajax({
+                    type: "POST",
+                    url: "${myapp}/show/toWord",
+                    data: "param="+param,
+                    success: function(data) {
+                    	/* alert(data); */
+                    	document.location.href='${myapp}/show/download?fileName='+data;
+             	    }
+                });
             }
             	//显示div
             $(document).ready(function(){
@@ -184,11 +202,11 @@
 		 <!--A区  -->
 		<ul class="breadcrumb">
 			<li>
-				<a href="firstshow">
+				<a href="/show/firstshow">
 				<span class="glyphicon glyphicon-home" style="color: rgb(54, 140, 167); font-size: 16px;"> Home</span></a> <span class="divider"></span>
 			</li>
 			<li >
-				<a href="login"><span class="glyphicon glyphicon-repeat" style="color: rgb(54, 140, 167); font-size: 17px;"> Back</span></a> <span class="divider"></span>
+				<a href="/show/login"><span class="glyphicon glyphicon-repeat" style="color: rgb(54, 140, 167); font-size: 17px;"> Back</span></a> <span class="divider"></span>
 			</li>
 			<li class="active1">
 				<a href="#"><span class="glyphicon glyphicon-question-sign" style="color: rgb(54, 140, 167); font-size: 17px;"> Help</span></a> <span class="divider"></span>

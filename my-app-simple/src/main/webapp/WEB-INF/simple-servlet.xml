@@ -18,6 +18,8 @@
     <mvc:resources mapping="/images/**" location="/images/"/>  
     <mvc:default-servlet-handler/>  
     
+    <mvc:view-controller path="" view-name="forward:/show/firstshow"/> 
+    
     <!-- ViewResolver -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
@@ -25,8 +27,6 @@
         <property name="suffix" value=".jsp"/>
     </bean>
     <context:component-scan base-package="com.mygudou.app" />    
-    
 
-    
 </beans>
 

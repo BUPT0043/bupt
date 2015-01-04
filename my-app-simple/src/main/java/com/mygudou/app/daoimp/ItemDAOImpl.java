@@ -15,10 +15,12 @@ import com.mygudou.app.dao.ItemDAO;
 import com.mygudou.app.model.Category;
 import com.mygudou.app.model.Item;
 import com.mygudou.app.model.Law;
+import com.mygudou.app.model.Matter;
 import com.mygudou.app.rowmapper.CategoryRowMapper;
 import com.mygudou.app.rowmapper.ItemInfoRowMapper;
 import com.mygudou.app.rowmapper.ItemRowMapper;
 import com.mygudou.app.rowmapper.LawRowMapper;
+import com.mygudou.app.rowmapper.MatterRowMapper;
 
 @Repository("ItemDAO")
 public class ItemDAOImpl implements ItemDAO{
@@ -28,7 +30,8 @@ public class ItemDAOImpl implements ItemDAO{
     String TABLE_NAME="res_category_item";
     String TABLE_NAME1="res_category";
     String TABLE_NAME2="res_law";
-
+    String TABLE_NAME3="res_matters";
+    
 	public void insertItem(Item item,String categoryName) {
 		
 			final String data=item.getData();
@@ -48,7 +51,7 @@ public class ItemDAOImpl implements ItemDAO{
     
 	}
 	
-	public void insertCategroy(Category category,String lawName) {//把值带过来了，
+	public void insertCategroy(Category category,String lawName) {
 		
 		final String name=category.getCategoryname();
 		final int lawid= jdbcTemplate.queryForInt("select id from res_law where name="+"'"+lawName+"'");
@@ -142,11 +145,31 @@ public class ItemDAOImpl implements ItemDAO{
 		String sql = "select * from "+ TABLE_NAME1+" where lawid="+lawid;
         return jdbcTemplate.query(sql, new CategoryRowMapper());
 	}
+	public List<Matter> getMatt(String title,int pageIndex,int pageSize) {
+		String sql="";
+		if("".equals(title)||null==title){
+			 sql="select * from "+TABLE_NAME3+ " limit " +pageIndex+","+ pageSize ;
+		}else{
+			sql="select * from "+TABLE_NAME3+" where title like"+"'%"+title+"%'"+" limit " +pageIndex+","+ pageSize ;
+		}
+		return jdbcTemplate.query(sql, new MatterRowMapper());
+	}
+	
+	public int getMattTotal(String title,int pageIndex,int pageSize) {
+		String sql="";
+		if("".equals(title)||null==title){
+			 sql="select * from "+TABLE_NAME3+ " limit " +pageIndex+","+ pageSize ;
+		}else{
+			sql="select * from "+TABLE_NAME3+" where title like"+"'%"+title+"%'"+" limit " +pageIndex+","+ pageSize ;
+		}
+		return jdbcTemplate.query(sql, new MatterRowMapper()).size();
+	}
 
 	public List<Law> getLaws() {
 		String sql = "select * from "+ TABLE_NAME2;
 		return jdbcTemplate.query(sql, new LawRowMapper());
 	}
+
 
 	public Law getLaw(int lawid) {
 		String sql = "select * from "+ TABLE_NAME2+" where id="+lawid;
@@ -162,6 +185,15 @@ public class ItemDAOImpl implements ItemDAO{
 	public Category getCa(int lawid, int categoryid) {
 		String sql = "select * from "+ TABLE_NAME1+" where id="+categoryid;
 		return jdbcTemplate.query(sql, new CategoryRowMapper()).get(0);
+	}
+
+//	public List<Matter> getMattAll(String title) {
+//		String sql="select * from "+TABLE_NAME3+" where title like"+"'%"+title+"%'" ;
+//		return jdbcTemplate.query(sql, new MatterRowMapper());
+//	}
+	public List<Matter> getMattAll(int id) {
+		String sql="select * from "+TABLE_NAME3+" where id="+id ;
+		return jdbcTemplate.query(sql, new MatterRowMapper());
 	}
 
 

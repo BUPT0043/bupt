@@ -3,7 +3,10 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %> 
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%> 
-
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path;
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -16,15 +19,15 @@
 	<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!-- Loading Flat UI -->
     <link href="../css/flat-ui.css" rel="stylesheet">
-
-    <style>
     
+    <style>
     	.login-form{
-    	width:800px;
+    	width:600px;
     	magin:0px auto;
     	}
     	.tile p{
     	font-size: 20px;
+    	margin-bottom: 3px;
     	}
     	.tile-title {
 		  margin: 0;
@@ -37,6 +40,22 @@
 		 .btn btn-large btn-block btn-info{
 		 width:500px;
 		 }
+		 .navbar-form{
+		 margin-left: 445px;
+		 font-size: 20px;
+		 }
+		 .navbar-form .form-control,
+		.navbar-form .input-group-addon,
+		.navbar-form .btn,
+		.navbar-form .select2-search input[type="text"] {
+		  height: 35px;
+		  padding: 10px 10px;
+		  font-size: 15px;
+		  line-height: 1.4;
+		  border-radius: 6px;
+		  
+		  }
+		
     
     </style>
   </head>
@@ -48,7 +67,12 @@
             <img class="tile-image" alt="" src="../images/note.jpg" />
             <h3 class="tile-title">合同Maker</h3>
             <p>用最简单的方式生成合同</p>
-           <a href="login" class="btn btn-primary btn-lg" >进入</a>
+	          
+				      <form class="navbar-form navbar-left" method="post" action="<%=basePath%>/show/search" role="search">
+				         <input type="hidden" name="title" value="${title}"  class="form-control">
+				          <a  href="/show/login" class="btn btn-primary btn-lg" >生成合同</a>
+				         <button type="submit" class="btn btn-primary btn-lg" >事件查询</button></a>
+				      </form>    
           </div>
         </div>     
 	   </div>

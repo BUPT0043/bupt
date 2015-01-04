@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Law>
 	<LawName>婚前财产协议</LawName>
-	<LawInform>
-		  婚前财产协议是指未婚夫妻之间的财产协议，可以用来明确婚前各自财产归各自所有，或者约定一方财产为共同财产，
-		或者双方财产为共同财产，或者将自己财产让渡给对方，但不能以此方式逃避个人债务；且不宜用婚前财产协议约定婚后财产的事宜，以免导致相关约定无效。
-		婚前财产协议适合进行公证。
-	</LawInform>
+
 	<房产>
 	<Category>婚前双方是否有房产</Category>
     <Item>
 	<Data>
-	甲方拥有座落于<![CDATA[ <input style="width:80px;height:25px;" />]]>路<![CDATA[ <input style="width:80px;height:25px;" />]]>号室房产一处，面积<![CDATA[ <input style="width:80px;height:25px;" />]]>平方米，为<![CDATA[ <input style="width:80px;height:25px;" />]]>权房，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-	     甲乙双方明确该房产为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+	甲方拥有座落于<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>路<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>号室房产一处，面积<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>平方米，为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>权房，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该房产为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	甲方拥有座落于<![CDATA[ <input style="width:80px;height:25px;" />]]>路<![CDATA[ <input style="width:80px;height:25px;" />]]>号室房产一处，面积<![CDATA[ <input style="width:80px;height:25px;" />]]>平方米，为<![CDATA[ <input style="width:80px;height:25px;" />]]>权房，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-	     甲乙双方明确该房产为甲、乙方双方共同财产。
+	甲方拥有座落于<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>路<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>号室房产一处，面积<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>平方米，为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>权房，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	 甲乙双方明确该房产为甲、乙方双方共同财产。
     </Data>
 	<Data>
-	乙方拥有座落于<![CDATA[ <input style="width:80px;height:25px;" />]]>路<![CDATA[ <input style="width:80px;height:25px;" />]]>号室房产一处，面积<![CDATA[ <input style="width:80px;height:25px;" />]]>平方米，为<![CDATA[ <input style="width:80px;height:25px;" />]]>权房，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		甲乙双方明确该房产为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+	乙方拥有座落于<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>路<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>号室房产一处，面积<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>平方米，为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>权房，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该房产为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>方个人财产。
     </Data>
 	<Data>
-	乙方拥有座落于<![CDATA[ <input style="width:80px;height:25px;" />]]>路<![CDATA[ <input style="width:80px;height:25px;" />]]>号室房产一处，面积<![CDATA[ <input style="width:80px;height:25px;" />]]>平方米，为<![CDATA[ <input style="width:80px;height:25px;" />]]>权房，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		甲乙双方明确该房产为甲、乙方双方共同财产。
+	乙方拥有座落于<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>路<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>号室房产一处，面积<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>平方米，为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>权房，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该房产为甲、乙方双方共同财产。
     </Data>
 		 
 		<Refer>
@@ -43,20 +39,20 @@
 	<Category>婚前双方是否有车辆</Category>
 	<Item>
 		<Data>
-		甲方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>牌汽车一辆，车牌号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-			 甲乙双方明确该汽车为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+		甲方拥有<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>牌汽车一辆，车牌号为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+		甲乙双方明确该汽车为<![CDATA[ <input style="width:50px;height: 20px;line-height: normal;" />]]>方个人财产。
 		</Data>
 		<Data>
-		甲方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>牌汽车一辆，车牌号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-			 甲乙双方明确该汽车为甲、乙方双方共同财产。
+		甲方拥有<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>牌汽车一辆，车牌号为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+		甲乙双方明确该汽车为甲、乙方双方共同财产。
 		</Data>
 		<Data>
-		乙方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>牌汽车一辆，车牌号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		     甲乙双方明确该汽车为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+		乙方拥有<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>牌汽车一辆，车牌号为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+		甲乙双方明确该汽车为<![CDATA[ <input style="width:50px;height: 20px;line-height: normal;" />]]>方个人财产。
 		</Data>
 		<Data>
-		乙方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>牌汽车一辆，车牌号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		     甲乙双方明确该汽车为甲、乙方双方共同财产。
+		乙方拥有<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>牌汽车一辆，车牌号为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+		甲乙双方明确该汽车为甲、乙方双方共同财产。
 		</Data>
 		<Refer>
 			<p>提示：当婚前个人财产约定为共同财产或完全装让给另一方时，应及时办理车辆过户手续。</p>
@@ -74,20 +70,20 @@
 	<Category>婚前双方是否有现金存款</Category>
     <Item>
 	<Data>
-	甲方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币存款，银行账号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		 甲乙双方明确该存款为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	甲方拥有<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币存款，银行账号为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该存款为<![CDATA[ <input style="width:50px;height: 20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	甲方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币存款，银行账号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		 甲乙双方明确该存款为甲乙双方财产。
+	甲方拥有<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币存款，银行账号为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+        甲乙双方明确该存款为甲乙双方财产。
 	</Data>
 	<Data>
-	乙方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币存款，银行账号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		 甲乙双方明确该存款为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	乙方拥有<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币存款，银行账号为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该存款为<![CDATA[ <input style="width:50px;height: 20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	乙方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币存款，银行账号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		 甲乙双方明确该存款为甲乙双方财产。
+	乙方拥有<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币存款，银行账号为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该存款为甲乙双方财产。
 	</Data>
 		<Refer>
 			<p>提示：现金所有权以交付为转移方式。</p>
@@ -106,20 +102,20 @@
 	<Category>婚前双方是否有重大价值动产</Category>
     <Item>
 	<Data>
-	 甲方拥有贵重物品为，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		  甲乙双方明确该物品为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	 甲方拥有贵重物品为，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该物品为<![CDATA[ <input style="width:50px;height: 20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	 甲方拥有贵重物品为，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		  甲乙双方明确该物品为甲乙双方财产。
+	 甲方拥有贵重物品为，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该物品为甲乙双方财产。
 	</Data>
 	<Data>
-	 乙方拥有贵重物品为，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		  甲乙双方明确该物品为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	 乙方拥有贵重物品为，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该物品为<![CDATA[ <input style="width:50px;height: 20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	 乙方拥有贵重物品为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		  甲乙双方明确该存款为双方财产。
+	 乙方拥有贵重物品为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+         甲乙双方明确该存款为双方财产。
 	</Data>
 	
 		<Refer>
@@ -139,20 +135,20 @@
 	<Category>婚前双方是否有基金</Category>
     <Item>
 	<Data>
-	 甲方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币基金，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		  甲乙双方明确该基金为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+	 甲方拥有价值为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币基金，账号为<![CDATA[ <input style="width:100px;height: 20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该基金为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	  甲方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币基金，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		   甲乙双方明确该基金为甲乙双方财产。
+	  甲方拥有价值为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币基金，账号为<![CDATA[ <input style="width:100px;height: 20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	 甲乙双方明确该基金为甲乙双方财产。
 	</Data>
 	<Data>
-	 乙方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币基金，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		  甲乙双方明确该基金为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+	 乙方拥有价值为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币基金，账号为<![CDATA[ <input style="width:100px;height: 20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	 甲乙双方明确该基金为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	 乙方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币基金，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		  甲乙双方明确该基金为甲乙双方财产。
+	 乙方拥有价值为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币基金，账号为<![CDATA[ <input style="width:100px;height: 20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该基金为甲乙双方财产。
 	</Data>
 		<Refer>
 			<p>提示：基金所有权以过户为转移方式。</p>
@@ -171,20 +167,20 @@
 	<Category>婚前双方是否有股票</Category>
     <Item>
 	<Data>
-	 甲方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币股票，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		  甲乙双方明确该股票为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+	 甲方拥有价值为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币股票，账号为<![CDATA[ <input style="width:100px;height: 20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+         甲乙双方明确该股票为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	 甲方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币股票，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		  甲乙双方明确该股票为甲乙双方财产。
+	 甲方拥有价值为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币股票，账号为<![CDATA[ <input style="width:100px;height: 20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该股票为甲乙双方财产。
 	</Data>
 	<Data>
-	 乙方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币股票，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		  甲乙双方明确该股票为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+	 乙方拥有价值为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币股票，账号为<![CDATA[ <input style="width:100px;height: 20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该股票为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	 乙方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币股票，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		  甲乙双方明确该股票为甲乙双方财产。
+	 乙方拥有价值为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币股票，账号为<![CDATA[ <input style="width:100px;height: 20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该股票为甲乙双方财产。
 	</Data>
 		<Refer>
 			<p>提示：股票所有权以过户为转移方式。</p>
@@ -204,20 +200,20 @@
 	<Category>婚前双方是否有债券</Category>
     <Item>
 	<Data>
-	 甲方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币债券，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		  甲乙双方明确该债券为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+	 甲方拥有价值为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币债券，账号为<![CDATA[ <input style="width:100px;height: 20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该债券为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	 甲方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币债券，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		  甲乙双方明确该债券为甲乙双方财产。
+	 甲方拥有价值为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币债券，账号为<![CDATA[ <input style="width:100px;height: 20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该债券为甲乙双方财产。
 	</Data>
 	<Data>
-	乙方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币债券，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		 甲乙双方明确该债券为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+	乙方拥有价值为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币债券，账号为<![CDATA[ <input style="width:100px;height: 20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该债券为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	 乙方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币债券，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
-		  甲乙双方明确该债券为甲乙双方财产。
+	 乙方拥有价值为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>元人民币债券，账号为<![CDATA[ <input style="width:100px;height: 20px;line-height: normal;" />]]>，由<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>方式取得。
+	甲乙双方明确该债券为甲乙双方财产。
 	</Data>
 		<Refer>
 			<p>提示：债券所有权以过户为转移方式。</p>
@@ -235,20 +231,20 @@
 	<Category>婚前双方是否投资有公司</Category>
     <Item>
 	<Data>
-	 甲方投资有公司为<![CDATA[ <input style="width:150px;height:25px;" />]]>，所占股份比例为<![CDATA[ <input style="width:0px;height:25px;" />]]>。
-		  甲乙双方明确该股份为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	 甲方投资有公司为<![CDATA[ <input style="width:150px;height: 20px;line-height: normal;" />]]>，所占股份比例为<![CDATA[ <input style="width:0px;height: 20px;line-height: normal;" />]]>。
+	甲乙双方明确该股份为<![CDATA[ <input style="width:50px;height: 20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	 甲方投资有公司为<![CDATA[ <input style="width:150px;height:25px;" />]]>，所占股份比例为<![CDATA[ <input style="width:80px;height:25px;" />]]>。
-		  甲乙双方明确该股份为甲乙双方财产。
+	 甲方投资有公司为<![CDATA[ <input style="width:150px;height: 20px;line-height: normal;" />]]>，所占股份比例为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>。
+	甲乙双方明确该股份为甲乙双方财产。
 	</Data>
 	<Data>
-	 乙方投资有公司为<![CDATA[ <input style="width:150px;height:25px;" />]]>，所占股份比例为<![CDATA[ <input style="width:80px;height:25px;" />]]>。
-		  甲乙双方明确该股份为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	 乙方投资有公司为<![CDATA[ <input style="width:150px;height: 20px;line-height: normal;" />]]>，所占股份比例为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>。
+	甲乙双方明确该股份为<![CDATA[ <input style="width:50px;height: 20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	 乙方投资有公司为<![CDATA[ <input style="width:150px;height:25px;" />]]>，所占股份比例为<![CDATA[ <input style="width:80px;height:25px;" />]]>。
-		  甲乙双方明确该股份为双方共同财产。
+	 乙方投资有公司为<![CDATA[ <input style="width:150px;height: 20px;line-height: normal;" />]]>，所占股份比例为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>。
+	甲乙双方明确该股份为双方共同财产。
 	</Data>
 		<Refer>
 			<p>提示：股份转移方式为工商局登记变更。</p>
@@ -267,20 +263,20 @@
 	<Category>婚前双方是否有债权</Category>
     <Item>
 	<Data>
-	 甲方拥有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债权，到期日为<![CDATA[ <input style="width:70px;height:25px;" />]]>。
-		  甲乙双方明确该债权为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	 甲方拥有对<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>价值为元人民币债权，到期日为<![CDATA[ <input style="width:70px;height: 20px;line-height: normal;" />]]>。
+	甲乙双方明确该债权为<![CDATA[ <input style="width:50px;height: 20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	 甲方拥有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债权，到期日为<![CDATA[ <input style="width:70px;height:25px;" />]]>。
-		  甲乙双方明确该债权为甲乙双方财产。
+	 甲方拥有对<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>价值为元人民币债权，到期日为<![CDATA[ <input style="width:70px;height: 20px;line-height: normal;" />]]>。
+	甲乙双方明确该债权为甲乙双方财产。
 	</Data>
 	<Data>
-	 乙方拥有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债权，到期日为<![CDATA[ <input style="width:70px;height:25px;" />]]>。
-		  甲乙双方明确该债权为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	 乙方拥有对<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>价值为元人民币债权，到期日为<![CDATA[ <input style="width:70px;height: 20px;line-height: normal;" />]]>。
+	甲乙双方明确该债权为<![CDATA[ <input style="width:50px;height: 20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	 乙方拥有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债权，到期日为<![CDATA[ <input style="width:70px;height:25px;" />]]>。
-		  甲乙双方明确该债权为双方共同财产。
+	 乙方拥有对<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>价值为元人民币债权，到期日为<![CDATA[ <input style="width:70px;height: 20px;line-height: normal;" />]]>。
+	甲乙双方明确该债权为双方共同财产。
 	</Data>
 		<Refer>
 			<p>提示：债权转移要书面通知债务人，最好取得对方书面同意。</p>
@@ -303,20 +299,20 @@
 	<Category>婚前双方是否负有债务</Category>
     <Item>
 	<Data>
-	 甲方负有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债务，到期日为<![CDATA[ <input style="width:80px;height:25px;" />]]>。
-		  甲乙双方明确该债务为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人债务。
+	 甲方负有对<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>价值为元人民币债务，到期日为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>。
+	甲乙双方明确该债务为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>方个人债务。
 	</Data>
 	<Data>
-	 甲方负有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债务，到期日为<![CDATA[ <input style="width:80px;height:25px;" />]]>。
-		  甲乙双方明确该债权为甲乙双方共同债务。
+	 甲方负有对<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>价值为元人民币债务，到期日为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>。
+	甲乙双方明确该债权为甲乙双方共同债务。
 	</Data>
 	<Data>
-	 乙方负有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债务，到期日为<![CDATA[ <input style="width:80px;height:25px;" />]]>。
-		  甲乙双方明确该债权为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人债务。
+	 乙方负有对<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>价值为元人民币债务，到期日为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>。
+	甲乙双方明确该债权为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>方个人债务。
 	</Data>
 	<Data>
-	 乙方负有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债务，到期日为<![CDATA[ <input style="width:80px;height:25px;" />]]>。
-		  甲乙双方明确该债权为双方共同债务。
+	 乙方负有对<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>价值为元人民币债务，到期日为<![CDATA[ <input style="width:80px;height:20px;line-height: normal;" />]]>。
+	甲乙双方明确该债权为双方共同债务。
 	</Data>
 		<Refer>
 			<p>提示：债务转移要书面通知债权人，且取得债权人书面同意。</p>
@@ -334,19 +330,19 @@
 	<Category>婚前双方是否有财产性权益</Category>
     <Item>
 	<Data>
-	 甲方拥有的财产性权益为<![CDATA[ <input style="width:150px;height:25px;" />]]>，取得方式为<![CDATA[ <input style="width:120px;height:25px;" />]]>。
-		  甲乙双方明确该权益为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	 甲方拥有的财产性权益为<![CDATA[ <input style="width:150px;height: 20px;line-height: normal;" />]]>，取得方式为<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>。
+	甲乙双方明确该权益为<![CDATA[ <input style="width:50px;height: 20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	 甲方拥有的财产性权益为<![CDATA[ <input style="width:150px;height:25px;" />]]>，取得方式为<![CDATA[ <input style="width:120px;height:25px;" />]]>。
-		  甲乙双方明确该权益为甲乙双方财产。</Data>
+	 甲方拥有的财产性权益为<![CDATA[ <input style="width:150px;height: 20px;line-height: normal;" />]]>，取得方式为<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>。
+	甲乙双方明确该权益为甲乙双方财产。</Data>
 	<Data>
-	 乙方拥有的财产性权益为<![CDATA[ <input style="width:150px;height:25px;" />]]>，取得方式为<![CDATA[ <input style="width:120px;height:25px;" />]]>。
-		  甲乙双方明确该权益为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	 乙方拥有的财产性权益为<![CDATA[ <input style="width:150px;height: 20px;line-height: normal;" />]]>，取得方式为<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>。
+	 甲乙双方明确该权益为<![CDATA[ <input style="width:50px;height: 20px;line-height: normal;" />]]>方个人财产。
 	</Data>
 	<Data>
-	 乙方拥有的财产性权益为<![CDATA[ <input style="width:150px;height:25px;" />]]>，取得方式为<![CDATA[ <input style="width:120px;height:25px;" />]]>。
-		  甲乙双方明确该权益为双方共同财产。
+	 乙方拥有的财产性权益为<![CDATA[ <input style="width:150px;height: 20px;line-height: normal;" />]]>，取得方式为<![CDATA[ <input style="width:120px;height: 20px;line-height: normal;" />]]>。
+	甲乙双方明确该权益为双方共同财产。
 	</Data>
 		<Refer>
 			<p>提示：财产性收益是指能带来财产收益的权益，例如知识产权、林权、土地承包权、谈矿产等。有些专属于人身属性，不允许转移的，但可以约定收益的权属，办理相关手续时需要登记办理的，请务必去主管部门办理，以免给自己造成损失。</p>
@@ -365,7 +361,7 @@
 	<Category>双方是否还有其它约定</Category>
     <Item>
 	<Data>
-		双方其它约定为<![CDATA[ <input style="width:500px;height:25px;" />]]>。
+	双方其它约定为<![CDATA[ <input style="width:500px;height: 20px;line-height: normal;" />]]>。
 	</Data>
 		<Refer>
 			<p></p>

@@ -23,13 +23,13 @@
 			<value>com.mysql.jdbc.Driver</value>
 		</property>
 		<property name="url">
-			<value>jdbc:mysql://localhost:3306/myapp?characterEncoding=utf8</value>
+			<value>jdbc:mysql://114.80.153.70:3306/sq_ydw2014?characterEncoding=utf8</value>
 		</property>
 		<property name="username">
-			<value>root</value>
+			<value>sq_ydw2014</value>
 		</property>
 		<property name="password">
-			<value></value>
+			<value>ydw2014</value>
 		</property>
 	</bean>
 	

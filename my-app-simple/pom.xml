@@ -5,7 +5,7 @@
 	<groupId>com.mygudou.app</groupId>
 	<artifactId>my-app-simple</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>my-app-simple</name>
 	<url>http://maven.apache.org</url>
@@ -147,13 +147,18 @@
 		</dependency>
 
 
-
-
 		<dependency>
 			<groupId>taglibs</groupId>
 			<artifactId>standard</artifactId>
 			<version>1.1.0</version>
 		</dependency>
+ 
+		<!-- <dependency>
+			<groupId>displaytag</groupId>
+			<artifactId>displaytag</artifactId>
+			<version>1.1.1</version>
+		</dependency> -->
+
 
 		<dependency>
 			<groupId>commons-dbcp</groupId>
@@ -161,12 +166,12 @@
 			<version>1.4</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.7.2</version>
-		</dependency>
-
+		<dependency>  
+		    <groupId>org.slf4j</groupId>  
+		    <artifactId>slf4j-log4j12</artifactId>  
+		    <version>1.7.2</version>  
+		</dependency>  
+		
 	</dependencies>
 
 	<build>
@@ -201,15 +206,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			
-			<plugin>   
-		      <groupId>org.apache.maven.plugins</groupId>   
-		      <artifactId>maven-war-plugin</artifactId>   
-		      <version>2.0.2</version>   
-		      <configuration>   
-	         	 <warSourceExcludes>WEB-INF/lib/log4j-${log4j.version}.jar</warSourceExcludes>   
-     		  </configuration>   
-  			</plugin>   
+
 		</plugins>
 	</build>
 

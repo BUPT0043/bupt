@@ -150,10 +150,6 @@ public class XMLDAOimpl implements XMLDAO{
 					lst2.add(la);
 					la=null;
 				}
-			/*	if("LawInform".equals(nodeName)){
-					lst2.add(la);
-					la=null;
-				}*/
 				break;    
 			}
 			event1=pullParser.next();
