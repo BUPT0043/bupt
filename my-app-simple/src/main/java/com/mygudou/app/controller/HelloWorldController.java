@@ -62,9 +62,7 @@ public class HelloWorldController{
 		ModelAndView mv3 = new ModelAndView();
 		mv3.addObject("title",title);
 		mv3.addObject("matter",XMLTransDBService.getMattList(title, 0, 3));
-		
-		System.out.println(XMLTransDBService.getMattList(title, 0, 3).size()+"------------------");
-		
+//		System.out.println(XMLTransDBService.getMattList(title, 0, 3).size()+"------------------");
 		mv3.addObject("total",(XMLTransDBService.getMattTotal(title, 0, 3)+1)/3);
         XMLTransDBService.TransXmlToDB();
 		mv3.setViewName("search");

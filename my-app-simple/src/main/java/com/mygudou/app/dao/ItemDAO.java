@@ -19,7 +19,6 @@ public interface ItemDAO {
 	
 	//搜索
 	public List<Matter> getMatt(String title,int pageIndex,int pageSize);
-	
 	public int getMattTotal(String title,int pageIndex,int pageSize);
 	public List<Matter> getMattAll(int id);
 

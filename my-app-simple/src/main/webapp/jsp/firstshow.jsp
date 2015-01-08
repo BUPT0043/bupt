@@ -67,12 +67,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <img class="tile-image" alt="" src="../images/note.jpg" />
             <h3 class="tile-title">合同Maker</h3>
             <p>用最简单的方式生成合同</p>
-	          
-				      <form class="navbar-form navbar-left" method="post" action="<%=basePath%>/show/search" role="search">
-				         <input type="hidden" name="title" value="${title}"  class="form-control">
-				          <a  href="/show/login" class="btn btn-primary btn-lg" >生成合同</a>
-				         <button type="submit" class="btn btn-primary btn-lg" >事件查询</button></a>
-				      </form>    
+		      <form class="navbar-form navbar-left" method="post" action="<%=basePath%>/show/search" role="search">
+		         <input type="hidden" name="title" value="${title}"  class="form-control">
+		          <a  href="/show/login" class="btn btn-primary btn-lg" >生成合同</a>
+		         <button type="submit" class="btn btn-primary btn-lg" >案例查询</button></a>
+		      </form>    
           </div>
         </div>     
 	   </div>
