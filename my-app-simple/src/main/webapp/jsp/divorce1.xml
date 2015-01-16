@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Law>
+	<LawName>婚前财产协议</LawName>
+	<LawInform>
+		  婚前财产协议是指未婚夫妻之间的财产协议，可以用来明确婚前各自财产归各自所有，或者约定一方财产为共同财产，
+		或者双方财产为共同财产，或者将自己财产让渡给对方，但不能以此方式逃避个人债务；且不宜用婚前财产协议约定婚后财产的事宜，以免导致相关约定无效。
+		婚前财产协议适合进行公证。
+	</LawInform>
+	<房产>
+	<Category>婚前双方是否有房产</Category>
+    <Item>
+	<Data>
+	甲方拥有座落于<![CDATA[ <input style="width:80px;height:25px;" />]]>路<![CDATA[ <input style="width:80px;height:25px;" />]]>号室房产一处，面积<![CDATA[ <input style="width:80px;height:25px;" />]]>平方米，为<![CDATA[ <input style="width:80px;height:25px;" />]]>权房，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+	     甲乙双方明确该房产为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	甲方拥有座落于<![CDATA[ <input style="width:80px;height:25px;" />]]>路<![CDATA[ <input style="width:80px;height:25px;" />]]>号室房产一处，面积<![CDATA[ <input style="width:80px;height:25px;" />]]>平方米，为<![CDATA[ <input style="width:80px;height:25px;" />]]>权房，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+	     甲乙双方明确该房产为甲、乙方双方共同财产。
+    </Data>
+	<Data>
+	乙方拥有座落于<![CDATA[ <input style="width:80px;height:25px;" />]]>路<![CDATA[ <input style="width:80px;height:25px;" />]]>号室房产一处，面积<![CDATA[ <input style="width:80px;height:25px;" />]]>平方米，为<![CDATA[ <input style="width:80px;height:25px;" />]]>权房，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		甲乙双方明确该房产为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+    </Data>
+	<Data>
+	乙方拥有座落于<![CDATA[ <input style="width:80px;height:25px;" />]]>路<![CDATA[ <input style="width:80px;height:25px;" />]]>号室房产一处，面积<![CDATA[ <input style="width:80px;height:25px;" />]]>平方米，为<![CDATA[ <input style="width:80px;height:25px;" />]]>权房，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		甲乙双方明确该房产为甲、乙方双方共同财产。
+    </Data>
+		 
+		<Refer>
+			<p>提示：当婚前个人财产约定为共同财产或完全转让给另一方时，应及时办理房产证加名过户手续。</p>
+			<p>法律依据：《物权法》第四条：国家、集体、私人的物权和其他权利人的物权受法律保护，任何单位和个人不得侵犯。</p>
+			<p>第三十九条：所有权人对自己的不动产或者动产，依法享有占有、使用、收益和处分的权利。</p>
+　		  　<p>第四十条：所有权人有权在自己的不动产或者动产上设立用益物权和担保物权。用益物权人、担保物权人行使权利，不得损害所有权人的权益。</p>
+			<p>第九十三条：不动产或者动产可以由两个以上单位、个人共有。共有包括按份共有和共同共有。</p>
+　		  　<p>第九十四条：按份共有人对共有的不动产或者动产按照其份额享有所有权。</p>
+　　		<p>第九十五条：共同共有人对共有的不动产或者动产共同享有所有权。</p>
+　　		<p>第九十六条：共有人按照约定管理共有的不动产或者动产；没有约定或者约定不明确的，各共有人都有管理的权利和义务。</p>
+		</Refer>		
+	</Item>
+	
+	</房产>
+	<车辆>
+	<Category>婚前双方是否有车辆</Category>
+	<Item>
+		<Data>
+		甲方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>牌汽车一辆，车牌号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+			 甲乙双方明确该汽车为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+		</Data>
+		<Data>
+		甲方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>牌汽车一辆，车牌号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+			 甲乙双方明确该汽车为甲、乙方双方共同财产。
+		</Data>
+		<Data>
+		乙方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>牌汽车一辆，车牌号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		     甲乙双方明确该汽车为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+		</Data>
+		<Data>
+		乙方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>牌汽车一辆，车牌号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		     甲乙双方明确该汽车为甲、乙方双方共同财产。
+		</Data>
+		<Refer>
+			<p>提示：当婚前个人财产约定为共同财产或完全装让给另一方时，应及时办理车辆过户手续。</p>
+			<p>法律依据：《物权法》第四条：国家、集体、私人的物权和其他权利人的物权受法律保护，任何单位和个人不得侵犯。</p>
+		    <p>第三十九条：所有权人对自己的不动产或者动产，依法享有占有、使用、收益和处分的权利。</p>
+　　        <p>第四十条：所有权人有权在自己的不动产或者动产上设立用益物权和担保物权。用益物权人、担保物权人行使权利，不得损害所有权人的权益。</p>
+            <p>第九十三条：不动产或者动产可以由两个以上单位、个人共有。共有包括按份共有和共同共有。</p>
+　　        <p>第九十四条：按份共有人对共有的不动产或者动产按照其份额享有所有权。</p>
+　　        <p>第九十五条：共同共有人对共有的不动产或者动产共同享有所有权。</p>
+　　        <p>第九十六条：共有人按照约定管理共有的不动产或者动产；没有约定或者约定不明确的，各共有人都有管理的权利和义务。</p>
+		</Refer>
+		</Item>
+	</车辆>
+	<现金存款>
+	<Category>婚前双方是否有现金存款</Category>
+    <Item>
+	<Data>
+	甲方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币存款，银行账号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		 甲乙双方明确该存款为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	甲方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币存款，银行账号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		 甲乙双方明确该存款为甲乙双方财产。
+	</Data>
+	<Data>
+	乙方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币存款，银行账号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		 甲乙双方明确该存款为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	乙方拥有<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币存款，银行账号为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		 甲乙双方明确该存款为甲乙双方财产。
+	</Data>
+		<Refer>
+			<p>提示：现金所有权以交付为转移方式。</p>
+			<p>法律依据：《物权法》第四条：国家、集体、私人的物权和其他权利人的物权受法律保护，任何单位和个人不得侵犯。</p>
+			   <p>第三十九条：所有权人对自己的不动产或者动产，依法享有占有、使用、收益和处分的权利。</p>
+　　           <p>第四十条：所有权人有权在自己的不动产或者动产上设立用益物权和担保物权。用益物权人、担保物权人行使权利，不得损害所有权人的权益。</p>
+			   <p>第九十三条：不动产或者动产可以由两个以上单位、个人共有。共有包括按份共有和共同共有。</p>
+　　		   <p>第九十四条：按份共有人对共有的不动产或者动产按照其份额享有所有权。</p>
+　　		   <p>第九十五条：共同共有人对共有的不动产或者动产共同享有所有权。</p>
+　　          <p>第九十六条：共有人按照约定管理共有的不动产或者动产；没有约定或者约定不明确的，各共有人都有管理的权利和义务。</p>
+		</Refer>		
+	</Item>
+    </现金存款>
+	
+	<重大价值动产>
+	<Category>婚前双方是否有重大价值动产</Category>
+    <Item>
+	<Data>
+	 甲方拥有贵重物品为，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		  甲乙双方明确该物品为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	 甲方拥有贵重物品为，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		  甲乙双方明确该物品为甲乙双方财产。
+	</Data>
+	<Data>
+	 乙方拥有贵重物品为，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		  甲乙双方明确该物品为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	 乙方拥有贵重物品为<![CDATA[ <input style="width:80px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		  甲乙双方明确该存款为双方财产。
+	</Data>
+	
+		<Refer>
+			 <p>提示：一般动产物品所有权以交付为转移方式。</p>
+			 <p>法律依据：《物权法》第四条：国家、集体、私人的物权和其他权利人的物权受法律保护，任何单位和个人不得侵犯。</p>
+			   <p>第三十九条：所有权人对自己的不动产或者动产，依法享有占有、使用、收益和处分的权利。</p>
+　		     　<p>第四十条：所有权人有权在自己的不动产或者动产上设立用益物权和担保物权。用益物权人、担保物权人行使权利，不得损害所有权人的权益。</p>
+			   <p>第九十三条：不动产或者动产可以由两个以上单位、个人共有。共有包括按份共有和共同共有。</p>
+　　           <p>第九十四条：按份共有人对共有的不动产或者动产按照其份额享有所有权。</p>
+　　           <p>第九十五条：共同共有人对共有的不动产或者动产共同享有所有权。</p>
+　　           <p>第九十六条：共有人按照约定管理共有的不动产或者动产；没有约定或者约定不明确的，各共有人都有管理的权利和义务。</p>
+		</Refer>		
+	</Item>
+	</重大价值动产>
+	
+	<基金>
+	<Category>婚前双方是否有基金</Category>
+    <Item>
+	<Data>
+	 甲方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币基金，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		  甲乙双方明确该基金为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	  甲方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币基金，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		   甲乙双方明确该基金为甲乙双方财产。
+	</Data>
+	<Data>
+	 乙方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币基金，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		  甲乙双方明确该基金为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	 乙方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币基金，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		  甲乙双方明确该基金为甲乙双方财产。
+	</Data>
+		<Refer>
+			<p>提示：基金所有权以过户为转移方式。</p>
+			   <p>法律依据：《物权法》第四条：国家、集体、私人的物权和其他权利人的物权受法律保护，任何单位和个人不得侵犯。</p>
+			   <p>第三十九条：所有权人对自己的不动产或者动产，依法享有占有、使用、收益和处分的权利。</p>
+　　		       <p>第四十条：所有权人有权在自己的不动产或者动产上设立用益物权和担保物权。用益物权人、担保物权人行使权利，不得损害所有权人的权益。</p>
+			   <p>第九十三条：不动产或者动产可以由两个以上单位、个人共有。共有包括按份共有和共同共有。</p>
+	　　		   <p>第九十四条：按份共有人对共有的不动产或者动产按照其份额享有所有权。</p>
+	　　		   <p>第九十五条：共同共有人对共有的不动产或者动产共同享有所有权。</p>
+	　　		   <p>第九十六条：共有人按照约定管理共有的不动产或者动产；没有约定或者约定不明确的，各共有人都有管理的权利和义务。</p>
+		</Refer>		
+	</Item>
+	</基金>
+	
+	<股票>
+	<Category>婚前双方是否有股票</Category>
+    <Item>
+	<Data>
+	 甲方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币股票，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		  甲乙双方明确该股票为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	 甲方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币股票，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		  甲乙双方明确该股票为甲乙双方财产。
+	</Data>
+	<Data>
+	 乙方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币股票，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		  甲乙双方明确该股票为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	 乙方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币股票，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		  甲乙双方明确该股票为甲乙双方财产。
+	</Data>
+		<Refer>
+			<p>提示：股票所有权以过户为转移方式。</p>
+			  <p>法律依据：《物权法》第四条：国家、集体、私人的物权和其他权利人的物权受法律保护，任何单位和个人不得侵犯。</p>
+			  <p>第三十九条：所有权人对自己的不动产或者动产，依法享有占有、使用、收益和处分的权利。</p>
+　	          <p>第四十条：所有权人有权在自己的不动产或者动产上设立用益物权和担保物权。用益物权人、担保物权人行使权利，不得损害所有权人的权益。</p>
+		      <p>第九十三条：不动产或者动产可以由两个以上单位、个人共有。共有包括按份共有和共同共有。</p>
+　　		  <p>第九十四条：按份共有人对共有的不动产或者动产按照其份额享有所有权。</p>
+　　		  <p>第九十五条：共同共有人对共有的不动产或者动产共同享有所有权。</p>
+　　	      <p>第九十六条：共有人按照约定管理共有的不动产或者动产；没有约定或者约定不明确的，各共有人都有管理的权利和义务。</p>
+		
+		</Refer>		
+	</Item>
+	</股票>
+	<债券>
+	
+	<Category>婚前双方是否有债券</Category>
+    <Item>
+	<Data>
+	 甲方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币债券，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		  甲乙双方明确该债券为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	 甲方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币债券，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		  甲乙双方明确该债券为甲乙双方财产。
+	</Data>
+	<Data>
+	乙方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币债券，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		 甲乙双方明确该债券为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	 乙方拥有价值为<![CDATA[ <input style="width:80px;height:25px;" />]]>元人民币债券，账号为<![CDATA[ <input style="width:100px;height:25px;" />]]>，由<![CDATA[ <input style="width:120px;height:25px;" />]]>方式取得。
+		  甲乙双方明确该债券为甲乙双方财产。
+	</Data>
+		<Refer>
+			<p>提示：债券所有权以过户为转移方式。</p>
+			   <p>法律依据：《物权法》第四条：国家、集体、私人的物权和其他权利人的物权受法律保护，任何单位和个人不得侵犯。</p>
+			   <p>第三十九条：所有权人对自己的不动产或者动产，依法享有占有、使用、收益和处分的权利。</p>
+　		     　<p>第四十条：所有权人有权在自己的不动产或者动产上设立用益物权和担保物权。用益物权人、担保物权人行使权利，不得损害所有权人的权益。</p>
+			   <p>第九十三条：不动产或者动产可以由两个以上单位、个人共有。共有包括按份共有和共同共有。</p>
+　　		   <p>第九十四条：按份共有人对共有的不动产或者动产按照其份额享有所有权。</p>
+　　		   <p>第九十五条：共同共有人对共有的不动产或者动产共同享有所有权。</p>
+　　		   <p>第九十六条：共有人按照约定管理共有的不动产或者动产；没有约定或者约定不明确的，各共有人都有管理的权利和义务。</p>
+		</Refer>		
+	</Item>
+	</债券>
+	<投资公司>
+	<Category>婚前双方是否投资有公司</Category>
+    <Item>
+	<Data>
+	 甲方投资有公司为<![CDATA[ <input style="width:150px;height:25px;" />]]>，所占股份比例为<![CDATA[ <input style="width:0px;height:25px;" />]]>。
+		  甲乙双方明确该股份为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	 甲方投资有公司为<![CDATA[ <input style="width:150px;height:25px;" />]]>，所占股份比例为<![CDATA[ <input style="width:80px;height:25px;" />]]>。
+		  甲乙双方明确该股份为甲乙双方财产。
+	</Data>
+	<Data>
+	 乙方投资有公司为<![CDATA[ <input style="width:150px;height:25px;" />]]>，所占股份比例为<![CDATA[ <input style="width:80px;height:25px;" />]]>。
+		  甲乙双方明确该股份为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	 乙方投资有公司为<![CDATA[ <input style="width:150px;height:25px;" />]]>，所占股份比例为<![CDATA[ <input style="width:80px;height:25px;" />]]>。
+		  甲乙双方明确该股份为双方共同财产。
+	</Data>
+		<Refer>
+			<p>提示：股份转移方式为工商局登记变更。</p>
+			   <p>法律依据：《物权法》第四条：国家、集体、私人的物权和其他权利人的物权受法律保护，任何单位和个人不得侵犯。</p>
+			   <p>第三十九条：所有权人对自己的不动产或者动产，依法享有占有、使用、收益和处分的权利。</p>
+　　		   <p>第四十条：所有权人有权在自己的不动产或者动产上设立用益物权和担保物权。用益物权人、担保物权人行使权利，不得损害所有权人的权益。</p>
+			   <p>第九十三条：不动产或者动产可以由两个以上单位、个人共有。共有包括按份共有和共同共有。</p>
+　　           <p>第九十四条：按份共有人对共有的不动产或者动产按照其份额享有所有权。</p>
+　　           <p>第九十五条：共同共有人对共有的不动产或者动产共同享有所有权。</p>
+　　           <p>第九十六条：共有人按照约定管理共有的不动产或者动产；没有约定或者约定不明确的，各共有人都有管理的权利和义务。</p>
+		</Refer>		
+	</Item>
+	</投资公司>
+	
+	<债权>
+	<Category>婚前双方是否有债权</Category>
+    <Item>
+	<Data>
+	 甲方拥有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债权，到期日为<![CDATA[ <input style="width:70px;height:25px;" />]]>。
+		  甲乙双方明确该债权为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	 甲方拥有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债权，到期日为<![CDATA[ <input style="width:70px;height:25px;" />]]>。
+		  甲乙双方明确该债权为甲乙双方财产。
+	</Data>
+	<Data>
+	 乙方拥有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债权，到期日为<![CDATA[ <input style="width:70px;height:25px;" />]]>。
+		  甲乙双方明确该债权为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	 乙方拥有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债权，到期日为<![CDATA[ <input style="width:70px;height:25px;" />]]>。
+		  甲乙双方明确该债权为双方共同财产。
+	</Data>
+		<Refer>
+			<p>提示：债权转移要书面通知债务人，最好取得对方书面同意。</p>
+				<p>法律依据：《合同法》第七十九条 债权人可以将合同的权利全部或者部分转让给第三人，但有下列情形之一的除外：</p>
+　　			<p>(一)根据合同性质不得转让;</p>
+　　			<p>(二)按照当事人约定不得转让;</p>
+　　			<p>(三)依照法律规定不得转让。</p>
+　　			<p>第八十一条 债权人转让权利的，受让人取得与债权有关的从权利，但该从权利专属于债权人自身的除外。</p>
+　　			<p>第八十二条 债务人接到债权转让通知后，债务人对让与人的抗辩，可以向受让人主张。</p>
+　　			<p>第八十三条 债务人接到债权转让通知时，债务人对让与人享有债权，并且债务人的债权先于转让的债权到期或者同时到期的，债务人可以向受让人主张抵销。</p>
+				<p>最高人民法院《关于适用<![CDATA[<中华人民共和国合同法>]]>若于问题的解释(一)》
+				第二十九条：　合同当事人一方经对方同意将其在合同中的权利义务一并转让给受让人，
+				对方与受让人因履行合同发生纠纷诉至人民法院，对方就合同权利义务提出抗辩的，
+				可以将出让方列为第三人。</p>
+		</Refer>		
+	</Item>
+	</债权>
+	
+	<债务>
+	<Category>婚前双方是否负有债务</Category>
+    <Item>
+	<Data>
+	 甲方负有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债务，到期日为<![CDATA[ <input style="width:80px;height:25px;" />]]>。
+		  甲乙双方明确该债务为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人债务。
+	</Data>
+	<Data>
+	 甲方负有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债务，到期日为<![CDATA[ <input style="width:80px;height:25px;" />]]>。
+		  甲乙双方明确该债权为甲乙双方共同债务。
+	</Data>
+	<Data>
+	 乙方负有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债务，到期日为<![CDATA[ <input style="width:80px;height:25px;" />]]>。
+		  甲乙双方明确该债权为<![CDATA[ <input style="width:80px;height:25px;" />]]>方个人债务。
+	</Data>
+	<Data>
+	 乙方负有对<![CDATA[ <input style="width:80px;height:25px;" />]]>价值为元人民币债务，到期日为<![CDATA[ <input style="width:80px;height:25px;" />]]>。
+		  甲乙双方明确该债权为双方共同债务。
+	</Data>
+		<Refer>
+			<p>提示：债务转移要书面通知债权人，且取得债权人书面同意。</p>
+			   <p>法律依据：《合同法》第八十五条 债务人转移义务的，新债务人可以主张原债务人对债权人的抗辩。</p>
+　　		   <p>第八十六条 债务人转移义务的，新债务人应当承担与主债务有关的从债务，但该从债务专属于原债务人自身的除外。</p>
+　　		   <p>第八十七条 法律、行政法规规定转让权利或者转移义务应当办理批准、登记等手续的，依照其规定。</p>
+　　		   <p>第八十八条 当事人一方经对方同意，可以将自己在合同中的权利和义务一并转让给第三人。</p>
+　　		   <p>第八十九条 权利和义务一并转让的，适用本法第七十九条、第八十一条至第八十三条、第八十五条至第八十七条的规定。</p>
+　　		   <p>最高人民法院《关于适用<![CDATA[<中华人民共和国合同法>]]>若于问题的解释(一)》第二十九条　合同当事人一方经对方同意将其在合同中的权利义务一并转让给受让人，对方与受让人因履行合同发生纠纷诉至人民法院，对方就合同权利义务提出抗辩的，可以将出让方列为第三人。</p>
+		</Refer>		
+	</Item>
+	</债务>
+	
+	<财产性权益>
+	<Category>婚前双方是否有财产性权益</Category>
+    <Item>
+	<Data>
+	 甲方拥有的财产性权益为<![CDATA[ <input style="width:150px;height:25px;" />]]>，取得方式为<![CDATA[ <input style="width:120px;height:25px;" />]]>。
+		  甲乙双方明确该权益为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	 甲方拥有的财产性权益为<![CDATA[ <input style="width:150px;height:25px;" />]]>，取得方式为<![CDATA[ <input style="width:120px;height:25px;" />]]>。
+		  甲乙双方明确该权益为甲乙双方财产。</Data>
+	<Data>
+	 乙方拥有的财产性权益为<![CDATA[ <input style="width:150px;height:25px;" />]]>，取得方式为<![CDATA[ <input style="width:120px;height:25px;" />]]>。
+		  甲乙双方明确该权益为<![CDATA[ <input style="width:50px;height:25px;" />]]>方个人财产。
+	</Data>
+	<Data>
+	 乙方拥有的财产性权益为<![CDATA[ <input style="width:150px;height:25px;" />]]>，取得方式为<![CDATA[ <input style="width:120px;height:25px;" />]]>。
+		  甲乙双方明确该权益为双方共同财产。
+	</Data>
+		<Refer>
+			<p>提示：财产性收益是指能带来财产收益的权益，例如知识产权、林权、土地承包权、谈矿产等。有些专属于人身属性，不允许转移的，但可以约定收益的权属，办理相关手续时需要登记办理的，请务必去主管部门办理，以免给自己造成损失。</p>
+			 <p>法律依据：《物权法》第四条：国家、集体、私人的物权和其他权利人的物权受法律保护，任何单位和个人不得侵犯。</p>
+			  <p>第三十九条：所有权人对自己的不动产或者动产，依法享有占有、使用、收益和处分的权利。</p>
+　　		  <p>第四十条：所有权人有权在自己的不动产或者动产上设立用益物权和担保物权。用益物权人、担保物权人行使权利，不得损害所有权人的权益。</p>
+			  <p>第九十三条：不动产或者动产可以由两个以上单位、个人共有。共有包括按份共有和共同共有。</p>
+　　		  <p>第九十四条：按份共有人对共有的不动产或者动产按照其份额享有所有权。</p>
+　　		  <p>第九十五条：共同共有人对共有的不动产或者动产共同享有所有权。</p>
+　　		  <p>第九十六条：共有人按照约定管理共有的不动产或者动产；没有约定或者约定不明确的，各共有人都有管理的权利和义务。</p>
+		</Refer>
+			
+	</Item>
+	</财产性权益>
+	<其它约定>
+	<Category>双方是否还有其它约定</Category>
+    <Item>
+	<Data>
+		双方其它约定为<![CDATA[ <input style="width:500px;height:25px;" />]]>。
+	</Data>
+		<Refer>
+			<p></p>
+		</Refer>		
+	</Item>
+	</其它约定>
+</Law>
