@@ -152,6 +152,8 @@ public class ItemDAOImpl implements ItemDAO{
 		}else{
 			sql="select * from "+TABLE_NAME3+" where title like"+"'%"+title+"%'"+" limit " +pageIndex+","+ pageSize ;
 		}
+//		System.out.println("\nItemDAOImpl.getMatt()---------");
+//		System.out.println("sql------"+sql);
 		return jdbcTemplate.query(sql, new MatterRowMapper());
 	}
 	

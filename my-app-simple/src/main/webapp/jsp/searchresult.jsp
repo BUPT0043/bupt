@@ -17,7 +17,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script src="../js/tableExport.js"></script>
 	<script src="../js/stickup.min.js"></script>
-	 <link href="../css/flat-ui.css" rel="stylesheet">
+	<link href="../css/flat-ui.css" rel="stylesheet">
 	<style type="text/css">
 
 	 .breadcrumb{
@@ -81,7 +81,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	 <!--A区  -->
 		<ul class="breadcrumb">
 			<li>
-				<a href="/show/firstshow">
+				<a href="<%=basePath%>/show/firstshow">
 				<span class="glyphicon glyphicon-home" style="color: rgb(54, 140, 167); font-size: 16px;"> Home</span></a> <span class="divider"></span>
 			</li>
 			<!-- <li >

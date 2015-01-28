@@ -83,7 +83,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	 <!--A区  -->
 		<ul class="breadcrumb">
 			<li>
-				<a href="/show/firstshow">
+				<a href="<%=basePath%>/show/firstshow">
 				<span class="glyphicon glyphicon-home" style="color: rgb(54, 140, 167); font-size: 16px;"> Home</span></a> <span class="divider"></span>
 			</li>
 			<li class="active1">

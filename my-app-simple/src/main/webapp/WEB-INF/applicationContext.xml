@@ -23,26 +23,21 @@
 			<value>com.mysql.jdbc.Driver</value>
 		</property>
 		<property name="url">
-			<value>jdbc:mysql://114.80.153.70:3306/sq_ydw2014?characterEncoding=utf8</value>
+			<value>jdbc:mysql://123.57.137.225:3306/sql_ydw2014?characterEncoding=utf8</value>
 		</property>
 		<property name="username">
-			<value>sq_ydw2014</value>
+			<value>root</value>
 		</property>
 		<property name="password">
-			<value>ydw2014</value>
+			<value>gudou1989118</value>
 		</property>
 	</bean>
-	
-	
+
 	<bean id="myjdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" abstract="false"
         lazy-init="false" autowire="default">
         <property name="dataSource">
             <ref bean="dataSource" />
         </property>
     </bean>
-    
-       
-
-
 
 </beans>

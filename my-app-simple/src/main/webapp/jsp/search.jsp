@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %> 
-<%@ taglib uri="my-taglib" prefix="my"%> 
+
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%> 
 <%@ include file="./head.jsp" %>
 <%
@@ -93,11 +93,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	 <!--A区  -->
 		<ul class="breadcrumb">
 			<li>
-				<a href="/show/firstshow">
+				<a href="<%=basePath%>/show/firstshow">
 				<span class="glyphicon glyphicon-home" style="color: rgb(54, 140, 167); font-size: 16px;"> Home</span></a> <span class="divider"></span>
 			</li>
 			<li >
-				<a href="/show/firstshow"><span class="glyphicon glyphicon-repeat" style="color: rgb(54, 140, 167); font-size: 17px;"> Back</span></a> <span class="divider"></span>
+				<a href="<%=basePath%>/show/firstshow"><span class="glyphicon glyphicon-repeat" style="color: rgb(54, 140, 167); font-size: 17px;"> Back</span></a> <span class="divider"></span>
 			</li>
 			<li class="active1">
 				<a href="#"><span class="glyphicon glyphicon-question-sign" style="color: rgb(54, 140, 167); font-size: 17px;"> Help</span></a> <span class="divider"></span>
@@ -137,9 +137,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	       				</a>
 	       			</c:forEach>
 	       		</p>
-	       		
 	       		<div id="zm_page" >
-	       			
 	       			<c:forEach begin="0" end="${total }" var="p">
 	       				<a href="javascript:void(0)" p="${p}" curr="0" title="${title }" onclick="toPage(this)">
 	       					<c:out value="${p+1}"></c:out>
@@ -153,10 +151,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
        			var p = $(obj).attr("p");
        			var curr = $(obj).attr("curr");
        			var title = $(obj).attr("title");
-       			
        			var total = $("#total").val();
        			$.ajax({
-       				url:'../show/searchajax',
+       				url:'<%=basePath%>/show/searchajax',
        				data:{"p":p,
        					"curr":curr,
        					"title":title

@@ -34,7 +34,7 @@ import com.lowagie.text.FontFactory;
 import com.lowagie.text.PageSize;
 import com.lowagie.text.Paragraph;
 import com.lowagie.text.rtf.RtfWriter2;
-import com.mygudou.app.Util.PageUtil;
+
 import com.mygudou.app.model.Category;
 import com.mygudou.app.model.Item;
 import com.mygudou.app.model.Matter;
@@ -59,10 +59,11 @@ public class HelloWorldController{
 //	搜索界面
 	@RequestMapping(value = "/search",method=RequestMethod.POST)
 	 public ModelAndView search(String badcause,@RequestParam(value="title", required = false) String title,HttpServletRequest request) throws Exception {
+		
+		System.out.println("HelloWorldController.search()");
 		ModelAndView mv3 = new ModelAndView();
 		mv3.addObject("title",title);
-		mv3.addObject("matter",XMLTransDBService.getMattList(title, 0, 3));
-//		System.out.println(XMLTransDBService.getMattList(title, 0, 3).size()+"------------------");
+		mv3.addObject("matter",XMLTransDBService.getMattList(title,0, 3));
 		mv3.addObject("total",(XMLTransDBService.getMattTotal(title, 0, 3)+1)/3);
         XMLTransDBService.TransXmlToDB();
 		mv3.setViewName("search");
@@ -72,8 +73,8 @@ public class HelloWorldController{
 //	搜索AJAX
 	@RequestMapping(value = "/searchajax",method=RequestMethod.POST)
 	 public void searchAJAX(@RequestParam(value="p") int p,@RequestParam(value="curr") int curr,@RequestParam(value="title") String title,HttpServletResponse response) throws Exception {
+		System.out.println("HelloWorldController.searchAJAX()");
 		List<Matter> list = XMLTransDBService.getMattList(title, p*3, 3);
-		
 		try {
 			 net.sf.json.JSONArray jo=net.sf.json.JSONArray.fromObject(list);
 	    	 response.setContentType("text/html;charset=UTF-8");   //Ajax转码
@@ -93,7 +94,6 @@ public class HelloWorldController{
 		//System.out.println(XMLTransDBService.getMattList(title, 0, 3).size()+"------------------");
         XMLTransDBService.TransXmlToDB();
 		mv4.setViewName("searchresult");
-		
 		return mv4;   
 		}
 	
@@ -127,7 +127,7 @@ public class HelloWorldController{
 		
 		//取出路径
 		String ctxPath = request.getSession().getServletContext().getRealPath("/") + "download/";
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd ");
 		String name = sdf.format(new Date());
         try {
             RtfWriter2.getInstance(document, new FileOutputStream(ctxPath+name+".doc"));
@@ -143,7 +143,7 @@ public class HelloWorldController{
             document.add(p); 
             
     	    String []sa = param.trim().split(",");
-//    	     用特殊字符 进行<p>标记，然后切割，st[0]input st[1]input context st[2]input over st[3]next inputs
+//    	        用特殊字符 进行<p>标记，然后切割，st[0]input st[1]input context st[2]input over st[3]next inputs
     	    for(String str : sa){
         	    System.out.println("str   "+str);
             	if(!"".equals(str)){
@@ -155,7 +155,7 @@ public class HelloWorldController{
            			 Font f = new Font(Font.UNDERLINE);
            			Chunk c=new Chunk(st[i]);
                		 if(i%2==1){
-               			 c.setFont(FontFactory.getFont(FontFactory.TIMES,12,Font.UNDERLINE));
+               			 c.setFont(FontFactory.getFont(FontFactory.TIMES,11,Font.UNDERLINE));
                		 }
                		para.add(c);
            		 }
@@ -163,8 +163,8 @@ public class HelloWorldController{
                 // 设置首行缩进  
                 para.setFirstLineIndent(5f); 
                 // 设置段后距和段前距  
-                para.setSpacingAfter(5f); 
-                para.setSpacingBefore(5f); 
+                para.setSpacingAfter(-5f); 
+                para.setSpacingBefore(-5f); 
                 document.add(para);
             	}
             }
@@ -179,9 +179,9 @@ public class HelloWorldController{
             para2.setIndentationLeft(20);
             para3.setIndentationLeft(20);
 //          段后间距
-            para1.setSpacingBefore(10f);
-            para2.setSpacingBefore(10f);
-            para3.setSpacingBefore(10f);
+            para1.setSpacingBefore(5f);
+            para2.setSpacingBefore(5f);
+            para3.setSpacingBefore(5f);
             
             para1.setAlignment(3); 
             para2.setAlignment(3); 
