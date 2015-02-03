@@ -6,112 +6,114 @@
 	pageEncoding="utf-8"%>
 <%@ include file="./head.jsp"%>
 <%
-	String path = request.getContextPath();
-	String basePath = request.getScheme() + "://"
-			+ request.getServerName() + ":" + request.getServerPort()
-			+ path;
+    String path = request.getContextPath();
+			String basePath = request.getScheme() + "://"
+					+ request.getServerName() + ":" + request.getServerPort()
+					+ path;
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<title>合同生成界面</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-	<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script src="../js/stickup.min.js"></script>
-	<script src="../js/tableExport.js"></script>
-	<script src="../js/jquery.base64.js"></script>
-	<script src="../js/base64.js"></script>
-	<script src="../js/sprintf.js"></script>
-	<script src="../js/jspdf.js"></script>
-	<link href="../css/flat-ui.css" rel="stylesheet">
-	<link href="../css/main.css" rel="stylesheet">
-	<!-- 编辑栏置顶 -->
-	<style type="text/css">
-		.jumbotron {
-			margin-top: 2px;
-		}
-		.col-md-2{
-			margin-top: 40px;
-		}
-			
-		.dataeditzone {
-			margin-left: 0px;
-			width: 255px;
-			background-color: white;
-		}
-		
-		.btn-lg, .btn-group-lg>.btn {
-			margin: 8px;
-		}
-		
-		.editzone {
-			width: 1030px;
-			margin-top: 2px;
-			margin-bottom: 2px;
-			position: absoulte;
-			z-index: 5555
-		}
-		
-		.datazone p {
-			font-size: 14px;
-			width: 750px;
-			margin-right: 0px;
-			padding-right: 0px;
-		}
-		
-		.col-md-12 {
-			margin-bottom: 2px;
-		}
-		
-		.btn2 {
-			margin: 12px;
-			margin-right: 15px;
-			margin-top: 5px;
-			float: right;
-		}
-		
-		.btn-primary {
-			float: right;
-			margin-bottom: 12px;
-			width: 150px;
-		}
-		
-		.btn-default {
-			background-color: #1ABC9C;
-		}
-		
-		.refer1 {
-			margin-left: 15px;
-		}
-		
-		.bbtn {
-			color: #fff;
-			background-color: #1ABC9C;
-			width: 25px;
-			height: 25px;
-			border: 0px #ff0000 solid;
-			border-radius: 5px;
-		}
-		
-		.lawbtn {
-			color: #fff;
-			background-color: #637A90;
-			border: 0px #ff0000 solid;
-			border-radius: 5px;
-			margin-left: 665px;
-			width: 80px;
-			height: 30px;
-		}
-		
-		.data1 div {
-			margin-left: 8px;
-			margin-right: 8px;
-		}
-	</style>
+<title>合同生成界面</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet"
+	href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="../js/stickup.min.js"></script>
+<script src="../js/tableExport.js"></script>
+<script src="../js/jquery.base64.js"></script>
+<script src="../js/base64.js"></script>
+<script src="../js/sprintf.js"></script>
+<script src="../js/jspdf.js"></script>
+<link href="../css/flat-ui.css" rel="stylesheet">
+<link href="../css/main.css" rel="stylesheet">
+<!-- 编辑栏置顶 -->
+<style type="text/css">
+.jumbotron {
+	margin-top: 2px;
+}
 
-	<script type="text/javascript">
+.col-md-2 {
+	margin-top: 40px;
+}
+
+.dataeditzone {
+	margin-left: 0px;
+	width: 255px;
+	background-color: white;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+	margin: 8px;
+}
+
+.editzone {
+	width: 1030px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	position: absoulte;
+	z-index: 5555
+}
+
+.datazone p {
+	font-size: 14px;
+	width: 750px;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.col-md-12 {
+	margin-bottom: 2px;
+}
+
+.btn2 {
+	margin: 12px;
+	margin-right: 15px;
+	margin-top: 5px;
+	float: right;
+}
+
+.btn-primary {
+	float: right;
+	margin-bottom: 12px;
+	width: 150px;
+}
+
+.btn-default {
+	background-color: #1ABC9C;
+}
+
+.refer1 {
+	margin-left: 15px;
+}
+
+.bbtn {
+	color: #fff;
+	background-color: #1ABC9C;
+	width: 25px;
+	height: 25px;
+	border: 0px #ff0000 solid;
+	border-radius: 5px;
+}
+
+.lawbtn {
+	color: #fff;
+	background-color: #637A90;
+	border: 0px #ff0000 solid;
+	border-radius: 5px;
+	margin-left: 665px;
+	width: 80px;
+	height: 30px;
+}
+
+.data1 div {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+</style>
+
+<script type="text/javascript">
 				  jQuery(function($){ 
 					  $(document).ready(function() { 
 							  $("#editzone").stickUp(); 
@@ -123,8 +125,8 @@
 							  });
 					  }); 
 			  </script>
-	
-	<script type="text/javascript">
+
+<script type="text/javascript">
 	            function searchItem(){
 	        		var categoryids=0;
 	                $('#navList input[type=checkbox]:checked').each( function(){
@@ -249,9 +251,13 @@
 	</div>
 	<!--D区编辑editzone--置顶-->
 	<div class="editzone" id="editzone" style="background-color: #FFFFCC";>
-		<strong style="margin-left: 10px;">条款操作</strong> 
-		<a href="#" class="btn2" onclick="javascript:window.top.location.reload()"> <span class="glyphicon glyphicon-remove" style="color: rgb(0, 124, 162); font-size: 15px;"> 重置</a> 
-		<a href="#" id="btn2" class="btn2"><span class="glyphicon glyphicon-list" style="color: rgb(0, 124, 162); font-size: 15px;"> 重新选择</a>
+		<strong style="margin-left: 10px;">条款操作</strong> <a href="#"
+			class="btn2" onclick="javascript:window.top.location.reload()"> <span
+			class="glyphicon glyphicon-remove"
+			style="color: rgb(0, 124, 162); font-size: 15px;"> 重置</a> <a
+			href="#" id="btn2" class="btn2"><span
+			class="glyphicon glyphicon-list"
+			style="color: rgb(0, 124, 162); font-size: 15px;"> 重新选择</a>
 	</div>
 
 	<!-- 数据区域 -->
@@ -284,7 +290,9 @@
 							<li>
 								<button type="button" class="btn btn-lg btn-default"
 									onClick="toWord();">
-									<span class="glyphicon glyphicon-saved" style="color: rgb(255, 255, 255); font-size: 22px;"> Word</span>
+									<span class="glyphicon glyphicon-saved"
+										style="color: rgb(255, 255, 255); font-size: 22px;">
+										Word</span>
 								</button>
 							</li>
 						</ul>
@@ -302,7 +310,9 @@
 	</div>
 	<!--    页脚分割线     -->
 
-	<HR style="FILTER: progid:DXImageTransform.Microsoft.Glow(color=#987cb9, strength= 10)" width="100%" color=#987cb9 SIZE=1>
+	<HR
+		style="FILTER: progid:DXImageTransform.Microsoft.Glow(color=#987cb9, strength= 10)"
+		width="100%" color=#987cb9 SIZE=1>
 	<div class="thelast">
 		<strong>提示：</strong> 涉及相关财产，请注意保护个人隐私安全 XX认证123456
 	</div>

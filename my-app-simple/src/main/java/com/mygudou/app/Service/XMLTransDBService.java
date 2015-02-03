@@ -1,4 +1,4 @@
-package com.mygudou.app.service;
+package com.mygudou.app.Service;
 
 import java.util.List;
 
@@ -7,14 +7,16 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.mygudou.app.daoimp.ItemDAOImpl;
-import com.mygudou.app.daoimp.XMLDAOimpl;
-import com.mygudou.app.model.Category;
-import com.mygudou.app.model.Item;
-import com.mygudou.app.model.Law;
-import com.mygudou.app.model.Matter;
-import com.mygudou.app.rowmapper.MatterRowMapper;
+import com.mygudou.app.DAOImp.ItemDAOImpl;
+import com.mygudou.app.DAOImp.XMLDAOimpl;
+import com.mygudou.app.Model.Category;
+import com.mygudou.app.Model.Item;
+import com.mygudou.app.Model.Law;
+import com.mygudou.app.Model.Matter;
 
+/**
+ * xml-->DB
+ * */
 @Service("XMLTransDBService")
 @Transactional
 public class XMLTransDBService {
@@ -58,50 +60,5 @@ public class XMLTransDBService {
 		 * String categoryName = lst3.get(i); if (ItemDAO.isNotExist(itt)) {
 		 * ItemDAO.insertItem(itt, categoryName); } }
 		 */
-	}
-
-	// jsp获取Item\Category\Law
-	public List<Item> getList() {
-		return ItemDAO.getItems();
-	}
-
-	public List<Category> getCateogoryList(int lawid) {
-
-		return ItemDAO.getCategory(lawid);
-	}
-
-	public List<Law> getLawList() {
-
-		return ItemDAO.getLaws();
-
-	}
-
-	// 搜索传值
-	public List<Matter> getMattList(String title,int pageIndex,int pageSize) {
-		return ItemDAO.getMatt(title, pageIndex, pageSize);
-		}
-	public int getMattTotal(String title,int pageIndex,int pageSize) {
-	
-		return ItemDAO.getMattTotal(title, pageIndex, pageSize);
-	}
-//	public List<Matter> getMattAll(String title) {
-//		
-//		return ItemDAO.getMattAll(title);
-//	}
-	public List<Matter> getMattAll(int id) {
-		
-		return ItemDAO.getMattAll(id);
-	}
-
-	public Law getLaw(int lawid) {
-		return ItemDAO.getLaw(lawid);
-	}
-
-	public Item getItem(int lawid, int categoryid) {
-		return ItemDAO.getItem(lawid, categoryid);
-	}
-
-	public Category getCa(int lawid, int categoryid) {
-		return ItemDAO.getCa(lawid, categoryid);
 	}
 }
