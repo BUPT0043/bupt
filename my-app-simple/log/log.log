@@ -1,372 +1,326 @@
-2015-02-06 00:01:35 [ main ] Root WebApplicationContext: initialization started
-2015-02-06 00:01:35 [ main ] Refreshing Root WebApplicationContext: startup date [Fri Feb 06 00:01:35 CST 2015]; root of context hierarchy
-2015-02-06 00:01:35 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
-2015-02-06 00:01:35 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2015-02-06 00:01:36 [ main ] Root WebApplicationContext: initialization completed in 745 ms
-2015-02-06 00:01:36 [ main ] FrameworkServlet 'simple': initialization started
-2015-02-06 00:01:36 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Fri Feb 06 00:01:36 CST 2015]; parent: Root WebApplicationContext
-2015-02-06 00:01:36 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
-2015-02-06 00:01:36 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/firstshow] onto handler 'firstShowController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/firstshow.*] onto handler 'firstShowController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/firstshow/] onto handler 'firstShowController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/main] onto handler 'firstShowController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/main.*] onto handler 'firstShowController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/main/] onto handler 'firstShowController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/login] onto handler 'loginController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/login.*] onto handler 'loginController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/login/] onto handler 'loginController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/register] onto handler 'registerController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/register.*] onto handler 'registerController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/register/] onto handler 'registerController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/searchajax] onto handler 'searchController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/searchajax.*] onto handler 'searchController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/searchajax/] onto handler 'searchController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/searchresult] onto handler 'searchController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/searchresult.*] onto handler 'searchController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/searchresult/] onto handler 'searchController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/search] onto handler 'searchController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/search.*] onto handler 'searchController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/search/] onto handler 'searchController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/searchItem] onto handler 'searchItemController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/searchItem.*] onto handler 'searchItemController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/searchItem/] onto handler 'searchItemController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/toWord] onto handler 'toWordController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/toWord.*] onto handler 'toWordController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/toWord/] onto handler 'toWordController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/download] onto handler 'toWordController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/download.*] onto handler 'toWordController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/download/] onto handler 'toWordController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/userLogin] onto handler 'userLoginController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/userLogin.*] onto handler 'userLoginController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/show/userLogin/] onto handler 'userLoginController'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
-2015-02-06 00:01:36 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-2015-02-06 00:01:36 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
-2015-02-06 00:01:36 [ main ] FrameworkServlet 'simple': initialization completed in 350 ms
-2015-02-06 00:02:27 [ Timer-1 ] Closing WebApplicationContext for namespace 'simple-servlet': startup date [Fri Feb 06 00:01:36 CST 2015]; parent: Root WebApplicationContext
-2015-02-06 00:02:27 [ Timer-1 ] Closing Root WebApplicationContext: startup date [Fri Feb 06 00:01:35 CST 2015]; root of context hierarchy
-2015-02-06 00:02:27 [ Timer-1 ] Root WebApplicationContext: initialization started
-2015-02-06 00:02:27 [ Timer-1 ] Refreshing Root WebApplicationContext: startup date [Fri Feb 06 00:02:27 CST 2015]; root of context hierarchy
-2015-02-06 00:02:27 [ Timer-1 ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
-2015-02-06 00:02:27 [ Timer-1 ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2015-02-06 00:02:28 [ Timer-1 ] Root WebApplicationContext: initialization completed in 651 ms
-2015-02-06 00:02:28 [ Timer-1 ] FrameworkServlet 'simple': initialization started
-2015-02-06 00:02:28 [ Timer-1 ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Fri Feb 06 00:02:28 CST 2015]; parent: Root WebApplicationContext
-2015-02-06 00:02:28 [ Timer-1 ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
-2015-02-06 00:02:28 [ Timer-1 ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/firstshow] onto handler 'firstShowController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/firstshow.*] onto handler 'firstShowController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/firstshow/] onto handler 'firstShowController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/main] onto handler 'firstShowController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/main.*] onto handler 'firstShowController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/main/] onto handler 'firstShowController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/index] onto handler 'indexController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/index.*] onto handler 'indexController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/index/] onto handler 'indexController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/login] onto handler 'loginController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/login.*] onto handler 'loginController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/login/] onto handler 'loginController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/register] onto handler 'registerController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/register.*] onto handler 'registerController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/register/] onto handler 'registerController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/searchajax] onto handler 'searchController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/searchajax.*] onto handler 'searchController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/searchajax/] onto handler 'searchController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/searchresult] onto handler 'searchController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/searchresult.*] onto handler 'searchController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/searchresult/] onto handler 'searchController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/search] onto handler 'searchController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/search.*] onto handler 'searchController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/search/] onto handler 'searchController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/searchItem] onto handler 'searchItemController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/searchItem.*] onto handler 'searchItemController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/searchItem/] onto handler 'searchItemController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/toWord] onto handler 'toWordController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/toWord.*] onto handler 'toWordController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/toWord/] onto handler 'toWordController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/download] onto handler 'toWordController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/download.*] onto handler 'toWordController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/download/] onto handler 'toWordController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/userLogin] onto handler 'userLoginController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/userLogin.*] onto handler 'userLoginController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/show/userLogin/] onto handler 'userLoginController'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
-2015-02-06 00:02:28 [ Timer-1 ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-2015-02-06 00:02:28 [ Timer-1 ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
-2015-02-06 00:02:28 [ Timer-1 ] FrameworkServlet 'simple': initialization completed in 275 ms
-2015-02-06 00:03:09 [ main ] Root WebApplicationContext: initialization started
-2015-02-06 00:03:09 [ main ] Refreshing Root WebApplicationContext: startup date [Fri Feb 06 00:03:09 CST 2015]; root of context hierarchy
-2015-02-06 00:03:09 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
-2015-02-06 00:03:10 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2015-02-06 00:03:10 [ main ] Root WebApplicationContext: initialization completed in 891 ms
-2015-02-06 00:03:10 [ main ] FrameworkServlet 'simple': initialization started
-2015-02-06 00:03:10 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Fri Feb 06 00:03:10 CST 2015]; parent: Root WebApplicationContext
-2015-02-06 00:03:10 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
-2015-02-06 00:03:10 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/firstshow] onto handler 'firstShowController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/firstshow.*] onto handler 'firstShowController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/firstshow/] onto handler 'firstShowController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/main] onto handler 'firstShowController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/main.*] onto handler 'firstShowController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/main/] onto handler 'firstShowController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/login] onto handler 'loginController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/login.*] onto handler 'loginController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/login/] onto handler 'loginController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/register] onto handler 'registerController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/register.*] onto handler 'registerController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/register/] onto handler 'registerController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/searchajax] onto handler 'searchController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/searchajax.*] onto handler 'searchController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/searchajax/] onto handler 'searchController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/searchresult] onto handler 'searchController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/searchresult.*] onto handler 'searchController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/searchresult/] onto handler 'searchController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/search] onto handler 'searchController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/search.*] onto handler 'searchController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/search/] onto handler 'searchController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/searchItem] onto handler 'searchItemController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/searchItem.*] onto handler 'searchItemController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/searchItem/] onto handler 'searchItemController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/toWord] onto handler 'toWordController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/toWord.*] onto handler 'toWordController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/toWord/] onto handler 'toWordController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/download] onto handler 'toWordController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/download.*] onto handler 'toWordController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/download/] onto handler 'toWordController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/userLogin] onto handler 'userLoginController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/userLogin.*] onto handler 'userLoginController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/show/userLogin/] onto handler 'userLoginController'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
-2015-02-06 00:03:10 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-2015-02-06 00:03:10 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
-2015-02-06 00:03:10 [ main ] FrameworkServlet 'simple': initialization completed in 480 ms
-2015-02-06 00:03:34 [ btpool0-0 ] Request method 'POST' not supported
-2015-02-06 00:04:39 [ btpool0-0 ] Request method 'POST' not supported
-2015-02-06 00:05:11 [ main ] Root WebApplicationContext: initialization started
-2015-02-06 00:05:11 [ main ] Refreshing Root WebApplicationContext: startup date [Fri Feb 06 00:05:11 CST 2015]; root of context hierarchy
-2015-02-06 00:05:11 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
-2015-02-06 00:05:12 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2015-02-06 00:05:12 [ main ] Root WebApplicationContext: initialization completed in 719 ms
-2015-02-06 00:05:12 [ main ] FrameworkServlet 'simple': initialization started
-2015-02-06 00:05:12 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Fri Feb 06 00:05:12 CST 2015]; parent: Root WebApplicationContext
-2015-02-06 00:05:12 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
-2015-02-06 00:05:12 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/firstshow] onto handler 'firstShowController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/firstshow.*] onto handler 'firstShowController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/firstshow/] onto handler 'firstShowController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/main] onto handler 'firstShowController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/main.*] onto handler 'firstShowController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/main/] onto handler 'firstShowController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/login] onto handler 'loginController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/login.*] onto handler 'loginController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/login/] onto handler 'loginController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/register] onto handler 'registerController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/register.*] onto handler 'registerController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/register/] onto handler 'registerController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/searchajax] onto handler 'searchController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/searchajax.*] onto handler 'searchController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/searchajax/] onto handler 'searchController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/searchresult] onto handler 'searchController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/searchresult.*] onto handler 'searchController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/searchresult/] onto handler 'searchController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/search] onto handler 'searchController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/search.*] onto handler 'searchController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/search/] onto handler 'searchController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/searchItem] onto handler 'searchItemController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/searchItem.*] onto handler 'searchItemController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/searchItem/] onto handler 'searchItemController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/toWord] onto handler 'toWordController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/toWord.*] onto handler 'toWordController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/toWord/] onto handler 'toWordController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/download] onto handler 'toWordController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/download.*] onto handler 'toWordController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/download/] onto handler 'toWordController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/userLogin] onto handler 'userLoginController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/userLogin.*] onto handler 'userLoginController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/show/userLogin/] onto handler 'userLoginController'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
-2015-02-06 00:05:12 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-2015-02-06 00:05:12 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
-2015-02-06 00:05:12 [ main ] FrameworkServlet 'simple': initialization completed in 341 ms
-2015-02-06 00:05:32 [ btpool0-0 ] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
-2015-02-06 00:05:32 [ btpool0-0 ] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
-2015-02-06 00:07:23 [ main ] Root WebApplicationContext: initialization started
-2015-02-06 00:07:23 [ main ] Refreshing Root WebApplicationContext: startup date [Fri Feb 06 00:07:23 CST 2015]; root of context hierarchy
-2015-02-06 00:07:23 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
-2015-02-06 00:07:24 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2015-02-06 00:07:24 [ main ] Root WebApplicationContext: initialization completed in 792 ms
-2015-02-06 00:07:24 [ main ] FrameworkServlet 'simple': initialization started
-2015-02-06 00:07:24 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Fri Feb 06 00:07:24 CST 2015]; parent: Root WebApplicationContext
-2015-02-06 00:07:24 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
-2015-02-06 00:07:24 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/firstshow] onto handler 'firstShowController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/firstshow.*] onto handler 'firstShowController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/firstshow/] onto handler 'firstShowController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/main] onto handler 'firstShowController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/main.*] onto handler 'firstShowController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/main/] onto handler 'firstShowController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/login] onto handler 'loginController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/login.*] onto handler 'loginController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/login/] onto handler 'loginController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/register] onto handler 'registerController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/register.*] onto handler 'registerController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/register/] onto handler 'registerController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/searchajax] onto handler 'searchController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/searchajax.*] onto handler 'searchController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/searchajax/] onto handler 'searchController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/searchresult] onto handler 'searchController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/searchresult.*] onto handler 'searchController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/searchresult/] onto handler 'searchController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/search] onto handler 'searchController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/search.*] onto handler 'searchController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/search/] onto handler 'searchController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/searchItem] onto handler 'searchItemController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/searchItem.*] onto handler 'searchItemController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/searchItem/] onto handler 'searchItemController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/toWord] onto handler 'toWordController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/toWord.*] onto handler 'toWordController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/toWord/] onto handler 'toWordController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/download] onto handler 'toWordController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/download.*] onto handler 'toWordController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/download/] onto handler 'toWordController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/userLogin] onto handler 'userLoginController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/userLogin.*] onto handler 'userLoginController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/show/userLogin/] onto handler 'userLoginController'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
-2015-02-06 00:07:24 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-2015-02-06 00:07:24 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
-2015-02-06 00:07:24 [ main ] FrameworkServlet 'simple': initialization completed in 365 ms
-2015-02-06 00:07:41 [ btpool0-1 ] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
-2015-02-06 00:07:41 [ btpool0-1 ] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
-2015-02-06 00:24:02 [ main ] Root WebApplicationContext: initialization started
-2015-02-06 00:24:02 [ main ] Refreshing Root WebApplicationContext: startup date [Fri Feb 06 00:24:02 CST 2015]; root of context hierarchy
-2015-02-06 00:24:02 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
-2015-02-06 00:24:03 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2015-02-06 00:24:03 [ main ] Root WebApplicationContext: initialization completed in 784 ms
-2015-02-06 00:24:03 [ main ] FrameworkServlet 'simple': initialization started
-2015-02-06 00:24:03 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Fri Feb 06 00:24:03 CST 2015]; parent: Root WebApplicationContext
-2015-02-06 00:24:03 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
-2015-02-06 00:24:03 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/firstshow] onto handler 'firstShowController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/firstshow.*] onto handler 'firstShowController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/firstshow/] onto handler 'firstShowController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/main] onto handler 'firstShowController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/main.*] onto handler 'firstShowController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/main/] onto handler 'firstShowController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/login] onto handler 'loginController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/login.*] onto handler 'loginController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/login/] onto handler 'loginController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/register] onto handler 'registerController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/register.*] onto handler 'registerController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/register/] onto handler 'registerController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/searchajax] onto handler 'searchController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/searchajax.*] onto handler 'searchController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/searchajax/] onto handler 'searchController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/searchresult] onto handler 'searchController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/searchresult.*] onto handler 'searchController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/searchresult/] onto handler 'searchController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/search] onto handler 'searchController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/search.*] onto handler 'searchController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/search/] onto handler 'searchController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/searchItem] onto handler 'searchItemController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/searchItem.*] onto handler 'searchItemController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/searchItem/] onto handler 'searchItemController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/toWord] onto handler 'toWordController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/toWord.*] onto handler 'toWordController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/toWord/] onto handler 'toWordController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/download] onto handler 'toWordController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/download.*] onto handler 'toWordController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/download/] onto handler 'toWordController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/userLogin] onto handler 'userLoginController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/userLogin.*] onto handler 'userLoginController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/show/userLogin/] onto handler 'userLoginController'
-2015-02-06 00:24:03 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-2015-02-06 00:24:04 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
-2015-02-06 00:24:04 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
-2015-02-06 00:24:04 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
-2015-02-06 00:24:04 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-2015-02-06 00:24:04 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
-2015-02-06 00:24:04 [ main ] FrameworkServlet 'simple': initialization completed in 698 ms
-2015-02-06 11:58:58 [ main ] Root WebApplicationContext: initialization started
-2015-02-06 11:58:58 [ main ] Refreshing Root WebApplicationContext: startup date [Fri Feb 06 11:58:58 CST 2015]; root of context hierarchy
-2015-02-06 11:58:58 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
-2015-02-06 11:58:59 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2015-02-06 11:59:01 [ main ] Root WebApplicationContext: initialization completed in 3670 ms
-2015-02-06 11:59:03 [ main ] FrameworkServlet 'simple': initialization started
-2015-02-06 11:59:03 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Fri Feb 06 11:59:03 CST 2015]; parent: Root WebApplicationContext
-2015-02-06 11:59:03 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
-2015-02-06 11:59:05 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/firstshow] onto handler 'firstShowController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/firstshow.*] onto handler 'firstShowController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/firstshow/] onto handler 'firstShowController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/main] onto handler 'firstShowController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/main.*] onto handler 'firstShowController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/main/] onto handler 'firstShowController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/login] onto handler 'loginController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/login.*] onto handler 'loginController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/login/] onto handler 'loginController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/register] onto handler 'registerController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/register.*] onto handler 'registerController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/register/] onto handler 'registerController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/searchajax] onto handler 'searchController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/searchajax.*] onto handler 'searchController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/searchajax/] onto handler 'searchController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/searchresult] onto handler 'searchController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/searchresult.*] onto handler 'searchController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/searchresult/] onto handler 'searchController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/search] onto handler 'searchController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/search.*] onto handler 'searchController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/search/] onto handler 'searchController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/searchItem] onto handler 'searchItemController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/searchItem.*] onto handler 'searchItemController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/searchItem/] onto handler 'searchItemController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/toWord] onto handler 'toWordController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/toWord.*] onto handler 'toWordController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/toWord/] onto handler 'toWordController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/download] onto handler 'toWordController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/download.*] onto handler 'toWordController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/download/] onto handler 'toWordController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/userLogin] onto handler 'userLoginController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/userLogin.*] onto handler 'userLoginController'
-2015-02-06 11:59:05 [ main ] Mapped URL path [/show/userLogin/] onto handler 'userLoginController'
-2015-02-06 11:59:06 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-2015-02-06 11:59:06 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
-2015-02-06 11:59:06 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
-2015-02-06 11:59:06 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
-2015-02-06 11:59:06 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-2015-02-06 11:59:06 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
-2015-02-06 11:59:07 [ main ] FrameworkServlet 'simple': initialization completed in 3873 ms
+2015-02-07 00:03:24 [ Timer-1 ] Closing WebApplicationContext for namespace 'simple-servlet': startup date [Fri Feb 06 23:53:05 CST 2015]; parent: Root WebApplicationContext
+2015-02-07 00:03:24 [ Timer-1 ] Closing Root WebApplicationContext: startup date [Fri Feb 06 23:53:04 CST 2015]; root of context hierarchy
+2015-02-07 00:03:24 [ Timer-1 ] Root WebApplicationContext: initialization started
+2015-02-07 00:03:24 [ Timer-1 ] Refreshing Root WebApplicationContext: startup date [Sat Feb 07 00:03:24 CST 2015]; root of context hierarchy
+2015-02-07 00:03:24 [ Timer-1 ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-02-07 00:03:25 [ Timer-1 ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-07 00:03:25 [ Timer-1 ] Root WebApplicationContext: initialization completed in 794 ms
+2015-02-07 00:03:25 [ Timer-1 ] FrameworkServlet 'simple': initialization started
+2015-02-07 00:03:25 [ Timer-1 ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Sat Feb 07 00:03:25 CST 2015]; parent: Root WebApplicationContext
+2015-02-07 00:03:25 [ Timer-1 ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
+2015-02-07 00:03:25 [ Timer-1 ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/firstshow] onto handler 'firstShowController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/firstshow.*] onto handler 'firstShowController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/firstshow/] onto handler 'firstShowController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/main] onto handler 'firstShowController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/main.*] onto handler 'firstShowController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/main/] onto handler 'firstShowController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/index] onto handler 'indexController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/index.*] onto handler 'indexController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/index/] onto handler 'indexController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/login] onto handler 'loginController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/login.*] onto handler 'loginController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/login/] onto handler 'loginController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/register] onto handler 'registerController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/register.*] onto handler 'registerController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/register/] onto handler 'registerController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/searchajax] onto handler 'searchController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/searchajax.*] onto handler 'searchController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/searchajax/] onto handler 'searchController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/searchresult] onto handler 'searchController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/searchresult.*] onto handler 'searchController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/searchresult/] onto handler 'searchController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/search] onto handler 'searchController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/search.*] onto handler 'searchController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/search/] onto handler 'searchController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/searchItem] onto handler 'searchItemController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/searchItem.*] onto handler 'searchItemController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/searchItem/] onto handler 'searchItemController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/toWord] onto handler 'toWordController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/toWord.*] onto handler 'toWordController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/toWord/] onto handler 'toWordController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/download] onto handler 'toWordController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/download.*] onto handler 'toWordController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/download/] onto handler 'toWordController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/userLogin] onto handler 'userLoginController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/userLogin.*] onto handler 'userLoginController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/show/userLogin/] onto handler 'userLoginController'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2015-02-07 00:03:25 [ Timer-1 ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-02-07 00:03:25 [ Timer-1 ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-02-07 00:03:25 [ Timer-1 ] FrameworkServlet 'simple': initialization completed in 261 ms
+2015-02-07 00:03:37 [ btpool0-3 ] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2015-02-07 00:03:37 [ btpool0-3 ] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2015-02-07 00:04:14 [ Timer-1 ] Closing WebApplicationContext for namespace 'simple-servlet': startup date [Sat Feb 07 00:03:25 CST 2015]; parent: Root WebApplicationContext
+2015-02-07 00:04:14 [ Timer-1 ] Closing Root WebApplicationContext: startup date [Sat Feb 07 00:03:24 CST 2015]; root of context hierarchy
+2015-02-07 00:04:14 [ Timer-1 ] Root WebApplicationContext: initialization started
+2015-02-07 00:04:14 [ Timer-1 ] Refreshing Root WebApplicationContext: startup date [Sat Feb 07 00:04:14 CST 2015]; root of context hierarchy
+2015-02-07 00:04:14 [ Timer-1 ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-02-07 00:04:14 [ Timer-1 ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-07 00:04:15 [ Timer-1 ] Root WebApplicationContext: initialization completed in 644 ms
+2015-02-07 00:04:15 [ Timer-1 ] FrameworkServlet 'simple': initialization started
+2015-02-07 00:04:15 [ Timer-1 ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Sat Feb 07 00:04:15 CST 2015]; parent: Root WebApplicationContext
+2015-02-07 00:04:15 [ Timer-1 ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
+2015-02-07 00:04:15 [ Timer-1 ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/firstshow] onto handler 'firstShowController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/firstshow.*] onto handler 'firstShowController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/firstshow/] onto handler 'firstShowController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/main] onto handler 'firstShowController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/main.*] onto handler 'firstShowController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/main/] onto handler 'firstShowController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/index] onto handler 'indexController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/index.*] onto handler 'indexController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/index/] onto handler 'indexController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/login] onto handler 'loginController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/login.*] onto handler 'loginController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/login/] onto handler 'loginController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/register] onto handler 'registerController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/register.*] onto handler 'registerController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/register/] onto handler 'registerController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/searchajax] onto handler 'searchController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/searchajax.*] onto handler 'searchController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/searchajax/] onto handler 'searchController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/searchresult] onto handler 'searchController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/searchresult.*] onto handler 'searchController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/searchresult/] onto handler 'searchController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/search] onto handler 'searchController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/search.*] onto handler 'searchController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/search/] onto handler 'searchController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/searchItem] onto handler 'searchItemController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/searchItem.*] onto handler 'searchItemController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/searchItem/] onto handler 'searchItemController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/toWord] onto handler 'toWordController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/toWord.*] onto handler 'toWordController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/toWord/] onto handler 'toWordController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/download] onto handler 'toWordController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/download.*] onto handler 'toWordController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/download/] onto handler 'toWordController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/userLogin] onto handler 'userLoginController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/userLogin.*] onto handler 'userLoginController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/show/userLogin/] onto handler 'userLoginController'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2015-02-07 00:04:15 [ Timer-1 ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-02-07 00:04:15 [ Timer-1 ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-02-07 00:04:15 [ Timer-1 ] FrameworkServlet 'simple': initialization completed in 259 ms
+2015-02-07 00:04:40 [ btpool0-3 ] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2015-02-07 00:04:40 [ btpool0-3 ] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2015-02-07 00:05:14 [ Timer-1 ] Closing WebApplicationContext for namespace 'simple-servlet': startup date [Sat Feb 07 00:04:15 CST 2015]; parent: Root WebApplicationContext
+2015-02-07 00:05:14 [ Timer-1 ] Closing Root WebApplicationContext: startup date [Sat Feb 07 00:04:14 CST 2015]; root of context hierarchy
+2015-02-07 00:05:14 [ Timer-1 ] Root WebApplicationContext: initialization started
+2015-02-07 00:05:14 [ Timer-1 ] Refreshing Root WebApplicationContext: startup date [Sat Feb 07 00:05:14 CST 2015]; root of context hierarchy
+2015-02-07 00:05:14 [ Timer-1 ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-02-07 00:05:15 [ Timer-1 ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-07 00:05:15 [ Timer-1 ] Root WebApplicationContext: initialization completed in 714 ms
+2015-02-07 00:05:15 [ Timer-1 ] FrameworkServlet 'simple': initialization started
+2015-02-07 00:05:15 [ Timer-1 ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Sat Feb 07 00:05:15 CST 2015]; parent: Root WebApplicationContext
+2015-02-07 00:05:15 [ Timer-1 ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
+2015-02-07 00:05:15 [ Timer-1 ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/firstshow] onto handler 'firstShowController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/firstshow.*] onto handler 'firstShowController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/firstshow/] onto handler 'firstShowController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/main] onto handler 'firstShowController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/main.*] onto handler 'firstShowController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/main/] onto handler 'firstShowController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/index] onto handler 'indexController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/index.*] onto handler 'indexController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/index/] onto handler 'indexController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/login] onto handler 'loginController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/login.*] onto handler 'loginController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/login/] onto handler 'loginController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/register] onto handler 'registerController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/register.*] onto handler 'registerController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/register/] onto handler 'registerController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/searchajax] onto handler 'searchController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/searchajax.*] onto handler 'searchController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/searchajax/] onto handler 'searchController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/searchresult] onto handler 'searchController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/searchresult.*] onto handler 'searchController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/searchresult/] onto handler 'searchController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/search] onto handler 'searchController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/search.*] onto handler 'searchController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/search/] onto handler 'searchController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/searchItem] onto handler 'searchItemController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/searchItem.*] onto handler 'searchItemController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/searchItem/] onto handler 'searchItemController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/toWord] onto handler 'toWordController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/toWord.*] onto handler 'toWordController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/toWord/] onto handler 'toWordController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/download] onto handler 'toWordController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/download.*] onto handler 'toWordController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/download/] onto handler 'toWordController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/userLogin] onto handler 'userLoginController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/userLogin.*] onto handler 'userLoginController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/show/userLogin/] onto handler 'userLoginController'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2015-02-07 00:05:15 [ Timer-1 ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-02-07 00:05:15 [ Timer-1 ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-02-07 00:05:15 [ Timer-1 ] FrameworkServlet 'simple': initialization completed in 258 ms
+2015-02-07 00:05:24 [ Timer-1 ] Closing WebApplicationContext for namespace 'simple-servlet': startup date [Sat Feb 07 00:05:15 CST 2015]; parent: Root WebApplicationContext
+2015-02-07 00:05:24 [ Timer-1 ] Closing Root WebApplicationContext: startup date [Sat Feb 07 00:05:14 CST 2015]; root of context hierarchy
+2015-02-07 00:05:24 [ Timer-1 ] Root WebApplicationContext: initialization started
+2015-02-07 00:05:24 [ Timer-1 ] Refreshing Root WebApplicationContext: startup date [Sat Feb 07 00:05:24 CST 2015]; root of context hierarchy
+2015-02-07 00:05:24 [ Timer-1 ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-02-07 00:05:24 [ Timer-1 ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-07 00:05:25 [ Timer-1 ] Root WebApplicationContext: initialization completed in 683 ms
+2015-02-07 00:05:25 [ Timer-1 ] FrameworkServlet 'simple': initialization started
+2015-02-07 00:05:25 [ Timer-1 ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Sat Feb 07 00:05:25 CST 2015]; parent: Root WebApplicationContext
+2015-02-07 00:05:25 [ Timer-1 ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
+2015-02-07 00:05:25 [ Timer-1 ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/firstshow] onto handler 'firstShowController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/firstshow.*] onto handler 'firstShowController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/firstshow/] onto handler 'firstShowController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/main] onto handler 'firstShowController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/main.*] onto handler 'firstShowController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/main/] onto handler 'firstShowController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/index] onto handler 'indexController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/index.*] onto handler 'indexController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/index/] onto handler 'indexController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/login] onto handler 'loginController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/login.*] onto handler 'loginController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/login/] onto handler 'loginController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/register] onto handler 'registerController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/register.*] onto handler 'registerController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/register/] onto handler 'registerController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/searchajax] onto handler 'searchController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/searchajax.*] onto handler 'searchController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/searchajax/] onto handler 'searchController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/searchresult] onto handler 'searchController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/searchresult.*] onto handler 'searchController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/searchresult/] onto handler 'searchController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/search] onto handler 'searchController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/search.*] onto handler 'searchController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/search/] onto handler 'searchController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/searchItem] onto handler 'searchItemController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/searchItem.*] onto handler 'searchItemController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/searchItem/] onto handler 'searchItemController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/toWord] onto handler 'toWordController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/toWord.*] onto handler 'toWordController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/toWord/] onto handler 'toWordController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/download] onto handler 'toWordController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/download.*] onto handler 'toWordController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/download/] onto handler 'toWordController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/userLogin] onto handler 'userLoginController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/userLogin.*] onto handler 'userLoginController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/show/userLogin/] onto handler 'userLoginController'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2015-02-07 00:05:25 [ Timer-1 ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-02-07 00:05:25 [ Timer-1 ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-02-07 00:05:25 [ Timer-1 ] FrameworkServlet 'simple': initialization completed in 257 ms
+2015-02-07 00:05:44 [ Timer-1 ] Closing WebApplicationContext for namespace 'simple-servlet': startup date [Sat Feb 07 00:05:25 CST 2015]; parent: Root WebApplicationContext
+2015-02-07 00:05:44 [ Timer-1 ] Closing Root WebApplicationContext: startup date [Sat Feb 07 00:05:24 CST 2015]; root of context hierarchy
+2015-02-07 00:05:44 [ Timer-1 ] Root WebApplicationContext: initialization started
+2015-02-07 00:05:44 [ Timer-1 ] Refreshing Root WebApplicationContext: startup date [Sat Feb 07 00:05:44 CST 2015]; root of context hierarchy
+2015-02-07 00:05:44 [ Timer-1 ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-02-07 00:05:44 [ Timer-1 ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-07 00:05:44 [ Timer-1 ] Root WebApplicationContext: initialization completed in 474 ms
+2015-02-07 00:05:44 [ Timer-1 ] FrameworkServlet 'simple': initialization started
+2015-02-07 00:05:44 [ Timer-1 ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Sat Feb 07 00:05:44 CST 2015]; parent: Root WebApplicationContext
+2015-02-07 00:05:44 [ Timer-1 ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
+2015-02-07 00:05:45 [ Timer-1 ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/firstshow] onto handler 'firstShowController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/firstshow.*] onto handler 'firstShowController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/firstshow/] onto handler 'firstShowController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/main] onto handler 'firstShowController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/main.*] onto handler 'firstShowController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/main/] onto handler 'firstShowController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/index] onto handler 'indexController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/index.*] onto handler 'indexController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/index/] onto handler 'indexController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/login] onto handler 'loginController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/login.*] onto handler 'loginController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/login/] onto handler 'loginController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/register] onto handler 'registerController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/register.*] onto handler 'registerController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/register/] onto handler 'registerController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/searchajax] onto handler 'searchController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/searchajax.*] onto handler 'searchController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/searchajax/] onto handler 'searchController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/searchresult] onto handler 'searchController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/searchresult.*] onto handler 'searchController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/searchresult/] onto handler 'searchController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/search] onto handler 'searchController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/search.*] onto handler 'searchController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/search/] onto handler 'searchController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/searchItem] onto handler 'searchItemController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/searchItem.*] onto handler 'searchItemController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/searchItem/] onto handler 'searchItemController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/toWord] onto handler 'toWordController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/toWord.*] onto handler 'toWordController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/toWord/] onto handler 'toWordController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/download] onto handler 'toWordController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/download.*] onto handler 'toWordController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/download/] onto handler 'toWordController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/userLogin] onto handler 'userLoginController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/userLogin.*] onto handler 'userLoginController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/show/userLogin/] onto handler 'userLoginController'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2015-02-07 00:05:45 [ Timer-1 ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-02-07 00:05:45 [ Timer-1 ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-02-07 00:05:45 [ Timer-1 ] FrameworkServlet 'simple': initialization completed in 655 ms
+2015-02-07 00:29:48 [ main ] Root WebApplicationContext: initialization started
+2015-02-07 00:29:48 [ main ] Refreshing Root WebApplicationContext: startup date [Sat Feb 07 00:29:48 CST 2015]; root of context hierarchy
+2015-02-07 00:29:48 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-02-07 00:29:49 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-07 00:29:50 [ main ] Root WebApplicationContext: initialization completed in 1806 ms
+2015-02-07 00:29:50 [ main ] FrameworkServlet 'simple': initialization started
+2015-02-07 00:29:50 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Sat Feb 07 00:29:50 CST 2015]; parent: Root WebApplicationContext
+2015-02-07 00:29:50 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
+2015-02-07 00:29:50 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/firstshow] onto handler 'firstShowController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/firstshow.*] onto handler 'firstShowController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/firstshow/] onto handler 'firstShowController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/main] onto handler 'firstShowController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/main.*] onto handler 'firstShowController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/main/] onto handler 'firstShowController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/login] onto handler 'loginController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/login.*] onto handler 'loginController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/login/] onto handler 'loginController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/register] onto handler 'registerController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/register.*] onto handler 'registerController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/register/] onto handler 'registerController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/searchajax] onto handler 'searchController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/searchajax.*] onto handler 'searchController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/searchajax/] onto handler 'searchController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/searchresult] onto handler 'searchController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/searchresult.*] onto handler 'searchController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/searchresult/] onto handler 'searchController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/search] onto handler 'searchController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/search.*] onto handler 'searchController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/search/] onto handler 'searchController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/searchItem] onto handler 'searchItemController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/searchItem.*] onto handler 'searchItemController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/searchItem/] onto handler 'searchItemController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/toWord] onto handler 'toWordController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/toWord.*] onto handler 'toWordController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/toWord/] onto handler 'toWordController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/download] onto handler 'toWordController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/download.*] onto handler 'toWordController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/download/] onto handler 'toWordController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/userLogin] onto handler 'userLoginController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/userLogin.*] onto handler 'userLoginController'
+2015-02-07 00:29:50 [ main ] Mapped URL path [/show/userLogin/] onto handler 'userLoginController'
+2015-02-07 00:29:51 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-02-07 00:29:51 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2015-02-07 00:29:51 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2015-02-07 00:29:51 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2015-02-07 00:29:51 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-02-07 00:29:51 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-02-07 00:29:51 [ main ] FrameworkServlet 'simple': initialization completed in 760 ms

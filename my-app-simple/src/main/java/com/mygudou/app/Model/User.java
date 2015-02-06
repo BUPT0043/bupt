@@ -7,7 +7,7 @@ public class User {
 
     private int id;
 
-    private String userId;
+    private String username;
 
     private String role;
 
@@ -17,12 +17,14 @@ public class User {
 
     private String email;
 
-    public String getUserId() {
-        return this.userId;
+  
+
+    public String getUsername() {
+        return this.username;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getRole() {

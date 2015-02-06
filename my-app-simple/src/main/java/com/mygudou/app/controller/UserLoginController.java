@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import scala.Int;
+
 import com.mygudou.app.Model.User;
 import com.mygudou.app.Service.UserLoginService;
 
@@ -28,19 +30,19 @@ public class UserLoginController {
             throws Exception {
         ModelAndView mv = new ModelAndView();
 
-        String userId = request.getParameter("userid");
-        String role = request.getParameter("userrole");
+        String username = request.getParameter("username");
+        String role = request.getParameter("optionsRadios").toString();
         String pwd = request.getParameter("pwd");
         String email = request.getParameter("email");
-        String sex = request.getParameter("sex");
-        
+        String sex = request.getParameter("optionsRadiosinline").toString();
+
         User user = new User();
-        user.setUserId(userId);
+        user.setUsername(username);
         user.setRole(role);
         user.setPwd(pwd);
         user.setEmail(email);
         user.setSex(sex);
-        
+
         UserLoginService.insertUser(user);
         mv.setViewName("userLogin");
         return mv;

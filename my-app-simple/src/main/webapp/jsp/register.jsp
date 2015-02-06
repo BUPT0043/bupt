@@ -6,9 +6,9 @@
 	pageEncoding="utf-8"%>
 <%
     String path = request.getContextPath();
-    String basePath = request.getScheme() + "://"
-            + request.getServerName() + ":" + request.getServerPort()
-            + path;
+			String basePath = request.getScheme() + "://"
+					+ request.getServerName() + ":" + request.getServerPort()
+					+ path;
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -68,6 +68,28 @@
 	font-size: 13px;
 	margin-left: 148px;
 }
+
+#spwd {
+	font-weight: normal;
+	font-size: 13px;
+	margin-left: 148px;
+}
+
+#srpwd {
+	font-weight: normal;
+	font-size: 13px;
+	margin-left: -124px;
+}
+
+.frred {
+	font-weight: normal;
+	font-size: 13px;
+	margin-left: 148px;
+}
+
+.radio label, .checkbox label {
+	padding-left: 35px;
+}
 </style>
 </head>
 <body class="Context" id="body1" background="../images/1.jpg">
@@ -88,62 +110,55 @@
 		<div class="form1">
 			<form class="form-horizontal" role="userLogin" method="post"
 				action="<%=basePath%>/show/userLogin">
-					<div class="form-group">
+				<div class="form-group">
 					<label class="col-sm-2 control-label"> 注册角色： </label>
 					<div class="radio">
-					<label> <input type="radio" name="optionsRadios"
-						id="optionsRadios1" value="option1" checked> 律师
-					</label>
+						<label> <input type="radio" name="optionsRadios" value="1"
+							checked> 律师
+						</label> <label> <input type="radio" name="optionsRadios"
+							value="0"> 用户
+						</label>
+					</div>
 				</div>
-				<div class="radio">
-					<label> <input type="radio" name="optionsRadios"
-						id="optionsRadios2" value="option2"> 用户
-					</label>
-				</div>
-				</div> 
-				
+
 				<div class="form-group">
 					<label class="col-sm-2 control-label">用户名：</label>
 					<div class="col-sm-3">
 						<input class="form-control" id="focusedInput" type="text"
-							name="userid">
+							name="username" placeholder="必填">
 					</div>
 					<label class="control-label" id="fname">请输入6-8位用户名，含字母，数字，下划线</label>
 				</div>
 				<div class="form-group">
 					<label class="col-sm-2 control-label">密码：</label>
 					<div class="col-sm-3">
-						<input class="form-control" id="focusedInput" type="text"
-							name="pwd">
+						<input class="form-control" id="pwd" type="password" name="pwd"
+							placeholder="必填" onblur="checkPwd();">
 					</div>
+					<label class="control-label" id="spwd">请输入6位密码，含有字母和数字</label>
 				</div>
+
 				<div class="form-group">
 					<label class="col-sm-2 control-label">再次确认密码：</label>
 					<div class="col-sm-3">
-						<input class="form-control" id="focusedInput" type="text">
+						<input class="form-control" id="rpwd" type="password"
+							placeholder="必填" onblur="recheckPwd();">
 					</div>
+					<span id="srpwd" class="frbule"></span>
 				</div>
-				<!--<div class="form-group">
-			 		<label class="col-sm-2 control-label"> 性别： </label>
-					<div class="col-sm-3">
-						<select id="focusedInput" class="form-control" name="userrole">
-							<option value="1">男</option>
-							<option value="0">女</option>
-						</select>
-					</div>
-				</div> -->
 				<div class="form-group">
-					<label class="col-sm-2 control-label">性别：</label>
-					<div class="col-sm-3">
-						<input class="form-control" id="focusedInput" type="text"
-							name="sex">
-					</div>
+					<label class="col-sm-2 control-label"> 性别： </label> <label
+						class="checkbox-inline"> <input type="radio"
+						name="optionsRadiosinline" value="1" checked> 男
+					</label> <label class="checkbox-inline"> <input type="radio"
+						name="optionsRadiosinline" value="0"> 女
+					</label>
 				</div>
 				<div class="form-group">
 					<label class="col-sm-2 control-label">邮箱：</label>
 					<div class="col-sm-3">
-						<input class="form-control" id="focusedInput" type="text"
-							name="email">
+						<input class="form-control" id="email" type="text" name="email"
+							onblur="checkEmail();"> <span id="semail" class="frbule"></span>
 					</div>
 				</div>
 				<div class="btn-group btn-group-lg">
@@ -154,6 +169,54 @@
 		</div>
 
 	</div>
+	<script type="text/javascript">
+		function checkPwd() {
+			var fpwd = document.getElementById("pwd");
+			var ftpwd = document.getElementById("spwd");
+			if (fpwd.value == "" || fpwd.value.length > 6
+					|| fpwd.value.length < 6) {
+				ftpwd.className = "frred";
+				ftpwd.innerHTML = "× 请输入6位用户密码！";
+			} else {
+				ftpwd.className = "fgren";
+				ftpwd.innerHTML = "                                     √ 密码可用！"
+			}
+		}
+		function recheckPwd() {
+			var fpwd = document.getElementById("pwd");
+			var frpwd = document.getElementById("rpwd");
+			var ftrpwd = document.getElementById("srpwd");
+			if (frpwd.value == "") {
+				ftrpwd.className = "frred";
+				ftrpwd.innerHTML = "× 请输入您的重复密码！"
+			} else {
+				if (frpwd.value != fpwd.value) {
+					ftrpwd.className = "frred";
+					ftrpwd.innerHTML = "× 俩次密码输入不一致，请重新输入！";
+				} else {
+					ftrpwd.className = "fgren";
+					ftrpwd.innerHTML = " √ 密码输入正确"
+				}
+			}
+		}
+		function checkEmail() {
+			var regemail = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*(;\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)*$/;
+			var femail = document.getElementById("email");
+			var ftemail = document.getElementById("semail");
+			if (femail.value == "") {
+				ftemail.className = "frred";
+				ftemail.innerHTML = "× 电子邮箱不能为空！";
+			} else {
+				if (femail.value.match(regemail)) {
+					ftemail.className = "fgren";
+					ftemail.innerHTML = "√ 邮箱地址正确！";
+				} else {
+					ftemail.className = "frred";
+					ftemail.innerHTML = "× 邮箱格式输入错误，请检查！";
+				}
+			}
+		}
+	</script>
 </body>
 </html>
 

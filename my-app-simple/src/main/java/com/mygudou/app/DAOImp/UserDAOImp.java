@@ -26,18 +26,18 @@ public class UserDAOImp implements UserDAO {
 
     public void insertUser(User user) {
         final int id = user.getId();
-        final String userId = user.getUserId();
+        final String username = user.getUsername();
         final String role = user.getRole();
         final String sex = user.getSex();
         final String pwd = user.getPwd();
         final String email = user.getEmail();
         jdbcTemplate.update("INSERT INTO " + TABLE_NAME
-                + "(userId,role,sex,pwd,email) VALUES (?,?,?,?,?)",
+                + "(username,role,sex,pwd,email) VALUES (?,?,?,?,?)",
                 new PreparedStatementSetter() {
 
                     public void setValues(PreparedStatement ps)
                             throws SQLException {
-                        ps.setString(1, userId);
+                        ps.setString(1, username);
                         ps.setString(2, role);
                         ps.setString(3, sex);
                         ps.setString(4, pwd);
@@ -49,9 +49,9 @@ public class UserDAOImp implements UserDAO {
     }
 
     public boolean isNotExist(User user) {
-        final String userId2 = user.getUserId();
+        final String username1 = user.getUsername();
         List list = jdbcTemplate.queryForList("SELECT * FROM " + TABLE_NAME
-                + " WHERE userId = " + userId2);
+                + " WHERE username = " + "'"+username1+"'");
         if (list.size() > 0) {
             return false;
         } else {
