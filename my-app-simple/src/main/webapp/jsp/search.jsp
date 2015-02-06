@@ -1,4 +1,4 @@
-<%@ page import="com.mygudou.app.model.*"%>
+<%@ page import="com.mygudou.app.Model.*"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
@@ -101,13 +101,9 @@ a.list-group-item {
 <body class="login-edit" background="../images/1.jpg";>
 	<!--A区  -->
 	<ul class="breadcrumb">
-		<li><a href="<%=basePath%>/show/firstshow"> <span
+		<li><a href="<%=basePath%>/show/index"> <span
 				class="glyphicon glyphicon-home"
 				style="color: rgb(54, 140, 167); font-size: 16px;"> Home</span></a> <span
-			class="divider"></span></li>
-		<li><a href="<%=basePath%>/show/firstshow"><span
-				class="glyphicon glyphicon-repeat"
-				style="color: rgb(54, 140, 167); font-size: 17px;"> Back</span></a> <span
 			class="divider"></span></li>
 		<li class="active1"><a href="#"><span
 				class="glyphicon glyphicon-question-sign"
