@@ -11,22 +11,44 @@ import org.springframework.web.servlet.ModelAndView;
 
 import scala.Int;
 
-import com.mygudou.app.Model.User;
-import com.mygudou.app.Service.UserLoginService;
+import com.mygudou.app.model.User;
+import com.mygudou.app.service.ContractService;
+import com.mygudou.app.service.UserLoginService;
 
 ;
 /**
- * 主页用户登录
+ * user login page and register page controller
  */
 @Controller
-@RequestMapping(value = "/show")
+@RequestMapping(value = "/user")
 public class UserLoginController {
 
     @Resource(name = "UserLoginService")
     private UserLoginService UserLoginService;
-
-    @RequestMapping(value = "/userLogin", method = RequestMethod.POST)
-    public ModelAndView userLogin(String badcause, HttpServletRequest request)
+    
+    /**
+     * check the user info, and go to the new index after logined
+     * @param title
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping(value = "/logined")
+    public ModelAndView showfirst(
+    		String optionsRadios,String username,String password)
+            throws Exception {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("indexAfterLogin");
+        return mv;
+    }
+    
+    /**
+     * register a new user
+     * @param request
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    public ModelAndView registerUser(HttpServletRequest request)
             throws Exception {
         ModelAndView mv = new ModelAndView();
 
@@ -44,7 +66,29 @@ public class UserLoginController {
         user.setSex(sex);
 
         UserLoginService.insertUser(user);
-        mv.setViewName("userLogin");
+        mv.setViewName("indexAfterLogin");
         return mv;
     }
+    /**
+     * go to the register page
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping(value = "/registershow")
+    public ModelAndView showRegisterPage() throws Exception {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("register");
+        return mv;
+    }
+    /**
+     * go to the login page
+     * @return
+     * @throws Exception
+     */
+	@RequestMapping(value = "/login")
+	public ModelAndView showCategory() throws Exception {
+		ModelAndView mv = new ModelAndView();		
+		mv.setViewName("login");
+		return mv;
+	}
 }

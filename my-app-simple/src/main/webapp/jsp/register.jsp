@@ -1,4 +1,4 @@
-<%@ page import="com.mygudou.app.Model.*"%>
+<%@ page import="com.mygudou.app.model.*"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
@@ -109,7 +109,7 @@
 		</ul>
 		<div class="form1">
 			<form class="form-horizontal" role="userLogin" method="post"
-				action="<%=basePath%>/show/userLogin">
+				action="<%=basePath%>/user/register">
 				<div class="form-group">
 					<label class="col-sm-2 control-label"> 注册角色： </label>
 					<div class="radio">

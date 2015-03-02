@@ -1,4 +1,4 @@
-<%@ page import="com.mygudou.app.Model.*"%>
+<%@ page import="com.mygudou.app.model.*"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
@@ -62,7 +62,7 @@ margin-left: 411px;
 
 </head>
 
-<body class="Context" id="body1" background="../images/note.jpg">
+<body class="Context" id="body1" background="../images/index_bg.jpg">
 	<div class="tile">
 		<h3 class="tile-title">合同Maker</h3>
 		<p>用最简单的方式生成合同</p>
@@ -72,7 +72,7 @@ margin-left: 411px;
 			<div class="form-group">
 				<label class="col-sm-2 control-label"><span
 					class="glyphicon glyphicon-user"
-					style="color: rgb(0, 100, 75); font-size: 15px;"><strong>
+					style="color: rgb(43,53,112); font-size: 15px;"><strong>
 							Role</strong></span></label>
 				<div class="col-sm-3">
 					<select id="focusedInput" class="form-control">
@@ -84,7 +84,7 @@ margin-left: 411px;
 			<div class="form-group">
 				<label class="col-sm-2 control-label"><span
 					class="glyphicon glyphicon-log-in"
-					style="color: rgb(0, 100, 75); font-size: 15px;"><strong>
+					style="color: rgb(43,53,112); font-size: 15px;"><strong>
 							Login</strong></span></label>
 				<div class="col-sm-3">
 					<input class="form-control" id="focusedInput" type="text">
@@ -93,7 +93,7 @@ margin-left: 411px;
 			<div class="form-group">
 				<label class="col-sm-2 control-label"><span
 					class="glyphicon glyphicon-lock"
-					style="color: rgb(0, 100, 75); font-size: 15px;"><strong>
+					style="color: rgb(43,53,112); font-size: 15px;"><strong>
 							Password</strong></span></label>
 				<div class="col-sm-3">
 					<input class="form-control" id="focusedInput" type="text">
@@ -101,15 +101,15 @@ margin-left: 411px;
 			</div>
 		</form>
 		<p class="register">
-			<a href="<%=basePath%>/show/register">注册</a>
+			<a href="<%=basePath%>/user/registershow">注册</a>
 		</p>
 		<form class="navbar-form navbar-left" method="post"
-			action="<%=basePath%>/show/search" role="search">
+			action="<%=basePath%>/lawcase/show" role="search">
 			<input type="hidden" name="title" value="${title}"
-				class="btn btn-default"> <a href="<%=basePath%>/show/userLogin"
+				class="btn btn-default"> <a href="<%=basePath%>/user/login"
 				class="btn btn-default">登录</a>
 			<input type="hidden" name="title" value="${title}"
-				class="form-control"> <a href="<%=basePath%>/show/login"
+				class="form-control"> <a href="<%=basePath%>/contract/chose"
 				class="btn btn-default">生成合同</a>
 			<button type="submit" class="btn btn-default">案例查询</button>
 		</form>

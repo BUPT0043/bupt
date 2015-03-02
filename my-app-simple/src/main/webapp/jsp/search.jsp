@@ -1,4 +1,4 @@
-<%@ page import="com.mygudou.app.Model.*"%>
+<%@ page import="com.mygudou.app.model.*"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
@@ -130,7 +130,7 @@ a.list-group-item {
 			</div>
 			<div>
 				<form class="navbar-form navbar-left" method="post"
-					action="<%=basePath%>/show/search" role="search">
+					action="<%=basePath%>/lawcase/search" role="search">
 					<div class="form-group">
 						<input type="text" name="title" value="${title}"
 							class="form-control" id="lalainput" placeholder="请输入查询关键字">

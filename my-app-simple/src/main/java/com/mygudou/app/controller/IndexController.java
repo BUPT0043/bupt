@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.mygudou.app.Service.IndexService;
+import com.mygudou.app.service.IndexService;
 
 /**
  * 首页登录
@@ -20,7 +20,7 @@ public class IndexController {
     private IndexService IndexService;
 
     @RequestMapping(value = "/index")
-    public ModelAndView showfirst(String badcause) throws Exception {
+    public ModelAndView showfirst() throws Exception {
         ModelAndView mv = new ModelAndView();
         mv.setViewName("index");
         return mv;
