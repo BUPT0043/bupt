@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-
+import com.alibaba.fastjson.JSON;
 import com.lowagie.text.Chunk;
 import com.lowagie.text.Document;
 import com.lowagie.text.Font;
@@ -104,7 +104,7 @@ public class ContractController {
                 list1.add(SearchItemService.getCa(lawid, categoryid));
             }
         }
-        net.sf.json.JSONArray jo = net.sf.json.JSONArray.fromObject(list);
+        String jo=JSON.toJSONString(list); 
         response.setContentType("text/html;charset=UTF-8"); // Ajax转码
         response.getWriter().print(jo.toString());
         return null;

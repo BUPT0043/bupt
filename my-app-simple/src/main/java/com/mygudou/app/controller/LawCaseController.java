@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-
+import com.alibaba.fastjson.JSON;
 import com.mygudou.app.model.Category;
 import com.mygudou.app.model.Item;
 import com.mygudou.app.model.Matter;
@@ -72,7 +72,7 @@ public class LawCaseController {
             HttpServletResponse response) throws Exception {
         List<Matter> list = SearchAjaxService.getMattList(title, p * 3, 3);
         try {
-            net.sf.json.JSONArray jo = net.sf.json.JSONArray.fromObject(list);
+            String jo=JSON.toJSONString(list); 
             response.setContentType("text/html;charset=UTF-8"); // Ajax转码
             response.getWriter().print(jo.toString());
         } catch (IOException e) {
