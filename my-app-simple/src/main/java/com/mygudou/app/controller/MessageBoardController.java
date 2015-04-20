@@ -8,10 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
-import scala.Int;
-
-import com.mygudou.app.model.User;
 import com.mygudou.app.service.ContractService;
 import com.mygudou.app.service.UserLoginService;
 

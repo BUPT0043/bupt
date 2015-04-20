@@ -19,9 +19,8 @@ import com.alibaba.fastjson.JSON;
 import com.mygudou.app.model.Category;
 import com.mygudou.app.model.Item;
 import com.mygudou.app.model.Matter;
-import com.mygudou.app.service.SearchAjaxService;
-import com.mygudou.app.service.SearchItemService;
-import com.mygudou.app.service.SearchService;
+import com.mygudou.app.service.CaseService;
+import com.mygudou.app.service.CaseService;
 
 /**
  * 条款查询 Search+SearchAjax+SearchResult
@@ -29,10 +28,8 @@ import com.mygudou.app.service.SearchService;
 @Controller
 @RequestMapping(value = "/lawcase")
 public class LawCaseController {
-    @Resource(name = "SearchService")
-    private SearchService SearchService;
-    @Resource(name = "SearchAjaxService")
-    private SearchAjaxService SearchAjaxService;
+    @Resource(name = "CaseService")
+    private CaseService CaseService;
 
     Logger logger = Logger.getLogger(LawCaseController.class);
     
@@ -44,8 +41,8 @@ public class LawCaseController {
     @RequestMapping(value = "/show")
     public ModelAndView showfirst() throws Exception {
         ModelAndView mv = new ModelAndView();
-        mv.addObject("matter", SearchService.getMattList("车祸", 0, 3));
-        mv.addObject("total", (SearchService.getMattTotal("车祸", 0, 3) + 1)/3);        
+        mv.addObject("matter", CaseService.getMattList("车祸", 0, 3));
+        mv.addObject("total", (CaseService.getMattTotal("车祸", 0, 3) + 1)/3);        
         mv.setViewName("search");
         return mv;
     }
@@ -59,8 +56,8 @@ public class LawCaseController {
         
         ModelAndView mv3 = new ModelAndView();
         mv3.addObject("title", title);
-        mv3.addObject("matter", SearchService.getMattList(title, 0, 3));
-        mv3.addObject("total", (SearchService.getMattTotal(title, 0, 3) + 1)/3);
+        mv3.addObject("matter", CaseService.getMattList(title, 0, 3));
+        mv3.addObject("total", (CaseService.getMattTotal(title, 0, 3) + 1)/3);
         // SearchService.TransXmlToDB();
         mv3.setViewName("search");
         return mv3;
@@ -70,7 +67,7 @@ public class LawCaseController {
             @RequestParam(value = "curr") int curr,
             @RequestParam(value = "title") String title,
             HttpServletResponse response) throws Exception {
-        List<Matter> list = SearchAjaxService.getMattList(title, p * 3, 3);
+        List<Matter> list = CaseService.getMattList(title, p * 3, 3);
         try {
             String jo=JSON.toJSONString(list); 
             response.setContentType("text/html;charset=UTF-8"); // Ajax转码
@@ -86,7 +83,7 @@ public class LawCaseController {
         ModelAndView mv4 = new ModelAndView();
         mv4.addObject("title", title);
         mv4.addObject("content", title);
-        mv4.addObject("matter", SearchService.getMattAll(id));
+        mv4.addObject("matter", CaseService.getMattAll(id));
         mv4.setViewName("searchresult");
         return mv4;
     }

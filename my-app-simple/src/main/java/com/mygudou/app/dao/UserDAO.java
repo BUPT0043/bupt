@@ -1,15 +1,28 @@
 package com.mygudou.app.dao;
 
-import org.springframework.stereotype.Repository;
+import java.util.List;
 
-import com.mygudou.app.model.User;
+import com.mygudou.app.model.Customer;
+import com.mygudou.app.model.Lawyer;
 
 /**
  * @UserInterface
  */
 public interface UserDAO {
 
-    void insertUser(User user);
+    void insertLawyer(Lawyer user);
 
-    public boolean isNotExist(User user);
+    public boolean LawyerIsNotExist(int id);
+    
+    List<Lawyer> getLawyerSimpleList();
+    
+    Lawyer getLawyerDetail(int id);
+            
+    void insertCustomer(Customer user);
+
+    public boolean CustomerIsNotExist(int id);
+    
+    Customer getCustomerDetail(int id);
+    
+    
 }
