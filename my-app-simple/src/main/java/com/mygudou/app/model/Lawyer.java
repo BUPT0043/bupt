@@ -1,3 +1,4 @@
+package com.mygudou.app.model;
 import java.util.List;
 
 /**
