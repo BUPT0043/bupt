@@ -5,19 +5,18 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.mygudou.app.model.User;
+import com.mygudou.app.model.Lawyer;
 
 /**
  * @UserMapper
  */
-public class UserRowMapper implements RowMapper<User> {
+public class LawyerRowMapper implements RowMapper<Lawyer> {
 
-    public User mapRow(ResultSet rs, int rowNum) throws SQLException {
-        User user = new User();
+    public Lawyer mapRow(ResultSet rs, int rowNum) throws SQLException {
+    	Lawyer user = new Lawyer();
         user.setEmail(rs.getString("email"));
         user.setId(rs.getInt("id"));
         user.setPwd(rs.getString("pwd"));
-        user.setRole(rs.getString("role"));
         user.setSex(rs.getString("sex"));
         return user;
     }

@@ -7,7 +7,7 @@ import com.mygudou.app.model.Item;
 import com.mygudou.app.model.Law;
 import com.mygudou.app.model.Matter;
 
-public interface ItemDAO {
+public interface ContractDAO {
 
     public int insertLaw(Law law);
 
@@ -17,13 +17,6 @@ public interface ItemDAO {
     public List<Item> getItems();
 
     public List<Category> getCategory(int lawid);
-
-    // 搜索
-    public List<Matter> getMatt(String title, int pageIndex, int pageSize);
-
-    public int getMattTotal(String title, int pageIndex, int pageSize);
-
-    public List<Matter> getMattAll(int id);
 
     // 传值
     public Law getLaw(int lawid);

@@ -7,7 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.mygudou.app.daoImp.ItemDAOImpl;
+import com.mygudou.app.daoImp.ContractDAOImpl;
 import com.mygudou.app.daoImp.XMLDAOimpl;
 import com.mygudou.app.model.Category;
 import com.mygudou.app.model.Item;
@@ -23,7 +23,7 @@ public class XMLTransDBService {
 	@Resource(name = "XMLDAO")
 	private XMLDAOimpl XMLDAO;
 	@Resource(name = "ItemDAO")
-	private ItemDAOImpl ItemDAO;
+	private ContractDAOImpl ItemDAO;
 
 	public void TransXmlToDB() throws Exception {
 
