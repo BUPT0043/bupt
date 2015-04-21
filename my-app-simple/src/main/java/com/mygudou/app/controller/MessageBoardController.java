@@ -11,9 +11,10 @@ import org.springframework.web.servlet.ModelAndView;
 import com.mygudou.app.service.ContractService;
 import com.mygudou.app.service.UserLoginService;
 
-;
 /**
- * user login page and register page controller
+ * 留言板，简单的实现是个人只能看到未读消息list，并可以去关注者的主页查看两人的聊天记录
+ * @author gufeng
+ *
  */
 @Controller
 @RequestMapping(value = "/message")

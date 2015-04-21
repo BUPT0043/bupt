@@ -15,11 +15,11 @@ import com.mygudou.app.service.XMLTransDBService;
  */
 @Controller
 @RequestMapping(value = "/transfer")
-public class DateFormatController {
+public class DataFormatController {
     @Resource(name = "XMLTransDBService")
     private XMLTransDBService XMLTransDBService;
 
-    Logger logger = Logger.getLogger(DateFormatController.class);
+    Logger logger = Logger.getLogger(DataFormatController.class);
     
     @RequestMapping(value = "/start")
     public ModelAndView showfirst(String badcause,

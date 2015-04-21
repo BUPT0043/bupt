@@ -16,6 +16,8 @@ import com.mygudou.app.service.UserLoginService;
 ;
 /**
  * user login page and register page controller
+ * @author gufeng
+ *
  */
 @Controller
 @RequestMapping(value = "/user")
