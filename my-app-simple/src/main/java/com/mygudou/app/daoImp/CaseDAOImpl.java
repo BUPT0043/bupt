@@ -1,26 +1,14 @@
 package com.mygudou.app.daoImp;
 
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.List;
 
 import javax.annotation.Resource;
 
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.PreparedStatementSetter;
-import org.springframework.jdbc.support.GeneratedKeyHolder;
-import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
 import com.mygudou.app.dao.CaseDAO;
-import com.mygudou.app.dao.ContractDAO;
-import com.mygudou.app.model.Category;
-import com.mygudou.app.model.Item;
-import com.mygudou.app.model.Law;
 import com.mygudou.app.model.Matter;
-import com.mygudou.app.rowMapper.CategoryRowMapper;
-import com.mygudou.app.rowMapper.ItemRowMapper;
-import com.mygudou.app.rowMapper.LawRowMapper;
 import com.mygudou.app.rowMapper.MatterRowMapper;
 
 /**

@@ -11,8 +11,8 @@ import org.springframework.jdbc.core.PreparedStatementSetter;
 import org.springframework.stereotype.Repository;
 
 import com.mygudou.app.dao.UserDAO;
-import com.mygudou.app.model.Customer;
-import com.mygudou.app.model.Lawyer;
+import com.mygudou.app.model.user.Customer;
+import com.mygudou.app.model.user.Lawyer;
 import com.mygudou.app.rowMapper.CustomerRowMapper;
 import com.mygudou.app.rowMapper.LawyerRowMapper;
 

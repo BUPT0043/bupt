@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.mygudou.app.model.Category;
+import com.mygudou.app.model.contract.Category;
 
 public class CategoryRowMapper implements RowMapper<Category> {
 

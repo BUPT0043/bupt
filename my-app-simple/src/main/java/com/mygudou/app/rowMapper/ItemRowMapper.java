@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.mygudou.app.model.Item;
+import com.mygudou.app.model.contract.Item;
 
 public class ItemRowMapper implements RowMapper<Item> {
 

@@ -35,8 +35,8 @@ import com.lowagie.text.FontFactory;
 import com.lowagie.text.PageSize;
 import com.lowagie.text.Paragraph;
 import com.lowagie.text.rtf.RtfWriter2;
-import com.mygudou.app.model.Category;
-import com.mygudou.app.model.Item;
+import com.mygudou.app.model.contract.Category;
+import com.mygudou.app.model.contract.Item;
 import com.mygudou.app.service.ContractService;
 
 

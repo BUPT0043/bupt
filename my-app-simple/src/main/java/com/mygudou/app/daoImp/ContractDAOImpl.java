@@ -13,10 +13,10 @@ import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
 import com.mygudou.app.dao.ContractDAO;
-import com.mygudou.app.model.Category;
-import com.mygudou.app.model.Item;
-import com.mygudou.app.model.Law;
 import com.mygudou.app.model.Matter;
+import com.mygudou.app.model.contract.Category;
+import com.mygudou.app.model.contract.Item;
+import com.mygudou.app.model.contract.Law;
 import com.mygudou.app.rowMapper.CategoryRowMapper;
 import com.mygudou.app.rowMapper.ItemRowMapper;
 import com.mygudou.app.rowMapper.LawRowMapper;

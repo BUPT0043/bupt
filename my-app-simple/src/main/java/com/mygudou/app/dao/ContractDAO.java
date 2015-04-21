@@ -2,10 +2,10 @@ package com.mygudou.app.dao;
 
 import java.util.List;
 
-import com.mygudou.app.model.Category;
-import com.mygudou.app.model.Item;
-import com.mygudou.app.model.Law;
 import com.mygudou.app.model.Matter;
+import com.mygudou.app.model.contract.Category;
+import com.mygudou.app.model.contract.Item;
+import com.mygudou.app.model.contract.Law;
 
 public interface ContractDAO {
 

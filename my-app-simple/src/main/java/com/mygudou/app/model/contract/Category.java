@@ -1,9 +1,14 @@
-package com.mygudou.app.model;
+package com.mygudou.app.model.contract;
 
-public class Category {
+import java.io.Serializable;
+
+
     /**
-     * 分类：categoryname 类名
-     * */
+	 * 分类：categoryname 类名
+	 */
+public class Category implements Serializable{
+
+	private static final long serialVersionUID = 5023186671218357505L;
 
     private String categoryname;
 

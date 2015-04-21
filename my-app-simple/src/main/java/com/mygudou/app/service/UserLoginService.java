@@ -6,9 +6,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.mygudou.app.daoImp.UserDAOImp;
-import com.mygudou.app.model.Customer;
-import com.mygudou.app.model.Lawyer;
-import com.mygudou.app.model.User;
+import com.mygudou.app.model.user.Customer;
+import com.mygudou.app.model.user.IUser;
+import com.mygudou.app.model.user.Lawyer;
 
 /**
  * 用户登录
@@ -37,7 +37,7 @@ public class UserLoginService {
 
     }
 
-	public void insertUser(User user) {
+	public void insertUser(IUser user) {
 		// TODO Auto-generated method stub
 		if(user instanceof Lawyer)
 			insertLawyer((Lawyer)user);

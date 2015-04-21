@@ -9,10 +9,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.mygudou.app.daoImp.ContractDAOImpl;
 import com.mygudou.app.daoImp.XMLDAOimpl;
-import com.mygudou.app.model.Category;
-import com.mygudou.app.model.Item;
-import com.mygudou.app.model.Law;
 import com.mygudou.app.model.Matter;
+import com.mygudou.app.model.contract.Category;
+import com.mygudou.app.model.contract.Item;
+import com.mygudou.app.model.contract.Law;
 
 /**
  * xml-->DB

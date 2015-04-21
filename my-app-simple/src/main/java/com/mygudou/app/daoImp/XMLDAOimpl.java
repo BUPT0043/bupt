@@ -11,9 +11,9 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import com.mygudou.app.dao.XMLDAO;
-import com.mygudou.app.model.Category;
-import com.mygudou.app.model.Item;
-import com.mygudou.app.model.Law;
+import com.mygudou.app.model.contract.Category;
+import com.mygudou.app.model.contract.Item;
+import com.mygudou.app.model.contract.Law;
 
 @Repository("XMLDAO")
 public class XMLDAOimpl implements XMLDAO {

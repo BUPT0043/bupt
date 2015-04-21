@@ -4,7 +4,7 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
 
-import com.mygudou.app.model.Law;
+import com.mygudou.app.model.contract.Law;
 
 public interface XMLDAO {
 

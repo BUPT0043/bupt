@@ -23,6 +23,7 @@ import java.util.List;
 
 
 
+
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -42,9 +43,9 @@ import com.lowagie.text.Paragraph;
 import com.lowagie.text.rtf.RtfWriter2;
 import com.mygudou.app.daoImp.ContractDAOImpl;
 import com.mygudou.app.daoImp.XMLDAOimpl;
-import com.mygudou.app.model.Category;
-import com.mygudou.app.model.Item;
-import com.mygudou.app.model.Law;
+import com.mygudou.app.model.contract.Category;
+import com.mygudou.app.model.contract.Item;
+import com.mygudou.app.model.contract.Law;
 
 @Service("ContractService")
 @Transactional

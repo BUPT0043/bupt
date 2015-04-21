@@ -1,11 +1,16 @@
-package com.mygudou.app.model;
+package com.mygudou.app.model.contract;
 
-public class Law {
-    /**
+import java.io.Serializable;
+
+	/**
      * 法律：
      * name:法律名称
      * inform:法律相关信息
-     * */
+     */
+
+public class Law implements Serializable{
+
+	private static final long serialVersionUID = -3480386325196372741L;
 
     private int id;
 

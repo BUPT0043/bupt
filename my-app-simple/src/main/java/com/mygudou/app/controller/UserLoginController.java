@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.mygudou.app.model.Customer;
-import com.mygudou.app.model.Lawyer;
-import com.mygudou.app.model.User;
+import com.mygudou.app.model.user.Customer;
+import com.mygudou.app.model.user.IUser;
+import com.mygudou.app.model.user.Lawyer;
 import com.mygudou.app.service.UserLoginService;
 
 ;
@@ -58,7 +58,7 @@ public class UserLoginController {
         String email = request.getParameter("email");
         String sex = request.getParameter("optionsRadiosinline").toString();
 
-        User user;
+        IUser user;
         if(role.equals("0"))
         	user=new Customer();
         else 

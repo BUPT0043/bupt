@@ -1,12 +1,14 @@
-package com.mygudou.app.model;
+package com.mygudou.app.model.contract;
 
 import java.io.Serializable;
 
-public class Item implements Serializable {
     /**
      * 条款内项目： data:项目条款 
      *            refer:条款相关内容
      */
+
+public class Item implements Serializable {
+
     private static final long serialVersionUID = -3203827476568975742L;
 
     private int id;

@@ -1,11 +1,16 @@
-package com.mygudou.app.model;
+package com.mygudou.app.model.user;
+
+import java.io.Serializable;
 
 /**
- * User信息 role:1--律师 0--用户 sex: 1--男 0--女
+ * 用户身份的基类
  */
-public class User {
+public abstract class IUser implements Serializable{
 
-    private int id;
+
+	private static final long serialVersionUID = 1906490180434268100L;
+
+	private int id;
 
     private String username;
 

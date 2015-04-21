@@ -2,8 +2,8 @@ package com.mygudou.app.dao;
 
 import java.util.List;
 
-import com.mygudou.app.model.Customer;
-import com.mygudou.app.model.Lawyer;
+import com.mygudou.app.model.user.Customer;
+import com.mygudou.app.model.user.Lawyer;
 
 /**
  * @UserInterface

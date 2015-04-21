@@ -1,11 +1,18 @@
 package com.mygudou.app.model;
 
-public class Matter {
-    /**
+import java.io.Serializable;
+
+	/**
      * 搜索内事件
      * title:事件标题
      * content:事件内容
      * */
+
+public class Matter implements Serializable{
+
+	private static final long serialVersionUID = 3565767215481715236L;
+
+
     private int id;
 
     private String title;
