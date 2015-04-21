@@ -16,12 +16,12 @@ import com.mygudou.app.model.User;
 @Service("UserLoginService")
 @Transactional
 public class UserLoginService {
-    @Resource(name = "UserDAOImp")
+    @Resource(name = "UserDAO")
     private UserDAOImp userDAOImp;
 
     public void insertLawyer(Lawyer user) {
         
-        if (userDAOImp.LawyerIsNotExist(user.getId())) {
+        if (userDAOImp.LawyerIsNotExist(user.getUsername())) {
 
             userDAOImp.insertLawyer(user);
         }
@@ -30,7 +30,7 @@ public class UserLoginService {
     
     public void insertCustomer(Customer user) {
         
-        if (userDAOImp.CustomerIsNotExist(user.getId())) {
+        if (userDAOImp.CustomerIsNotExist(user.getUsername())) {
 
             userDAOImp.insertCustomer(user);
         }

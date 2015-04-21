@@ -133,3 +133,650 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
 	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305)
 	... 54 more
+2015-04-21 00:35:17 [ main ] Root WebApplicationContext: initialization started
+2015-04-21 00:35:17 [ main ] Refreshing Root WebApplicationContext: startup date [Tue Apr 21 00:35:17 CST 2015]; root of context hierarchy
+2015-04-21 00:35:17 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-04-21 00:35:17 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-04-21 00:35:17 [ main ] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lawCaseController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'CaseService' is defined
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:540)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:135)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1220)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:510)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:448)
+	at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart(Jetty6PluginWebAppContext.java:110)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:39)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:156)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:39)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:39)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:222)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:39)
+	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:371)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:307)
+	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:203)
+	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:184)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:133)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:108)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:76)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:116)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:361)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:155)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:584)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:213)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'CaseService' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:641)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1159)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:446)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:420)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:545)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305)
+	... 54 more
+2015-04-21 00:37:41 [ main ] Root WebApplicationContext: initialization started
+2015-04-21 00:37:41 [ main ] Refreshing Root WebApplicationContext: startup date [Tue Apr 21 00:37:41 CST 2015]; root of context hierarchy
+2015-04-21 00:37:41 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-04-21 00:37:41 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-04-21 00:37:41 [ main ] Root WebApplicationContext: initialization completed in 468 ms
+2015-04-21 00:37:41 [ main ] FrameworkServlet 'simple': initialization started
+2015-04-21 00:37:41 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Tue Apr 21 00:37:41 CST 2015]; parent: Root WebApplicationContext
+2015-04-21 00:37:41 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
+2015-04-21 00:37:41 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-04-21 00:37:41 [ main ] Mapped URL path [/contract/download] onto handler 'contractController'
+2015-04-21 00:37:41 [ main ] Mapped URL path [/contract/download.*] onto handler 'contractController'
+2015-04-21 00:37:41 [ main ] Mapped URL path [/contract/download/] onto handler 'contractController'
+2015-04-21 00:37:41 [ main ] Mapped URL path [/contract/searchItem] onto handler 'contractController'
+2015-04-21 00:37:41 [ main ] Mapped URL path [/contract/searchItem.*] onto handler 'contractController'
+2015-04-21 00:37:41 [ main ] Mapped URL path [/contract/searchItem/] onto handler 'contractController'
+2015-04-21 00:37:41 [ main ] Mapped URL path [/contract/generate] onto handler 'contractController'
+2015-04-21 00:37:41 [ main ] Mapped URL path [/contract/generate.*] onto handler 'contractController'
+2015-04-21 00:37:41 [ main ] Mapped URL path [/contract/generate/] onto handler 'contractController'
+2015-04-21 00:37:41 [ main ] Mapped URL path [/contract/chose] onto handler 'contractController'
+2015-04-21 00:37:41 [ main ] Mapped URL path [/contract/chose.*] onto handler 'contractController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/contract/chose/] onto handler 'contractController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/contract/toWord] onto handler 'contractController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/contract/toWord.*] onto handler 'contractController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/contract/toWord/] onto handler 'contractController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/transfer/start] onto handler 'dateFormatController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/transfer/start.*] onto handler 'dateFormatController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/transfer/start/] onto handler 'dateFormatController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/lawcase/search] onto handler 'lawCaseController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/lawcase/search.*] onto handler 'lawCaseController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/lawcase/search/] onto handler 'lawCaseController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/lawcase/show] onto handler 'lawCaseController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/lawcase/show.*] onto handler 'lawCaseController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/lawcase/show/] onto handler 'lawCaseController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/lawcase/searchresult] onto handler 'lawCaseController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/lawcase/searchresult.*] onto handler 'lawCaseController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/lawcase/searchresult/] onto handler 'lawCaseController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/lawcase/searchajax] onto handler 'lawCaseController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/lawcase/searchajax.*] onto handler 'lawCaseController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/lawcase/searchajax/] onto handler 'lawCaseController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/message/show] onto handler 'messageBoardController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/message/show.*] onto handler 'messageBoardController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/message/show/] onto handler 'messageBoardController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/user/registershow] onto handler 'userLoginController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/user/registershow.*] onto handler 'userLoginController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/user/registershow/] onto handler 'userLoginController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/user/logined] onto handler 'userLoginController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/user/logined.*] onto handler 'userLoginController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/user/logined/] onto handler 'userLoginController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/user/register] onto handler 'userLoginController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/user/register.*] onto handler 'userLoginController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/user/register/] onto handler 'userLoginController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/user/login] onto handler 'userLoginController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/user/login.*] onto handler 'userLoginController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/user/login/] onto handler 'userLoginController'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2015-04-21 00:37:42 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-04-21 00:37:42 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-04-21 00:37:42 [ main ] FrameworkServlet 'simple': initialization completed in 236 ms
+2015-04-21 00:37:42 [ Shutdown ] Closing WebApplicationContext for namespace 'simple-servlet': startup date [Tue Apr 21 00:37:41 CST 2015]; parent: Root WebApplicationContext
+2015-04-21 00:37:42 [ Shutdown ] Closing Root WebApplicationContext: startup date [Tue Apr 21 00:37:41 CST 2015]; root of context hierarchy
+2015-04-21 00:42:08 [ main ] Root WebApplicationContext: initialization started
+2015-04-21 00:42:08 [ main ] Refreshing Root WebApplicationContext: startup date [Tue Apr 21 00:42:08 CST 2015]; root of context hierarchy
+2015-04-21 00:42:08 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-04-21 00:42:08 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-04-21 00:42:08 [ main ] Root WebApplicationContext: initialization completed in 426 ms
+2015-04-21 00:42:08 [ main ] FrameworkServlet 'simple': initialization started
+2015-04-21 00:42:08 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Tue Apr 21 00:42:08 CST 2015]; parent: Root WebApplicationContext
+2015-04-21 00:42:08 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
+2015-04-21 00:42:08 [ main ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-04-21 00:42:08 [ main ] Mapped URL path [/contract/download] onto handler 'contractController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/contract/download.*] onto handler 'contractController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/contract/download/] onto handler 'contractController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/contract/toWord] onto handler 'contractController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/contract/toWord.*] onto handler 'contractController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/contract/toWord/] onto handler 'contractController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/contract/searchItem] onto handler 'contractController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/contract/searchItem.*] onto handler 'contractController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/contract/searchItem/] onto handler 'contractController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/contract/chose] onto handler 'contractController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/contract/chose.*] onto handler 'contractController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/contract/chose/] onto handler 'contractController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/contract/generate] onto handler 'contractController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/contract/generate.*] onto handler 'contractController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/contract/generate/] onto handler 'contractController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/transfer/start] onto handler 'dateFormatController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/transfer/start.*] onto handler 'dateFormatController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/transfer/start/] onto handler 'dateFormatController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/lawcase/search] onto handler 'lawCaseController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/lawcase/search.*] onto handler 'lawCaseController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/lawcase/search/] onto handler 'lawCaseController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/lawcase/show] onto handler 'lawCaseController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/lawcase/show.*] onto handler 'lawCaseController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/lawcase/show/] onto handler 'lawCaseController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/lawcase/searchajax] onto handler 'lawCaseController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/lawcase/searchajax.*] onto handler 'lawCaseController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/lawcase/searchajax/] onto handler 'lawCaseController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/lawcase/searchresult] onto handler 'lawCaseController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/lawcase/searchresult.*] onto handler 'lawCaseController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/lawcase/searchresult/] onto handler 'lawCaseController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/message/show] onto handler 'messageBoardController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/message/show.*] onto handler 'messageBoardController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/message/show/] onto handler 'messageBoardController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/user/registershow] onto handler 'userLoginController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/user/registershow.*] onto handler 'userLoginController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/user/registershow/] onto handler 'userLoginController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/user/logined] onto handler 'userLoginController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/user/logined.*] onto handler 'userLoginController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/user/logined/] onto handler 'userLoginController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/user/register] onto handler 'userLoginController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/user/register.*] onto handler 'userLoginController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/user/register/] onto handler 'userLoginController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/user/login] onto handler 'userLoginController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/user/login.*] onto handler 'userLoginController'
+2015-04-21 00:42:08 [ main ] Mapped URL path [/user/login/] onto handler 'userLoginController'
+2015-04-21 00:42:09 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-04-21 00:42:09 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2015-04-21 00:42:09 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2015-04-21 00:42:09 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2015-04-21 00:42:09 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-04-21 00:42:09 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-04-21 00:42:09 [ main ] FrameworkServlet 'simple': initialization completed in 248 ms
+2015-04-21 00:42:09 [ Shutdown ] Closing WebApplicationContext for namespace 'simple-servlet': startup date [Tue Apr 21 00:42:08 CST 2015]; parent: Root WebApplicationContext
+2015-04-21 00:42:09 [ Shutdown ] Closing Root WebApplicationContext: startup date [Tue Apr 21 00:42:08 CST 2015]; root of context hierarchy
+2015-04-21 00:43:38 [ main ] Root WebApplicationContext: initialization started
+2015-04-21 00:43:38 [ main ] Refreshing Root WebApplicationContext: startup date [Tue Apr 21 00:43:38 CST 2015]; root of context hierarchy
+2015-04-21 00:43:38 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-04-21 00:43:38 [ main ] Root WebApplicationContext: initialization completed in 489 ms
+2015-04-21 00:43:38 [ main ] FrameworkServlet 'simple': initialization started
+2015-04-21 00:43:38 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Tue Apr 21 00:43:38 CST 2015]; parent: Root WebApplicationContext
+2015-04-21 00:43:38 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
+2015-04-21 00:43:38 [ main ] Mapped URL path [/contract/toWord] onto handler 'contractController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/contract/toWord.*] onto handler 'contractController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/contract/toWord/] onto handler 'contractController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/contract/searchItem] onto handler 'contractController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/contract/searchItem.*] onto handler 'contractController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/contract/searchItem/] onto handler 'contractController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/contract/chose] onto handler 'contractController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/contract/chose.*] onto handler 'contractController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/contract/chose/] onto handler 'contractController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/contract/generate] onto handler 'contractController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/contract/generate.*] onto handler 'contractController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/contract/generate/] onto handler 'contractController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/contract/download] onto handler 'contractController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/contract/download.*] onto handler 'contractController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/contract/download/] onto handler 'contractController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/transfer/start] onto handler 'dateFormatController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/transfer/start.*] onto handler 'dateFormatController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/transfer/start/] onto handler 'dateFormatController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/lawcase/search] onto handler 'lawCaseController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/lawcase/search.*] onto handler 'lawCaseController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/lawcase/search/] onto handler 'lawCaseController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/lawcase/show] onto handler 'lawCaseController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/lawcase/show.*] onto handler 'lawCaseController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/lawcase/show/] onto handler 'lawCaseController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/lawcase/searchajax] onto handler 'lawCaseController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/lawcase/searchajax.*] onto handler 'lawCaseController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/lawcase/searchajax/] onto handler 'lawCaseController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/lawcase/searchresult] onto handler 'lawCaseController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/lawcase/searchresult.*] onto handler 'lawCaseController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/lawcase/searchresult/] onto handler 'lawCaseController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/message/show] onto handler 'messageBoardController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/message/show.*] onto handler 'messageBoardController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/message/show/] onto handler 'messageBoardController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/user/logined] onto handler 'userLoginController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/user/logined.*] onto handler 'userLoginController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/user/logined/] onto handler 'userLoginController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/user/register] onto handler 'userLoginController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/user/register.*] onto handler 'userLoginController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/user/register/] onto handler 'userLoginController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/user/login] onto handler 'userLoginController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/user/login.*] onto handler 'userLoginController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/user/login/] onto handler 'userLoginController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/user/registershow] onto handler 'userLoginController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/user/registershow.*] onto handler 'userLoginController'
+2015-04-21 00:43:38 [ main ] Mapped URL path [/user/registershow/] onto handler 'userLoginController'
+2015-04-21 00:43:39 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-04-21 00:43:39 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2015-04-21 00:43:39 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2015-04-21 00:43:39 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2015-04-21 00:43:39 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-04-21 00:43:39 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-04-21 00:43:39 [ main ] FrameworkServlet 'simple': initialization completed in 258 ms
+2015-04-21 00:44:49 [ main ] Root WebApplicationContext: initialization started
+2015-04-21 00:44:49 [ main ] Refreshing Root WebApplicationContext: startup date [Tue Apr 21 00:44:49 CST 2015]; root of context hierarchy
+2015-04-21 00:44:49 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-04-21 00:44:49 [ main ] Root WebApplicationContext: initialization completed in 479 ms
+2015-04-21 00:44:49 [ main ] FrameworkServlet 'simple': initialization started
+2015-04-21 00:44:49 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Tue Apr 21 00:44:49 CST 2015]; parent: Root WebApplicationContext
+2015-04-21 00:44:49 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
+2015-04-21 00:44:49 [ main ] Mapped URL path [/contract/toWord] onto handler 'contractController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/contract/toWord.*] onto handler 'contractController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/contract/toWord/] onto handler 'contractController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/contract/searchItem] onto handler 'contractController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/contract/searchItem.*] onto handler 'contractController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/contract/searchItem/] onto handler 'contractController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/contract/chose] onto handler 'contractController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/contract/chose.*] onto handler 'contractController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/contract/chose/] onto handler 'contractController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/contract/generate] onto handler 'contractController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/contract/generate.*] onto handler 'contractController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/contract/generate/] onto handler 'contractController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/contract/download] onto handler 'contractController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/contract/download.*] onto handler 'contractController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/contract/download/] onto handler 'contractController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/transfer/start] onto handler 'dateFormatController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/transfer/start.*] onto handler 'dateFormatController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/transfer/start/] onto handler 'dateFormatController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/lawcase/search] onto handler 'lawCaseController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/lawcase/search.*] onto handler 'lawCaseController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/lawcase/search/] onto handler 'lawCaseController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/lawcase/show] onto handler 'lawCaseController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/lawcase/show.*] onto handler 'lawCaseController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/lawcase/show/] onto handler 'lawCaseController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/lawcase/searchajax] onto handler 'lawCaseController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/lawcase/searchajax.*] onto handler 'lawCaseController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/lawcase/searchajax/] onto handler 'lawCaseController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/lawcase/searchresult] onto handler 'lawCaseController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/lawcase/searchresult.*] onto handler 'lawCaseController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/lawcase/searchresult/] onto handler 'lawCaseController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/message/show] onto handler 'messageBoardController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/message/show.*] onto handler 'messageBoardController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/message/show/] onto handler 'messageBoardController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/user/registershow] onto handler 'userLoginController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/user/registershow.*] onto handler 'userLoginController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/user/registershow/] onto handler 'userLoginController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/user/logined] onto handler 'userLoginController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/user/logined.*] onto handler 'userLoginController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/user/logined/] onto handler 'userLoginController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/user/register] onto handler 'userLoginController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/user/register.*] onto handler 'userLoginController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/user/register/] onto handler 'userLoginController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/user/login] onto handler 'userLoginController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/user/login.*] onto handler 'userLoginController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/user/login/] onto handler 'userLoginController'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2015-04-21 00:44:49 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-04-21 00:44:49 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-04-21 00:44:49 [ main ] FrameworkServlet 'simple': initialization completed in 251 ms
+2015-04-21 00:45:48 [ qtp1075417105-22 ] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2015-04-21 00:45:48 [ qtp1075417105-22 ] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2015-04-21 00:46:33 [ main ] Root WebApplicationContext: initialization started
+2015-04-21 00:46:33 [ main ] Refreshing Root WebApplicationContext: startup date [Tue Apr 21 00:46:33 CST 2015]; root of context hierarchy
+2015-04-21 00:46:33 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-04-21 00:46:33 [ main ] Root WebApplicationContext: initialization completed in 505 ms
+2015-04-21 00:46:33 [ main ] FrameworkServlet 'simple': initialization started
+2015-04-21 00:46:33 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Tue Apr 21 00:46:33 CST 2015]; parent: Root WebApplicationContext
+2015-04-21 00:46:33 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
+2015-04-21 00:46:33 [ main ] Mapped URL path [/contract/toWord] onto handler 'contractController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/contract/toWord.*] onto handler 'contractController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/contract/toWord/] onto handler 'contractController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/contract/searchItem] onto handler 'contractController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/contract/searchItem.*] onto handler 'contractController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/contract/searchItem/] onto handler 'contractController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/contract/chose] onto handler 'contractController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/contract/chose.*] onto handler 'contractController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/contract/chose/] onto handler 'contractController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/contract/generate] onto handler 'contractController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/contract/generate.*] onto handler 'contractController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/contract/generate/] onto handler 'contractController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/contract/download] onto handler 'contractController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/contract/download.*] onto handler 'contractController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/contract/download/] onto handler 'contractController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/transfer/start] onto handler 'dateFormatController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/transfer/start.*] onto handler 'dateFormatController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/transfer/start/] onto handler 'dateFormatController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/lawcase/search] onto handler 'lawCaseController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/lawcase/search.*] onto handler 'lawCaseController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/lawcase/search/] onto handler 'lawCaseController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/lawcase/show] onto handler 'lawCaseController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/lawcase/show.*] onto handler 'lawCaseController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/lawcase/show/] onto handler 'lawCaseController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/lawcase/searchajax] onto handler 'lawCaseController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/lawcase/searchajax.*] onto handler 'lawCaseController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/lawcase/searchajax/] onto handler 'lawCaseController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/lawcase/searchresult] onto handler 'lawCaseController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/lawcase/searchresult.*] onto handler 'lawCaseController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/lawcase/searchresult/] onto handler 'lawCaseController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/message/show] onto handler 'messageBoardController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/message/show.*] onto handler 'messageBoardController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/message/show/] onto handler 'messageBoardController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/user/registershow] onto handler 'userLoginController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/user/registershow.*] onto handler 'userLoginController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/user/registershow/] onto handler 'userLoginController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/user/logined] onto handler 'userLoginController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/user/logined.*] onto handler 'userLoginController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/user/logined/] onto handler 'userLoginController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/user/register] onto handler 'userLoginController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/user/register.*] onto handler 'userLoginController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/user/register/] onto handler 'userLoginController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/user/login] onto handler 'userLoginController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/user/login.*] onto handler 'userLoginController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/user/login/] onto handler 'userLoginController'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2015-04-21 00:46:33 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-04-21 00:46:33 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-04-21 00:46:33 [ main ] FrameworkServlet 'simple': initialization completed in 262 ms
+2015-04-21 00:46:58 [ qtp1075417105-22 ] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2015-04-21 00:46:58 [ qtp1075417105-22 ] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2015-04-21 00:49:53 [ main ] Root WebApplicationContext: initialization started
+2015-04-21 00:49:53 [ main ] Refreshing Root WebApplicationContext: startup date [Tue Apr 21 00:49:53 CST 2015]; root of context hierarchy
+2015-04-21 00:49:53 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-04-21 00:49:54 [ main ] Root WebApplicationContext: initialization completed in 512 ms
+2015-04-21 00:49:54 [ main ] FrameworkServlet 'simple': initialization started
+2015-04-21 00:49:54 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Tue Apr 21 00:49:54 CST 2015]; parent: Root WebApplicationContext
+2015-04-21 00:49:54 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
+2015-04-21 00:49:54 [ main ] Mapped URL path [/contract/toWord] onto handler 'contractController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/contract/toWord.*] onto handler 'contractController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/contract/toWord/] onto handler 'contractController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/contract/searchItem] onto handler 'contractController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/contract/searchItem.*] onto handler 'contractController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/contract/searchItem/] onto handler 'contractController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/contract/chose] onto handler 'contractController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/contract/chose.*] onto handler 'contractController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/contract/chose/] onto handler 'contractController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/contract/generate] onto handler 'contractController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/contract/generate.*] onto handler 'contractController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/contract/generate/] onto handler 'contractController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/contract/download] onto handler 'contractController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/contract/download.*] onto handler 'contractController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/contract/download/] onto handler 'contractController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/transfer/start] onto handler 'dateFormatController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/transfer/start.*] onto handler 'dateFormatController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/transfer/start/] onto handler 'dateFormatController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/lawcase/search] onto handler 'lawCaseController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/lawcase/search.*] onto handler 'lawCaseController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/lawcase/search/] onto handler 'lawCaseController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/lawcase/show] onto handler 'lawCaseController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/lawcase/show.*] onto handler 'lawCaseController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/lawcase/show/] onto handler 'lawCaseController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/lawcase/searchajax] onto handler 'lawCaseController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/lawcase/searchajax.*] onto handler 'lawCaseController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/lawcase/searchajax/] onto handler 'lawCaseController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/lawcase/searchresult] onto handler 'lawCaseController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/lawcase/searchresult.*] onto handler 'lawCaseController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/lawcase/searchresult/] onto handler 'lawCaseController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/message/show] onto handler 'messageBoardController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/message/show.*] onto handler 'messageBoardController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/message/show/] onto handler 'messageBoardController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/user/registershow] onto handler 'userLoginController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/user/registershow.*] onto handler 'userLoginController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/user/registershow/] onto handler 'userLoginController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/user/logined] onto handler 'userLoginController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/user/logined.*] onto handler 'userLoginController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/user/logined/] onto handler 'userLoginController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/user/register] onto handler 'userLoginController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/user/register.*] onto handler 'userLoginController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/user/register/] onto handler 'userLoginController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/user/login] onto handler 'userLoginController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/user/login.*] onto handler 'userLoginController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/user/login/] onto handler 'userLoginController'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2015-04-21 00:49:54 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-04-21 00:49:54 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-04-21 00:49:54 [ main ] FrameworkServlet 'simple': initialization completed in 258 ms
+2015-04-21 00:55:18 [ main ] Root WebApplicationContext: initialization started
+2015-04-21 00:55:18 [ main ] Refreshing Root WebApplicationContext: startup date [Tue Apr 21 00:55:18 CST 2015]; root of context hierarchy
+2015-04-21 00:55:19 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-04-21 00:55:19 [ main ] Root WebApplicationContext: initialization completed in 504 ms
+2015-04-21 00:55:19 [ main ] FrameworkServlet 'simple': initialization started
+2015-04-21 00:55:19 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Tue Apr 21 00:55:19 CST 2015]; parent: Root WebApplicationContext
+2015-04-21 00:55:19 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
+2015-04-21 00:55:19 [ main ] Mapped URL path [/contract/toWord] onto handler 'contractController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/contract/toWord.*] onto handler 'contractController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/contract/toWord/] onto handler 'contractController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/contract/searchItem] onto handler 'contractController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/contract/searchItem.*] onto handler 'contractController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/contract/searchItem/] onto handler 'contractController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/contract/chose] onto handler 'contractController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/contract/chose.*] onto handler 'contractController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/contract/chose/] onto handler 'contractController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/contract/generate] onto handler 'contractController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/contract/generate.*] onto handler 'contractController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/contract/generate/] onto handler 'contractController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/contract/download] onto handler 'contractController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/contract/download.*] onto handler 'contractController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/contract/download/] onto handler 'contractController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/transfer/start] onto handler 'dateFormatController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/transfer/start.*] onto handler 'dateFormatController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/transfer/start/] onto handler 'dateFormatController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/lawcase/search] onto handler 'lawCaseController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/lawcase/search.*] onto handler 'lawCaseController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/lawcase/search/] onto handler 'lawCaseController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/lawcase/show] onto handler 'lawCaseController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/lawcase/show.*] onto handler 'lawCaseController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/lawcase/show/] onto handler 'lawCaseController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/lawcase/searchajax] onto handler 'lawCaseController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/lawcase/searchajax.*] onto handler 'lawCaseController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/lawcase/searchajax/] onto handler 'lawCaseController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/lawcase/searchresult] onto handler 'lawCaseController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/lawcase/searchresult.*] onto handler 'lawCaseController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/lawcase/searchresult/] onto handler 'lawCaseController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/message/show] onto handler 'messageBoardController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/message/show.*] onto handler 'messageBoardController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/message/show/] onto handler 'messageBoardController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/user/registershow] onto handler 'userLoginController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/user/registershow.*] onto handler 'userLoginController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/user/registershow/] onto handler 'userLoginController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/user/logined] onto handler 'userLoginController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/user/logined.*] onto handler 'userLoginController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/user/logined/] onto handler 'userLoginController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/user/register] onto handler 'userLoginController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/user/register.*] onto handler 'userLoginController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/user/register/] onto handler 'userLoginController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/user/login] onto handler 'userLoginController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/user/login.*] onto handler 'userLoginController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/user/login/] onto handler 'userLoginController'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2015-04-21 00:55:19 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-04-21 00:55:19 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-04-21 00:55:19 [ main ] FrameworkServlet 'simple': initialization completed in 256 ms
+2015-04-21 00:55:27 [ main ] Root WebApplicationContext: initialization started
+2015-04-21 00:55:27 [ main ] Refreshing Root WebApplicationContext: startup date [Tue Apr 21 00:55:27 CST 2015]; root of context hierarchy
+2015-04-21 00:55:28 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-04-21 00:55:28 [ main ] Root WebApplicationContext: initialization completed in 487 ms
+2015-04-21 00:55:28 [ main ] FrameworkServlet 'simple': initialization started
+2015-04-21 00:55:28 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Tue Apr 21 00:55:28 CST 2015]; parent: Root WebApplicationContext
+2015-04-21 00:55:28 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
+2015-04-21 00:55:28 [ main ] Mapped URL path [/contract/toWord] onto handler 'contractController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/contract/toWord.*] onto handler 'contractController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/contract/toWord/] onto handler 'contractController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/contract/searchItem] onto handler 'contractController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/contract/searchItem.*] onto handler 'contractController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/contract/searchItem/] onto handler 'contractController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/contract/chose] onto handler 'contractController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/contract/chose.*] onto handler 'contractController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/contract/chose/] onto handler 'contractController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/contract/generate] onto handler 'contractController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/contract/generate.*] onto handler 'contractController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/contract/generate/] onto handler 'contractController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/contract/download] onto handler 'contractController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/contract/download.*] onto handler 'contractController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/contract/download/] onto handler 'contractController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/transfer/start] onto handler 'dateFormatController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/transfer/start.*] onto handler 'dateFormatController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/transfer/start/] onto handler 'dateFormatController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/lawcase/search] onto handler 'lawCaseController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/lawcase/search.*] onto handler 'lawCaseController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/lawcase/search/] onto handler 'lawCaseController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/lawcase/show] onto handler 'lawCaseController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/lawcase/show.*] onto handler 'lawCaseController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/lawcase/show/] onto handler 'lawCaseController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/lawcase/searchajax] onto handler 'lawCaseController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/lawcase/searchajax.*] onto handler 'lawCaseController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/lawcase/searchajax/] onto handler 'lawCaseController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/lawcase/searchresult] onto handler 'lawCaseController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/lawcase/searchresult.*] onto handler 'lawCaseController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/lawcase/searchresult/] onto handler 'lawCaseController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/message/show] onto handler 'messageBoardController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/message/show.*] onto handler 'messageBoardController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/message/show/] onto handler 'messageBoardController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/user/logined] onto handler 'userLoginController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/user/logined.*] onto handler 'userLoginController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/user/logined/] onto handler 'userLoginController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/user/register] onto handler 'userLoginController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/user/register.*] onto handler 'userLoginController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/user/register/] onto handler 'userLoginController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/user/login] onto handler 'userLoginController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/user/login.*] onto handler 'userLoginController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/user/login/] onto handler 'userLoginController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/user/registershow] onto handler 'userLoginController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/user/registershow.*] onto handler 'userLoginController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/user/registershow/] onto handler 'userLoginController'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2015-04-21 00:55:28 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-04-21 00:55:28 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-04-21 00:55:28 [ main ] FrameworkServlet 'simple': initialization completed in 254 ms
+2015-04-21 00:55:35 [ qtp1312910583-22 ] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2015-04-21 00:55:35 [ qtp1312910583-22 ] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2015-04-21 00:57:03 [ main ] Root WebApplicationContext: initialization started
+2015-04-21 00:57:03 [ main ] Refreshing Root WebApplicationContext: startup date [Tue Apr 21 00:57:03 CST 2015]; root of context hierarchy
+2015-04-21 00:57:03 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2015-04-21 00:57:03 [ main ] Root WebApplicationContext: initialization completed in 511 ms
+2015-04-21 00:57:03 [ main ] FrameworkServlet 'simple': initialization started
+2015-04-21 00:57:03 [ main ] Refreshing WebApplicationContext for namespace 'simple-servlet': startup date [Tue Apr 21 00:57:03 CST 2015]; parent: Root WebApplicationContext
+2015-04-21 00:57:03 [ main ] Loading XML bean definitions from ServletContext resource [/WEB-INF/simple-servlet.xml]
+2015-04-21 00:57:03 [ main ] Mapped URL path [/contract/toWord] onto handler 'contractController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/contract/toWord.*] onto handler 'contractController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/contract/toWord/] onto handler 'contractController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/contract/searchItem] onto handler 'contractController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/contract/searchItem.*] onto handler 'contractController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/contract/searchItem/] onto handler 'contractController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/contract/chose] onto handler 'contractController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/contract/chose.*] onto handler 'contractController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/contract/chose/] onto handler 'contractController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/contract/generate] onto handler 'contractController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/contract/generate.*] onto handler 'contractController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/contract/generate/] onto handler 'contractController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/contract/download] onto handler 'contractController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/contract/download.*] onto handler 'contractController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/contract/download/] onto handler 'contractController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/transfer/start] onto handler 'dateFormatController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/transfer/start.*] onto handler 'dateFormatController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/transfer/start/] onto handler 'dateFormatController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/show/index] onto handler 'indexController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/show/index.*] onto handler 'indexController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/show/index/] onto handler 'indexController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/lawcase/search] onto handler 'lawCaseController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/lawcase/search.*] onto handler 'lawCaseController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/lawcase/search/] onto handler 'lawCaseController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/lawcase/show] onto handler 'lawCaseController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/lawcase/show.*] onto handler 'lawCaseController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/lawcase/show/] onto handler 'lawCaseController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/lawcase/searchajax] onto handler 'lawCaseController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/lawcase/searchajax.*] onto handler 'lawCaseController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/lawcase/searchajax/] onto handler 'lawCaseController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/lawcase/searchresult] onto handler 'lawCaseController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/lawcase/searchresult.*] onto handler 'lawCaseController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/lawcase/searchresult/] onto handler 'lawCaseController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/message/show] onto handler 'messageBoardController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/message/show.*] onto handler 'messageBoardController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/message/show/] onto handler 'messageBoardController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/user/logined] onto handler 'userLoginController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/user/logined.*] onto handler 'userLoginController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/user/logined/] onto handler 'userLoginController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/user/register] onto handler 'userLoginController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/user/register.*] onto handler 'userLoginController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/user/register/] onto handler 'userLoginController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/user/login] onto handler 'userLoginController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/user/login.*] onto handler 'userLoginController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/user/login/] onto handler 'userLoginController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/user/registershow] onto handler 'userLoginController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/user/registershow.*] onto handler 'userLoginController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/user/registershow/] onto handler 'userLoginController'
+2015-04-21 00:57:03 [ main ] Mapped URL path [/themes/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-04-21 00:57:04 [ main ] Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2015-04-21 00:57:04 [ main ] Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2015-04-21 00:57:04 [ main ] Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2015-04-21 00:57:04 [ main ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2015-04-21 00:57:04 [ main ] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-04-21 00:57:04 [ main ] FrameworkServlet 'simple': initialization completed in 265 ms
+2015-04-21 00:57:20 [ qtp1075417105-22 ] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2015-04-21 00:57:20 [ qtp1075417105-22 ] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]

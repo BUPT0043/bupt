@@ -51,7 +51,9 @@ public class UserLoginController {
         ModelAndView mv = new ModelAndView();
 
         String username = request.getParameter("username");
+        System.out.println(username);
         String role = request.getParameter("optionsRadios").toString();
+        System.out.println(username);
         String pwd = request.getParameter("pwd");
         String email = request.getParameter("email");
         String sex = request.getParameter("optionsRadiosinline").toString();

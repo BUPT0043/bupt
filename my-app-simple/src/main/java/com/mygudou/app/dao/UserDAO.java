@@ -12,7 +12,7 @@ public interface UserDAO {
 
     void insertLawyer(Lawyer user);
 
-    public boolean LawyerIsNotExist(int id);
+    public boolean LawyerIsNotExist(String name);
     
     List<Lawyer> getLawyerSimpleList();
     
@@ -20,7 +20,7 @@ public interface UserDAO {
             
     void insertCustomer(Customer user);
 
-    public boolean CustomerIsNotExist(int id);
+    public boolean CustomerIsNotExist(String name);
     
     Customer getCustomerDetail(int id);
     

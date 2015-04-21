@@ -20,7 +20,7 @@ import com.mygudou.app.rowMapper.LawyerRowMapper;
  * @UserLogin
  */
 
-@Repository("UserDAOImp")
+@Repository("UserDAO")
 public class UserDAOImp implements UserDAO {
     @Resource(name = "myjdbcTemplate")
     private JdbcTemplate jdbcTemplate;
@@ -42,19 +42,19 @@ public class UserDAOImp implements UserDAO {
                     public void setValues(PreparedStatement ps)
                             throws SQLException {
                         ps.setString(1, username);
-                        ps.setString(3, sex);
-                        ps.setString(4, pwd);
-                        ps.setString(5, email);
+                        ps.setString(2, sex);
+                        ps.setString(3, pwd);
+                        ps.setString(4, email);
                     }
 
                 });
 
     }
 
-    public boolean LawyerIsNotExist(int id) {
+    public boolean LawyerIsNotExist(String name) {
         
         List list = jdbcTemplate.queryForList("SELECT * FROM " + TABLE_LAWYER
-                + " WHERE id = " + id);
+                + " WHERE username = '" + name+"'");
         if (list.size() > 0) {
             return false;
         } else {
@@ -71,11 +71,12 @@ public class UserDAOImp implements UserDAO {
 	}
 
 	public Lawyer getLawyerDetail(int id) {
-		if(LawyerIsNotExist(id))
-			return null;
 		// TODO Auto-generated method stub
 		String sql = "select * from " + TABLE_LAWYER+" where id ="+id;	
 		List<Lawyer> lawyer = jdbcTemplate.query(sql, new LawyerRowMapper());
+		
+		if(lawyer.size()==0||lawyer==null)
+			return null;
 		
         String getCustomers="select customerId from "+TABLE_LAWYER_CUSTOMER +" where lawyerId ="+id;
         
@@ -100,18 +101,18 @@ public class UserDAOImp implements UserDAO {
                     public void setValues(PreparedStatement ps)
                             throws SQLException {
                         ps.setString(1, username);
-                        ps.setString(3, sex);
-                        ps.setString(4, pwd);
-                        ps.setString(5, email);
+                        ps.setString(2, sex);
+                        ps.setString(3, pwd);
+                        ps.setString(4, email);
                     }
 
                 });
 	}
 
-	public boolean CustomerIsNotExist(int id) {
+	public boolean CustomerIsNotExist(String name) {
 		// TODO Auto-generated method stub
         List list = jdbcTemplate.queryForList("SELECT * FROM " + TABLE_CUSTOMER
-                + " WHERE id = " + id);
+                + " WHERE username = '" + name+"'");
         if (list.size() > 0) {
             return false;
         } else {
@@ -122,12 +123,13 @@ public class UserDAOImp implements UserDAO {
 
 
 	public Customer getCustomerDetail(int id) {
-		// TODO Auto-generated method stub
-		if(CustomerIsNotExist(id))
-			return null;
+		
 		// TODO Auto-generated method stub
 		String sql = "select * from " + TABLE_CUSTOMER+" where id ="+id;	
 		List<Customer> customer = jdbcTemplate.query(sql, new CustomerRowMapper());
+		
+		if(customer.size()==0||customer==null)
+			return null;
 		
         String getLawyers="select lawyerId from "+TABLE_LAWYER_CUSTOMER +" where customerId ="+id;
         

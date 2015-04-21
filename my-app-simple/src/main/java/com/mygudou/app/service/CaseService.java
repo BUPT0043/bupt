@@ -15,7 +15,7 @@ import com.mygudou.app.model.Matter;
 /**
  * 搜索
  */
-@Service("SearchService")
+@Service("CaseService")
 @Transactional
 public class CaseService {
     
